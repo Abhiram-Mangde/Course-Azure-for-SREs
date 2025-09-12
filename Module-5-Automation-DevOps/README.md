@@ -82,7 +82,33 @@ jobs:
 - Lab: Automate resource deployment and CI/CD pipeline
 
 
-## Mini Project: Automate Your First Deployment
+## Troubleshooting Tips & Common Mistakes
+- Validate your IaC templates before deployment to catch syntax errors.
+- If a pipeline fails, check for missing secrets or incorrect triggers.
+- Common mistake: Not using version control for scripts and templates.
+- Always test automation in a non-production environment first.
+
+---
+
+## Visual Guide
+![Azure DevOps Pipeline Example](https://learn.microsoft.com/en-us/azure/media/devops/pipelines/pipeline-diagram.png)
+*Sample Azure DevOps pipeline.*
+
+---
+
+## Quick Quiz
+1. What is Infrastructure as Code (IaC)?
+2. How does CI/CD improve deployment reliability?
+3. What is the benefit of using GitHub Actions?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
 **Goal:** Use IaC and CI/CD to deploy a simple app.
 
 **Tasks:**

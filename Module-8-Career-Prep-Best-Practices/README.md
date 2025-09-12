@@ -46,7 +46,33 @@ Congratulations! 🎉 By completing this course, you have:
 - Share your journey — post projects, write blogs, network with IT professionals
 
 
-## Mini Project: Career Launch Pad
+## Troubleshooting Tips & Common Mistakes
+- Keep your resume updated with new skills and certifications.
+- If your portfolio is missing projects, revisit previous modules for ideas.
+- Common mistake: Not preparing for behavioral interview questions.
+- Practice mock interviews with peers for confidence.
+
+---
+
+## Visual Guide
+![Azure Certification Pathways](https://learn.microsoft.com/en-us/certifications/media/azure-certification-path.png)
+*Sample Azure certification roadmap.*
+
+---
+
+## Quick Quiz
+1. What is one benefit of earning an Azure certification?
+2. How would you present your Azure projects in an interview?
+3. Why is networking with peers important for career growth?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
 **Goal:** Prepare for Azure SRE job applications and interviews.
 
 **Tasks:**

@@ -46,7 +46,33 @@ az vmss create --resource-group DemoGroup --name DemoScaleSet --image UbuntuLTS 
 - Quiz and reliability scenario lab
 
 
-## Mini Project: Build a Reliable Azure App
+## Troubleshooting Tips & Common Mistakes
+- Always use Availability Sets for VMs to avoid single points of failure.
+- If load balancing fails, check backend pool configuration and health probes.
+- Common mistake: Not enabling backup before data loss occurs.
+- Test disaster recovery regularly, not just once.
+
+---
+
+## Visual Guide
+![Azure High Availability Diagram](https://learn.microsoft.com/en-us/azure/media/architecture/resiliency/availability-zones-diagram.png)
+*Sample high availability architecture.*
+
+---
+
+## Quick Quiz
+1. What is the difference between SLA, SLO, and SLI?
+2. How does Azure Load Balancer improve reliability?
+3. Why is disaster recovery important?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
 **Goal:** Apply reliability concepts to a simple Azure deployment.
 
 **Tasks:**

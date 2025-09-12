@@ -38,7 +38,33 @@ az network nsg rule create --resource-group DemoGroup --nsg-name DemoNSG --name 
 - Lab: Secure resources and set up cost alerts
 
 
-## Mini Project: Secure and Monitor Your Azure Resources
+## Troubleshooting Tips & Common Mistakes
+- Always enable MFA for all users to prevent unauthorized access.
+- If NSG rules block access, check priorities and source/destination settings.
+- Common mistake: Not setting cost alerts, leading to budget overruns.
+- Review Secure Score regularly for actionable recommendations.
+
+---
+
+## Visual Guide
+![Azure Security Center Dashboard](https://learn.microsoft.com/en-us/azure/media/defender-for-cloud/security-center-dashboard.png)
+*Sample Security Center dashboard.*
+
+---
+
+## Quick Quiz
+1. What is the purpose of NSGs in Azure?
+2. How do you set a budget alert for a Resource Group?
+3. Why is Secure Score important?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
 **Goal:** Apply security and cost management best practices.
 
 **Tasks:**

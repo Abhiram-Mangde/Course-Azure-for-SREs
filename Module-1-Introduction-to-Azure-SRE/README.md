@@ -56,6 +56,35 @@ az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --ad
 ```
 
 
+
+## Troubleshooting Tips & Common Mistakes
+- Double-check your Azure region when creating resources to avoid deployment errors.
+- If you can't SSH into your VM, verify that the NSG allows port 22 and your public IP is whitelisted.
+- Remember to delete unused resources to avoid unexpected charges.
+- Common mistake: Forgetting to generate SSH keys or using an unsupported username.
+
+---
+
+## Visual Guide
+![Azure Portal Dashboard Example](https://learn.microsoft.com/en-us/azure/media/azure-portal/overview/portal-dashboard.png)
+*Sample Azure Portal dashboard for reference.*
+
+---
+
+## Quick Quiz
+1. What are the three main cloud service models?
+2. What is the difference between a Resource Group and a Subscription?
+3. Why is reliability important for an SRE?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
+
 ## Mini Project: Azure Starter Lab
 **Goal:** Get hands-on with Azure basics.
 

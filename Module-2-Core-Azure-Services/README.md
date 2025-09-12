@@ -57,7 +57,33 @@ az role assignment create --assignee <user-email> --role Reader --resource-group
 ## Assessment
 - Hands-on lab: Create and manage resources
 
-## Mini Project: Build Your First Azure Environment
+## Troubleshooting Tips & Common Mistakes
+- Always check address prefixes for VNets and subnets to avoid overlap errors.
+- If a VM fails to deploy, verify quota limits and region availability.
+- Common mistake: Forgetting to assign NSG rules for required ports (SSH, HTTP).
+- Clean up resources after labs to avoid charges.
+
+---
+
+## Visual Guide
+![Azure Networking Diagram](https://learn.microsoft.com/en-us/azure/media/virtual-network/virtual-network-diagram.png)
+*Sample Azure networking architecture.*
+
+---
+
+## Quick Quiz
+1. What is the purpose of a Resource Group?
+2. How do NSGs help secure your environment?
+3. What is the difference between a public and private IP in Azure?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
 **Goal:** Practice creating and managing core Azure resources.
 
 **Tasks:**

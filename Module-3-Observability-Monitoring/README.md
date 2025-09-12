@@ -42,7 +42,33 @@ Learn how to monitor Azure resources, set up dashboards, analyze logs, and confi
 - Quiz and dashboard creation lab
 
 
-## Mini Project: Monitor Your First VM
+## Troubleshooting Tips & Common Mistakes
+- If metrics are missing, check that monitoring is enabled for the resource.
+- Alerts not firing? Verify thresholds and notification settings.
+- Common mistake: Not configuring Log Analytics workspace for logs.
+- Use tags to organize resources for easier monitoring.
+
+---
+
+## Visual Guide
+![Azure Monitor Dashboard Example](https://learn.microsoft.com/en-us/azure/media/azure-monitor/overview/monitor-dashboard.png)
+*Sample Azure Monitor dashboard.*
+
+---
+
+## Quick Quiz
+1. What are the three pillars of observability?
+2. How do you set up an alert for high CPU usage?
+3. What is the role of Application Insights?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
 **Goal:** Set up monitoring and alerts for a virtual machine.
 
 **Tasks:**

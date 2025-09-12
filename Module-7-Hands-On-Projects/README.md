@@ -55,7 +55,33 @@ Apply your skills in real-world projects: deploy web apps, configure auto-scalin
 - Complete all guided labs and submit project reports
 
 
-## Mini Project: Portfolio Project Challenge
+## Troubleshooting Tips & Common Mistakes
+- Always test your app after deployment to catch configuration issues.
+- If monitoring is missing, verify that Application Insights is enabled.
+- Common mistake: Not documenting project steps for future reference.
+- Review cost usage before scaling resources.
+
+---
+
+## Visual Guide
+![Azure App Service Architecture](https://learn.microsoft.com/en-us/azure/media/app-service/app-service-architecture.png)
+*Sample App Service architecture.*
+
+---
+
+## Quick Quiz
+1. What are the key steps in deploying a web app to Azure?
+2. How do you automate deployments using CI/CD?
+3. Why is cost management important for cloud projects?
+
+*Discuss your answers in the course forum or with your instructor.*
+
+---
+
+## Community & Discussion
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+---
 **Goal:** Build a small Azure solution to showcase your skills.
 
 **Tasks:**
