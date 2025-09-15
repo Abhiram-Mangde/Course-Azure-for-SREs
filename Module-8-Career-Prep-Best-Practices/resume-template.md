@@ -25,9 +25,13 @@ Motivated Site Reliability Engineer with hands-on experience in Azure cloud, aut
 - [Project Title 1](#): Brief description and technologies used
 - [Project Title 2](#): Brief description and technologies used
 
+
 ## Education
+
 - Degree, University, Year
 
 ## Community & Activities
+
 - Member of Azure SRE Learners Forum
 - Contributor to open-source cloud projects
+

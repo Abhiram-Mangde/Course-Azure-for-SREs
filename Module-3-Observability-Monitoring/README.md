@@ -6,6 +6,7 @@ Learn how to monitor Azure resources, set up dashboards, analyze logs, and confi
 ---
 
 ## Lesson 3.1: Monitoring & Observability Fundamentals
+
 - Importance of monitoring for SREs
 - Three pillars: Metrics, Logs, Traces
 - **Analogy:** Car dashboard for observability
@@ -13,6 +14,7 @@ Learn how to monitor Azure resources, set up dashboards, analyze logs, and confi
 ---
 
 ## Lesson 3.2: Azure Monitor Basics
+
 - Collect and visualize performance data
 - Create dashboards and set alerts
 - **Demo:**

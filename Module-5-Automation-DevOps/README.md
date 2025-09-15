@@ -5,7 +5,9 @@ Learn Infrastructure as Code (IaC), Azure CLI, PowerShell, Azure DevOps pipeline
 
 ---
 
+
 ## Lesson 5.1: Introduction to Infrastructure as Code (IaC)
+
 - ARM Templates, Bicep, Terraform
 - **Demo:**
   - Example Bicep file to create a storage account
