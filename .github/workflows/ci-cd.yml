@@ -1,0 +1,58 @@
+name: Course Content CI/CD
+
+on:
+  push:
+    paths:
+      - '**/*'
+  pull_request:
+    paths:
+      - '**/*'
+
+jobs:
+  content-checks:
+    name: CI - Content Quality & Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install markdownlint-cli
+          pip install yamllint
+
+      - name: Lint Markdown files
+        run: |
+          markdownlint **/*.md --ignore node_modules
+
+      - name: Lint YAML files
+        run: |
+          yamllint .
+
+      - name: Validate folder structure
+        run: |
+          python .github/scripts/validate_structure.py
+        continue-on-error: false
+
+      - name: Show changed files
+        run: |
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }}
+
+      - name: Generate Markdown Report
+        run: |
+          echo "## CI Results" > ci-results.md
+          echo "Linting and validation completed successfully." >> ci-results.md
+        if: success()

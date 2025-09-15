@@ -1,0 +1,23 @@
+name: Course Content CD
+
+on:
+  workflow_run:
+    workflows: ["Course Content CI/CD"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    name: CD - Deploy Course Content
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Deploy Documentation
+        run: |
+          echo "Deploying course content..."
+          # Add deployment steps here (e.g., upload to Azure, publish docs)
+      - name: Notify Success
+        run: |
+          echo "Deployment completed successfully!"
