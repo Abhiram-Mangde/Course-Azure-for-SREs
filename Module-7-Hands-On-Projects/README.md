@@ -78,13 +78,18 @@ Apply your skills in real-world projects: deploy web apps, configure auto-scalin
 
 ---
 
+
 ## Community & Discussion
-- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure) to ask questions, share projects, and connect with peers.
+
+- Join the [Azure SRE Learners Forum](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
+  to ask questions, share projects, and connect with peers.
 
 ---
+
 **Goal:** Build a small Azure solution to showcase your skills.
 
 **Tasks:**
+
 1. Design and deploy a simple web app using Azure App Service.
 2. Set up monitoring and alerts for the app.
 3. Automate deployment using Azure DevOps or GitHub Actions.
@@ -92,14 +97,17 @@ Apply your skills in real-world projects: deploy web apps, configure auto-scalin
 5. Document your project and share it on GitHub or LinkedIn.
 
 **Submission:**
+
 - Share your project repo, screenshots, and a summary of what you learned.
 
 ---
 
 ## Hands-On Assignment
+
 **Scenario:** You want to demonstrate your Azure SRE skills to a potential employer.
 
 **Instructions:**
+
 1. Write a short case study describing a problem you solved using Azure tools.
 2. List the Azure services you used and why.
 3. Share your case study in the course forum or with your instructor.
@@ -107,6 +115,7 @@ Apply your skills in real-world projects: deploy web apps, configure auto-scalin
 ---
 
 ## Resources
+
 - [Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/)
 - [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/)
 - [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/)

@@ -1,11 +1,14 @@
+
 # Module 1: Introduction to Azure & SRE
 
 ## Overview
+
 This module introduces cloud computing, Microsoft Azure, and the role of Site Reliability Engineers (SREs). It is designed for beginners and sets the foundation for the rest of the course.
 
 ---
 
 ## Lesson 1.1: What is Cloud Computing?
+
 - **Definition:** Delivery of computing services (servers, storage, databases, networking) over the internet.
 - **Service Models:**
   - IaaS: Infrastructure as a Service
@@ -18,12 +21,14 @@ This module introduces cloud computing, Microsoft Azure, and the role of Site Re
 ---
 
 ## Lesson 1.2: Why Choose Azure?
+
 - **Key Features:** Integration with Microsoft tools, global reach, security, compliance.
 - **Career Tip:** Azure skills open doors in IT and SRE roles.
 
 ---
 
 ## Lesson 1.3: Who is an SRE?
+
 - **Role:** Mix of software engineer and system administrator.
 - **Responsibilities:** Reliability, automation, scalability.
 - **Beginner Example:** Keeping an online shop always available.
@@ -31,6 +36,7 @@ This module introduces cloud computing, Microsoft Azure, and the role of Site Re
 ---
 
 ## Lesson 1.4: Azure Portal Walkthrough & Free Account
+
 - **Steps:**
   1. Go to portal.azure.com
   2. Sign up for a Free Account ($200 credits)
@@ -40,22 +46,23 @@ This module introduces cloud computing, Microsoft Azure, and the role of Site Re
 ---
 
 ## Assessment
+
 - Quiz on cloud concepts and Azure basics
 - Hands-on: Create a free Azure account and explore the portal
 
 ---
 
 ## Example Script: Create a Resource Group in Azure CLI
+
 ```bash
 az group create --name MyResourceGroup --location eastus
 ```
 
 ## Example Script: Create a Virtual Machine in Azure CLI
+
 ```bash
 az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
 ```
-
-
 
 ## Troubleshooting Tips & Common Mistakes
 - Double-check your Azure region when creating resources to avoid deployment errors.
