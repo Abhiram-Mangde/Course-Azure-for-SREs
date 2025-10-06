@@ -49,10 +49,6 @@ jobs:
           python .github/scripts/validate_structure.py
         continue-on-error: false
 
-      - name: Show changed files
-        run: |
-          git diff --name-only ${{ github.event.before }} ${{ github.sha }}
-
       - name: Generate Markdown Report
         run: |
           echo "## CI Results" > ci-results.md
