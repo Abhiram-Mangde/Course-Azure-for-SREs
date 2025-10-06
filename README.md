@@ -1,8 +1,6 @@
 
 # 🚀 **Azure for Site Reliability Engineers (SREs): Beginner to Intermediate Course**
 
----
-
 ## 📚 Course Overview
 This comprehensive course is designed for aspiring and junior Site Reliability Engineers (SREs) who want to master Microsoft Azure fundamentals and SRE best practices. Through hands-on labs, real-world projects, and practical demos, learners will gain the skills needed to build, monitor, automate, and secure cloud-native systems on Azure.
 
@@ -16,7 +14,6 @@ This comprehensive course is designed for aspiring and junior Site Reliability E
 ---
 
 ## 📝 Prerequisites
-- Basic computer literacy
 - No prior cloud or SRE experience required
 - Optional: Familiarity with IT concepts or programming
 
@@ -29,16 +26,17 @@ By the end of this course, you will be able to:
 - Automate infrastructure and application deployments
 - Implement security and cost management best practices
 - Build portfolio-ready projects for interviews and career growth
+- Advance Topics: Details about each Service in Azure
 
 ---
 
 ## 🏗️ Course Structure
 The course is divided into modules, each with beginner-friendly explanations, hands-on labs, demo ideas, and assessment suggestions. Quizzes and project milestones are included to reinforce learning.
+Further you can move to advance folder where details on each Module is explained and given.
 
 ---
 
 # 📒 Course Modules
-
 
 
 ## 🟦 Module 1: Introduction to Azure & SRE
@@ -332,6 +330,10 @@ Congratulations! 🎉 By completing this course, you have:
 - Mastered Azure basics and SRE fundamentals
 - Built real-world projects for your portfolio
 - Learned how to prepare for interviews and career growth
+
+### Advance Topics - Azure Services Specific
+Learn more about each indiviual Service in Azure
+- Microsoft Entra Id
 
 **Final Reminders:**
 - Keep learning — Azure evolves rapidly
