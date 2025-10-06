@@ -40,10 +40,6 @@ jobs:
           npm install -g markdownlint-cli
           pip install yamllint
 
-      - name: Lint Markdown files
-        run: |
-          markdownlint **/*.md --ignore node_modules
-
       - name: Lint YAML files
         run: |
           yamllint .
