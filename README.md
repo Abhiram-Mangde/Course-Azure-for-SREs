@@ -333,7 +333,7 @@ Congratulations! 🎉 By completing this course, you have:
 
 ### Advance Topics - Azure Services Specific
 Learn more about each indiviual Service in Azure
-- Microsoft Entra Id
+- [Microsoft Entra Id](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId.md)
 
 **Final Reminders:**
 - Keep learning — Azure evolves rapidly
