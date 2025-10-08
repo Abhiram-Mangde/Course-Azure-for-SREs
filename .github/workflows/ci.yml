@@ -1,9 +1,9 @@
-name: Course Content CI/CD
+name: Course Content CI # Name of the GitHub Actions workflow
 
 on:
-  push:
+  push: # Name of the GitHub Actions workflow
     paths:
-      - '**/*'
+      - '**/*' # Run the workflow for changes to any file
   pull_request:
     paths:
       - '**/*'
@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # Check out the code from the repository so it can be used in the workflow
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5 # Set up a Python environment
         with:
           python-version: '3.x'
 
@@ -47,10 +47,10 @@ jobs:
       - name: Validate folder structure
         run: |
           python .github/scripts/validate_structure.py
-        continue-on-error: false
+        continue-on-error: false # Fail the job if the script fails (strict check)
 
       - name: Generate Markdown Report
         run: |
           echo "## CI Results" > ci-results.md
           echo "Linting and validation completed successfully." >> ci-results.md
-        if: success()
+        if: success() # Only run this step if all previous steps were successful
