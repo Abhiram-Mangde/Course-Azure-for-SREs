@@ -328,10 +328,10 @@ Congratulations! 🎉 By completing this course, you have:
 Learn more about each indiviual Service in Azure with Hands-On Activities
 - [Microsoft Entra Id](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId.md)
 
-**Final Reminders:**
-- Keep learning — Azure evolves rapidly
-- Practice daily — confidence comes from hands-on labs
-- Share your journey — post projects, write blogs, network with IT professionals
+### HandsOn Activities
+- [Setup Conditional Access for Admin](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId-HandsOnActivities/SetupConditionalAccess.md)
+- [Configure PIM for Global Admin Role](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId-HandsOnActivities/ConfigurePIMForAdmin.md)
+- [Secure Guest (B2B) Access](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId-HandsOnActivities/SecureGuestB2BAccess.md)
 
 **Recommended Resources:**
 - [Microsoft Learn: Azure Fundamentals](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals/)
