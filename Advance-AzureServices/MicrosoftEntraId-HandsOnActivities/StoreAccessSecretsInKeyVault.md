@@ -140,3 +140,36 @@ az group delete --name sre-keyvault-lab --yes --no-wait
 ---
 
 > Note: A Sample python script to use is given in the `.github/scripts/access_secrets_keyvault_script.py` path.
+
+[access_secrets_keyvault_script.py](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/.github/scripts/access_secrets_keyvault_script.py)
+
+**How to Run the Script:**
+
+This script demonstrates securely accessing a secret from Azure Key Vault using Managed Identity (no credentials stored in code). It’s simple, works well for labs, and can be deployed to an Azure App Service or run locally (with az login).
+
+**Option 1: Run Locally (with Azure CLI login)**
+
+1. Make sure you are logged in to Azure:
+```bash
+az login
+```
+
+2. Set environment variables:
+```bash
+export KEY_VAULT_NAME="your-keyvault-name"
+export SECRET_NAME="DbConnectionString"
+```
+
+3. Run the script:
+```bash
+python `python-filename`.py
+```
+
+**Option 2: Run in Azure App Service (Managed Identity)**
+
+1. Upload this script as part of your Flask or FastAPI app.
+2. Enable System-Assigned Managed Identity for the App Service.
+3. In your App Service Configuration → Application Settings, add:
+    - KEY_VAULT_NAME = your key vault name
+    - SECRET_NAME = DbConnectionString
+4. Deploy and access logs (via Log Stream) to see output
