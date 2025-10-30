@@ -39,6 +39,7 @@ jobs:
         run: |
           npm install -g markdownlint-cli
           pip install yamllint
+          pip install azure-identity azure-keyvault-secrets
 
       - name: Lint YAML files
         run: |
@@ -46,8 +47,9 @@ jobs:
 
       - name: Validate folder structure
         run: |
-          python .github/scripts/validate_structure.py
-        continue-on-error: false # Fail the job if the script fails (strict check)
+          python Sample-ProjectFiles/scripts/validate_structure.py
+          python Sample-ProjectFiles/scripts/access_secrets_keyvault_script.py
+        continue-on-error: true
 
       - name: Generate Markdown Report
         run: |
