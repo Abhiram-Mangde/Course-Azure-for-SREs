@@ -46,7 +46,8 @@ jobs:
 
       - name: Validate folder structure
         run: |
-          python .github/scripts/validate_structure.py
+          python Sample-ProjectFiles/scripts/validate_structure.py
+          python Sample-ProjectFiles/scripts/access_secrets_keyvault_script.py
         continue-on-error: false # Fail the job if the script fails (strict check)
 
       - name: Generate Markdown Report
