@@ -68,3 +68,5 @@ To integrate with an SRE workflow:
 - How can SREs use budget alerts as part of their error budgets and operational SLIs?
 - What actions can be automated when a budget threshold is breached (e.g., scaling down non-critical resources)?
 - How do budget alerts complement Azure Policy and Cost Anomaly Detection?
+
+> Note: A reference script is given in the Sample ProjectsFiles -> scripts folder [create_azure_budget_alert.sh](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Sample-ProjectFiles/scripts/create_azure_budget_alert.sh)
