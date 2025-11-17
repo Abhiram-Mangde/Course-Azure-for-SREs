@@ -308,7 +308,7 @@ ErrorRate(1h)
 
 **Goal: Find root cause of P99 spikes.**
 
-*Steps:*
+***Steps:***
 1. Identify impacted endpoints
 ```kql
 AppRequests
@@ -327,6 +327,7 @@ AppRequests
 | join AppDependencies on operation_Id
 | summarize avg(duration), avg(dependencyDuration) by name, target
 ```
+--- 
 
 ### LAB 2 — Failed Login Investigation
 **Parse logs:**
@@ -339,7 +340,7 @@ AppTraces
 ```kql
 | summarize count() by userId, reason
 ```
-
+---
 ### LAB 3 — Reliability Dashboard
 
 Metrics to include:
@@ -350,6 +351,7 @@ Metrics to include:
 - Dependency failures
 - RPS
 Queries included earlier.
+---
 
 ### LAB 4 — Anomaly Detection Alert
 ```kql
@@ -360,22 +362,24 @@ AppRequests
 ```
 ---
 
-MODULE 13 — BEST PRACTICES (MOST IMPORTANT FOR SRE)
+## MODULE 13 — BEST PRACTICES (MOST IMPORTANT FOR SRE)
 
 **Project early**
-Reduces costs.
+    - Reduces costs.
 
 **Use bin() for time-series**
-Avoid random timestamps.
+    - Avoid random timestamps.
 
 **Use explicit column types**
-Avoid dynamic unless needed.
+    - Avoid dynamic unless needed.
 
 **Don’t overuse join**
-Large joins = slow & expensive.
+    - Large joins = slow & expensive.
 
 **Use summarize before join**
-Smaller datasets → faster.
+    - Smaller datasets → faster.
 
 **Use materialized views for dashboards**
-Don’t compute heavy queries on the fly.
+    - Don’t compute heavy queries on the fly.
+    
+---
