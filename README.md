@@ -326,7 +326,9 @@ Congratulations! 🎉 By completing this course, you have:
 
 ### Advance Topics - Azure Services Specific
 Learn more about each indiviual Service in Azure with Hands-On Activities
-- [Microsoft Entra Id](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId.md)
+- [Microsoft Entra Id](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Azure%20Entra%20Id/MicrosoftEntraId.md)
+- [Microsoft Automation Account]([https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId.md](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Kubernetes%20Service))
+
 
 ### HandsOn Activities
 - [Setup Conditional Access for Admin](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId-HandsOnActivities/SetupConditionalAccess.md)
