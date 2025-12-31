@@ -1,8 +1,12 @@
 
-# 🚀 **Azure for Site Reliability Engineers (SREs): Beginner to Intermediate Course**
+# **Azure for Site Reliability Engineers (SREs): Beginner to Intermediate Course**
 
 ## Course Overview
+
 This comprehensive course is designed for aspiring and junior Site Reliability Engineers (SREs) who want to master Microsoft Azure fundamentals and SRE best practices. Through hands-on labs, real-world projects, and practical demos, learners will gain the skills needed to build, monitor, automate, and secure cloud-native systems on Azure.
+
+- [Course Website](https://abhiram-mangde.github.io/Course-Azure-for-SREs/)
+- [Discussion and Challenges Board](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions)
 
 ---
 
@@ -326,14 +330,15 @@ Congratulations! 🎉 By completing this course, you have:
 
 ### Advance Topics - Azure Services Specific
 Learn more about each indiviual Service in Azure with Hands-On Activities
-- [Microsoft Entra Id](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Azure%20Entra%20Id/MicrosoftEntraId.md)
-- [Microsoft Automation Account]([https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId.md](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Kubernetes%20Service))
-
+- [Azure Entra Id](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Azure%20Entra%20Id/MicrosoftEntraId.md)
+- [Azure Automation Account](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Automation%20Account)
+- [Azure Kubernetes Service](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Kubernetes%20Service)
+- [Azure Monitor](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Monitor)
+- [Azure Virtual Machines](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Virtual%20Machines)
 
 ### HandsOn Activities
-- [Setup Conditional Access for Admin](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId-HandsOnActivities/SetupConditionalAccess.md)
-- [Configure PIM for Global Admin Role](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId-HandsOnActivities/ConfigurePIMForAdmin.md)
-- [Secure Guest (B2B) Access](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/Advance-AzureServices/MicrosoftEntraId-HandsOnActivities/SecureGuestB2BAccess.md)
+[Azure EntraId HandsOn Activities](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Entra%20Id/Microsoft%20EntraId%20Hands%20On%20Activities)
+[Azure Monitor Hands On Activities](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Monitor/Azure%20Monitor%20Hands%20On%20Activities)
 
 **Recommended Resources:**
 - [Microsoft Learn: Azure Fundamentals](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals/)
