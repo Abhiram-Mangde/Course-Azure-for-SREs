@@ -2,14 +2,14 @@
 <!--  Azure for SREs – Index  -->
 <!-- ========================= -->
 
-# 🚀 Azure for SREs  
+# Azure for SREs  
 ### *Build • Operate • Scale Reliable Systems on Microsoft Azure*
 
 > A **practical, real-world course** designed to help you think like a **Site Reliability Engineer (SRE)** while working with **Microsoft Azure**.
 
 ---
 
-## 🌟 Why Azure for SREs?
+## Why Azure for SREs?
 
 Most courses teach *what Azure services do*.  
 Most SRE content teaches *theory without context*.
@@ -24,20 +24,20 @@ You will learn **how systems fail in production**, **why they fail**, and **how 
 
 ---
 
-## 👩‍💻 Who Is This Course For?
+## Who Is This Course For?
 
-| 👤 Role | What You’ll Gain |
+| Role | What You’ll Gain |
 |------|------------------|
-| 🌱 Beginners | Clear cloud & SRE fundamentals |
-| 👷 Junior SREs | Real-world reliability patterns |
-| ⚙️ DevOps Engineers | Azure + SRE skills combined |
-| 🎓 Students / Career Switchers | Hands-on, job-ready experience |
+| Beginners | Clear cloud & SRE fundamentals |
+| Junior SREs | Real-world reliability patterns |
+| DevOps Engineers | Azure + SRE skills combined |
+| Students / Career Switchers | Hands-on, job-ready experience |
 
 > 💡 *If outages interest you more than just deployments — this course is for you.*
 
 ---
 
-## 🧠 What You’ll Learn
+## What You’ll Learn
 
 ### Core Skills You’ll Build
 
@@ -64,8 +64,6 @@ You will learn **how systems fail in production**, **why they fail**, and **how 
 | **7️⃣** | Hands-On Projects (Guided Labs) |
 | **8️⃣** | Career Prep, Best Practices & Conclusion |
 
-**Start here:** [View Full Syllabus](syllabus.md)
-
 ---
 
 ## Advanced Azure Topics (Deep Dives)
@@ -75,32 +73,39 @@ You will learn **how systems fail in production**, **why they fail**, and **how 
 <table>
 <tr>
 
-<td align="center" width="25%">
+<td align="center" width="20%">
 <h3>⚙️</h3>
 <b>Automation Account</b><br/>
 Automate operational tasks<br/><br/>
-<a href="Azure%20Automation%20Account/">Open Module</a>
+<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Automation%20Account">Open Module</a>
 </td>
 
-<td align="center" width="25%">
+<td align="center" width="20%">
 <h3>🔐</h3>
 <b>Azure Entra ID</b><br/>
 Identity & access reliability<br/><br/>
-<a href="Azure%20Entra%20Id/">Open Module</a>
+<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Entra%20Id">Open Module</a>
 </td>
 
-<td align="center" width="25%">
+<td align="center" width="20%">
 <h3>☸️</h3>
 <b>Azure Kubernetes Service</b><br/>
 Production-grade AKS<br/><br/>
-<a href="Azure%20Kubernetes%20Service/">Open Module</a>
+<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Kubernetes%20Service">Open Module</a>
 </td>
 
-<td align="center" width="25%">
+<td align="center" width="20%">
 <h3>📈</h3>
 <b>Azure Monitor</b><br/>
 Observability & alerts<br/><br/>
-<a href="Azure%20Monitor/">Open Module</a>
+<a href="[Azure%20Monitor/](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Monitor)">Open Module</a>
+</td>
+
+<td align="center" width="20%">
+<h3>☸️</h3>
+<b>Azure Virtual Machine</b><br/>
+Compute Services<br/><br/>
+<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Virtual%20Machines">Open Module</a>
 </td>
 
 </tr>
@@ -115,31 +120,31 @@ Observability & alerts<br/><br/>
 This course focuses heavily on **practice over theory**.
 
 You’ll work on:
-- ✅ Guided hands-on labs  
-- ✅ Failure simulations  
-- ✅ Incident-style troubleshooting  
-- ✅ Reliability-first architecture design  
+- Guided hands-on labs  
+- Failure simulations  
+- Incident-style troubleshooting  
+- Reliability-first architecture design  
 
 > *You won’t just deploy systems — you’ll learn how to keep them running.*
 
 ---
 
-## 🤝 Community & Collaboration
+## Community & Collaboration
 
-### 💬 Learn Together
+### Learn Together
 - Ask questions in **[GitHub Discussions](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions)**
 - Participate in incident simulations
 - Learn from real-world experiences
 
-### 🛠️ Contribute & Improve
+### Contribute & Improve
 - Add labs, fix docs, suggest improvements
 - Read the **[Contributing Guidelines](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/CONTRIBUTING.md)**
 
-> 🌍 This course grows with its community.
+> This course grows with its community.
 
 ---
 
-## 🚦 How to Get Started
+## How to Get Started
 
 1️⃣ Start with **Module 1 – Introduction to Azure & SRE**  
 2️⃣ Follow the roadmap step-by-step  
@@ -155,7 +160,7 @@ If this course helps you:
 - 🍴 Fork it  
 - 💬 Share feedback  
 
-Together, let’s build **reliable cloud systems** 🚀
+Together, let’s build **reliable cloud systems**
 
 ---
 
