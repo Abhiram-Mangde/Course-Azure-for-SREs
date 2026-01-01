@@ -1,5 +1,5 @@
 <!-- ========================= -->
-<!--  Azure for SREs – Index  -->
+<!--  Course: Azure For SREs – Index  -->
 <!-- ========================= -->
 
 # Azure for SREs  
@@ -18,9 +18,9 @@ Most SRE content teaches *theory without context*.
 
 You will learn **how systems fail in production**, **why they fail**, and **how SREs design Azure architectures that survive failure**.
 
-✔ Production-first mindset  
-✔ Beginner-friendly, no assumptions  
-✔ Focused on reliability, not just deployments  
+* Production-first mindset
+* Beginner-friendly, no assumptions
+* Focused on reliability, not just deployments  
 
 ---
 
@@ -39,19 +39,17 @@ You will learn **how systems fail in production**, **why they fail**, and **how 
 
 ## What You’ll Learn
 
-### Core Skills You’ll Build
-
 - 🔧 **SRE fundamentals applied to Azure**
-- ☸️ **AKS reliability & scaling patterns**
-- 📊 **Monitoring, alerting & incident response**
-- 🏗️ **Infrastructure as Code (Terraform & Bicep)**
-- 🚨 **Real-world failure & recovery scenarios**
+- ☸️ **Reliability & Scaling patterns**
+- 📊 **Monitoring, Alerting & Incident Response**
+- 🏗️ **Infrastructure as Code**
+- 🚨 **Real-world Case Studies, failures & recovery scenarios**
 
 ---
 
 ## 🗺️ Course Roadmap
 
-### 📘 Structured Learning Path
+### Learning Path - Designed as a Module based Learning
 
 | Module | Focus Area |
 |------|-----------|
@@ -66,7 +64,9 @@ You will learn **how systems fail in production**, **why they fail**, and **how 
 
 ---
 
-## Advanced Azure Topics (Deep Dives)
+## Advanced Azure Topics
+
+Few Important Services from Azure that you should know as SRE.
 
 ### Explore Azure Services from an SRE Perspective
 
@@ -119,7 +119,7 @@ Compute Services<br/><br/>
 
 This course focuses heavily on **practice over theory**.
 
-You’ll work on:
+Work on:
 - Guided hands-on labs  
 - Failure simulations  
 - Incident-style troubleshooting  
@@ -146,7 +146,8 @@ You’ll work on:
 
 ## How to Get Started
 
-1️⃣ Start with **Module 1 – Introduction to Azure & SRE**  
+1️⃣ Start with [**Module 1 – Introduction to Azure & SRE**](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Module-1-Introduction-to-Azure-SRE)
+
 2️⃣ Follow the roadmap step-by-step  
 3️⃣ Join Discussions and ask questions  
 4️⃣ Build → Break → Fix → Learn  
