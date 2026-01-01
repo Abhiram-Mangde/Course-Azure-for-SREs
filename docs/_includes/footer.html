@@ -1,8 +1,27 @@
 <footer class="site-footer">
-  <div class="wrapper">
-    <p>© {{ site.time | date: '%Y' }} Azure for SREs — Built by Abhiram Mangde</p>
+  <style>
+    .site-footer {
+      background: #222;
+      color: #eee;
+      padding: 10px 20px;
+    }
+    .site-footer a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+
+  <div class="footer-container">
+    <!-- Left side -->
+    <p>© {{ site.time | date: '%Y' }} Built by Abhiram Mangde</p>
+
+    <!-- Right side -->
     <p>
-      Connect with me on 
       <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
     </p>
   </div>
