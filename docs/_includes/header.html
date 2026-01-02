@@ -1,0 +1,38 @@
+<header class="site-header">
+  <style>
+    .site-header {
+      background: linear-gradient(90deg, #0078d7, #004578);
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .site-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+  </style>
+
+  <h1>Azure for SREs</h1>
+  <nav class="nav-links">
+    <a href="{{ "/" | relative_url }}">Home</a>
+    <a href="{{ "/about" | relative_url }}">About</a>
+    <a href="{{ "/course" | relative_url }}">Course</a>
+    <a href="{{ "/discussions" | relative_url }}">Discussions</a>
+  </nav>
+</header>
