@@ -23,7 +23,7 @@ title: About
   }
 
   ul {
-    list-style-type: "✔️ ";
+    list-style-type: " • ";
     margin-left: 20px;
   }
 
@@ -72,8 +72,6 @@ title: About
     text-decoration: underline;
   }
 </style>
-
-# About This Course: Azure for SREs
 
 Welcome to **Azure for Site Reliability Engineers (SREs)** — a practical, hands‑on course designed to help you master reliability engineering in the Microsoft Azure ecosystem.
 
@@ -141,5 +139,5 @@ Learning is best when it’s collaborative. Join our
 
 <div class="custom-footer">
   © {{ site.time | date: '%Y' }} Azure for SREs — Built by Abhiram Mangde  
-  | Connect with me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+  | Connect with me on <a href="https://in.linkedin.com/in/abhiram-mangde-759b3a20b" target="_blank">LinkedIn</a>
 </div>
