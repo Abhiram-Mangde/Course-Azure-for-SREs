@@ -1,3 +1,7 @@
+--- 
+layout: page 
+title: Module 1 – Introduction to Azure & SRE 
+---
 
 # Module 1: Introduction to Azure & SRE
 
