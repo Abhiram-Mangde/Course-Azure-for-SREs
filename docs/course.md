@@ -55,7 +55,7 @@ title: Course
   <div class="course-tile">
     <h3>Module 1</h3>
     <p>Introduction to Azure & SRE</p>
-    <a href="{{ "/Module1/" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-1-Introduction-to-Azure-SRE/" | relative_url }}">Open Module</a>
   </div>
 
   <div class="course-tile">
