@@ -182,6 +182,8 @@ You will learn **how systems fail in production**, **why they fail**, and **how 
 
 ---
 
+<div style="text-align:center; margin-top:20px;"> <a href="{{ "/course" | relative_url }}" style="display:inline-block; padding:12px 20px; background:#0078d7; color:#fff; border-radius:6px; text-decoration:none; font-weight:bold;"> Explore Full Course Page </a> </div>
+
 ## Advanced Azure Topics
 
 Explore Azure Services from an SRE Perspective
