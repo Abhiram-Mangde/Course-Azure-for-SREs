@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Module 7 - Hands-On Projects
+title: Module 7 - Hands-On Projects (Guided Labs)
 ---
 
 # Module 7: Hands-On Projects (Guided Labs)
