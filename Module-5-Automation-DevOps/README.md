@@ -1,4 +1,7 @@
-pool:
+---
+layout: page
+title: Module 5 - Automation & DevOps for Beginners
+---
 
 # Module 5: Automation & DevOps for Beginners
 
