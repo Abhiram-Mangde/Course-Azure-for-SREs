@@ -1,3 +1,7 @@
+---
+layout: page
+title: Module 8 - Career Prep, Best Practices & Conclusion
+---
 
 # Module 8: Career Prep, Best Practices & Conclusion
 

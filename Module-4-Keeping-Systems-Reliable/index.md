@@ -1,3 +1,7 @@
+---
+layout: page
+title: Module 4 - Keeping Systems Reliable
+---
 
 # Module 4: Keeping Systems Reliable
 

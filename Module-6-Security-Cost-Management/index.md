@@ -1,3 +1,7 @@
+---
+layout: page
+title: Module 6 - Security & Cost Management
+---
 
 # Module 6: Security & Cost Management
 

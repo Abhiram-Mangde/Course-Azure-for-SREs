@@ -1,3 +1,8 @@
+---
+layout: page
+title: Module 7 - Hands-On Projects
+---
+
 # Module 7: Hands-On Projects (Guided Labs)
 
 ## Overview
