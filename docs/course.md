@@ -61,43 +61,43 @@ title: Course
   <div class="course-tile">
     <h3>Module 2</h3>
     <p>Core Azure Services for SREs</p>
-    <a href="{{ "/Module-2-Core-Azure-Services" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-2-Core-Azure-Services/" | relative_url }}">Open Module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 3</h3>
     <p>Observability & Monitoring</p>
-    <a href="{{ "/Module-3-Observability-Monitoring" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-3-Observability-Monitoring/" | relative_url }}">Open Module</a>
   </div>
 
    <div class="course-tile">
     <h3>Module 4</h3>
     <p>Keeping Systems Reliable</p>
-    <a href="{{ "/Module-4-Keeping-Systems-Reliable" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-4-Keeping-Systems-Reliable/" | relative_url }}">Open Module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 5</h3>
     <p>Keeping Systems Reliable</p>
-    <a href="{{ "/Module-5-Automation-DevOps" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-5-Automation-DevOps/" | relative_url }}">Open Module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 6</h3>
     <p>Keeping Systems Reliable</p>
-    <a href="{{ "/Module-6-Security-Cost-Management" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-6-Security-Cost-Management/" | relative_url }}">Open Module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 7</h3>
     <p>Keeping Systems Reliable</p>
-    <a href="{{ "/Module-7-Hands-On-Project" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-7-Hands-On-Project/" | relative_url }}">Open Module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 8</h3>
     <p>Career Preparation Best Practices</p>
-    <a href="{{ "/Module-8-Career-Prep-Best-Practices" | relative_url }}">Open Module</a>
+    <a href="{{ "/Module-8-Career-Prep-Best-Practices/" | relative_url }}">Open Module</a>
   </div>
   
 </div>
