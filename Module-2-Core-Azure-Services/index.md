@@ -1,6 +1,6 @@
---- 
-layout: page 
-title: Module 2: Core Azure Services for SREs
+---
+layout: page
+title: Module 2 - Core Azure Services for SREs
 ---
 
 # Module 2: Core Azure Services for SREs
