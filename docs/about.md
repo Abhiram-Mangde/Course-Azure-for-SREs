@@ -121,7 +121,7 @@ By the end of this course, you will be able to:
 ---
 
 ## Community & Discussions
-Learning is best when it’s collaborative. Join our  
+Learning is best when it’s collaborative. Join the community and lets learn together
 👉 [GitHub Discussions](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions) to:
 - Ask questions about labs and modules.
 - Share incident scenarios and debug together.
