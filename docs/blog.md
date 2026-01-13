@@ -66,7 +66,7 @@ title: Blog
   <div class="blog-tile">
     <h3>Why SREs Need to Understand Networking</h3>
     <p>Networking is the backbone of reliability. Learn why every SRE must master it in Azure.</p>
-    <a href="{{ "/blogs/sre-networking/" | relative_url }}">Read Blog</a>
+    <a href="{{ "/blogs/srenetworking/" | relative_url }}">Read Blog</a>
   </div>
 
 </div>
