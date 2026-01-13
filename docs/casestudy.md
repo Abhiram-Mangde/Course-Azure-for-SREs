@@ -66,19 +66,19 @@ title: Case Studies
   <div class="case-tile">
     <h3>High Availability in Azure</h3>
     <p>How a retail company achieved 99.99% uptime during seasonal traffic spikes.</p>
-    <a href="{{ "/case-studies/high-availability/" | relative_url }}">Read Case Study</a>
+    <a href="{{ "/casestudy/High-Availability/" | relative_url }}">Read Case Study</a>
   </div>
 
   <div class="case-tile">
     <h3>Cost Optimization</h3>
     <p>How a startup reduced monthly cloud spend by 40% using Azure Cost Management.</p>
-    <a href="{{ "/case-studies/cost-optimization/" | relative_url }}">Read Case Study</a>
+    <a href="{{ "/casestudy/cost-optimization/" | relative_url }}">Read Case Study</a>
   </div>
 
   <div class="case-tile">
     <h3>Incident Response with Observability</h3>
     <p>How a financial services app improved resolution time with Azure Monitor.</p>
-    <a href="{{ "/case-studies/incident-response/" | relative_url }}">Read Case Study</a>
+    <a href="{{ "/casestudy/incident-response/" | relative_url }}">Read Case Study</a>
   </div>
 
 </div>
