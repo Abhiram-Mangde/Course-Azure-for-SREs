@@ -1,26 +1,58 @@
 <footer class="site-footer">
   <style>
     .site-footer {
-      background: #222;
+      background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
       color: #eee;
-      padding: 10px 20px;
+      padding: 20px 40px;
+      margin-top: 50px;
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 1.2s ease;
     }
-    .site-footer a {
-      color: #4da6ff;
-      text-decoration: none;
-    }
+
     .footer-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .site-footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .site-footer a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    .site-footer::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0,198,255,0.2), transparent 70%);
+      animation: rotateBg 20s linear infinite;
+    }
+
+    @keyframes fadeInUp {
+      from {transform: translateY(50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes rotateBg {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
     }
   </style>
 
   <div class="footer-container">
-    <!-- Left side -->
     <p>© {{ site.time | date: '%Y' }} Built by Abhiram Mangde</p>
-
-    <!-- Right side -->
     <p>
       <a href="https://in.linkedin.com/in/abhiram-mangde-759b3a20b" target="_blank">LinkedIn</a>
     </p>

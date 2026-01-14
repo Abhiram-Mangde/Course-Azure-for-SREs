@@ -4,116 +4,160 @@ title: Home
 ---
 
 <style>
+  /* Global styles */
   body {
     font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.6;
-    background: #f9f9f9;
-    color: #333;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.2s ease-in-out;
   }
 
   h1 {
-    color: #0078d7;
-    font-size: 36px;
+    color: #00c6ff;
+    font-size: 42px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    animation: slideDown 1s ease;
   }
 
   h2 {
-    color: #004578;
+    color: #ffd700;
     margin-top: 30px;
-    border-bottom: 2px solid #0078d7;
+    border-bottom: 2px solid #00c6ff;
     padding-bottom: 5px;
+    animation: fadeInUp 1s ease;
   }
 
   h3 {
-    color: #444;
+    color: #fff;
     margin-top: 20px;
   }
 
+  /* Intro box */
   .intro-box {
-    background: #e6f2ff;
-    border-left: 4px solid #0078d7;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 6px;
+    background: rgba(0, 198, 255, 0.1);
+    border-left: 4px solid #00c6ff;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: pulseGlow 3s infinite;
   }
 
+  /* Roadmap table */
   .roadmap-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
   }
   .roadmap-table th, .roadmap-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 1px solid #444;
+    padding: 12px;
     text-align: center;
   }
   .roadmap-table th {
-    background: #0078d7;
+    background: #00c6ff;
     color: #fff;
+    text-transform: uppercase;
   }
   .roadmap-table td {
-    background: #f0f8ff;
+    background: rgba(255,255,255,0.05);
+    color: #eee;
+  }
+  .roadmap-table tr:hover td {
+    background: rgba(0,198,255,0.2);
+    transition: background 0.3s;
   }
 
+  /* Azure tiles */
   .azure-tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
   }
 
   .azure-tile {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    padding: 25px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
     position: relative;
+    overflow: hidden;
+  }
+
+  .azure-tile::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,198,255,0.2), transparent 70%);
+    transform: rotate(45deg);
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+
+  .azure-tile:hover::before {
+    opacity: 1;
   }
 
   .azure-tile:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,198,255,0.3);
   }
 
   .azure-tile h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #00c6ff;
   }
 
   .azure-tile p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 20px;
   }
 
   .azure-tile a {
     display: inline-block;
-    padding: 8px 12px;
-    background: #0078d7;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #00c6ff, #0078d7);
     color: #fff;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
   }
 
   .azure-tile a:hover {
-    background: #004578;
+    background: linear-gradient(135deg, #0078d7, #004578);
+    transform: scale(1.05);
   }
 
+  /* CTA box */
   .cta-box {
-    background: #0078d7;
+    background: linear-gradient(135deg, #0078d7, #00c6ff);
     color: #fff;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    margin-top: 40px;
-    border-radius: 6px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    animation: fadeInUp 1.2s ease;
   }
 
   .cta-box a {
@@ -124,6 +168,28 @@ title: Home
 
   .cta-box a:hover {
     text-decoration: underline;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes slideDown {
+    from {transform: translateY(-30px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+
+  @keyframes fadeInUp {
+    from {transform: translateY(30px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+
+  @keyframes pulseGlow {
+    0% {box-shadow: 0 0 15px rgba(0,198,255,0.4);}
+    50% {box-shadow: 0 0 30px rgba(0,198,255,0.8);}
+    100% {box-shadow: 0 0 15px rgba(0,198,255,0.4);}
   }
 </style>
 

@@ -1,30 +1,70 @@
 <header class="site-header">
   <style>
     .site-header {
-      background: linear-gradient(90deg, #0078d7, #004578);
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
       color: #fff;
-      padding: 15px 30px;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      animation: slideDown 1s ease;
     }
+
     .site-header h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: bold;
+      background: linear-gradient(90deg, #00c6ff, #ffd700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glowPulse 3s infinite;
     }
+
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 25px;
     }
+
     .nav-links a {
       color: #fff;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s;
+      position: relative;
+      transition: color 0.3s ease;
     }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: #ffd700;
+      transition: width 0.3s ease;
+    }
+
     .nav-links a:hover {
       color: #ffd700;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes glowPulse {
+      0% {text-shadow: 0 0 10px rgba(255,215,0,0.6);}
+      50% {text-shadow: 0 0 20px rgba(0,198,255,0.8);}
+      100% {text-shadow: 0 0 10px rgba(255,215,0,0.6);}
     }
   </style>
 
