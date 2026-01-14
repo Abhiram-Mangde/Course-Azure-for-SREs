@@ -1,10 +1,21 @@
 <footer class="site-footer">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1; /* pushes footer down */
+    }
+    
     .site-footer {
       background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
       color: #eee;
       padding: 20px 40px;
-      margin-top: 50px;
+      margin-top: auto;
       position: relative;
       overflow: hidden;
       animation: fadeInUp 1.2s ease;
