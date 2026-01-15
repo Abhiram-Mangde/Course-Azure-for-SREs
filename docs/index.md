@@ -8,7 +8,7 @@ title: Home
   body {
     font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
     color: #eee;
     margin: 0;
     padding: 0;
@@ -194,10 +194,10 @@ title: Home
 </style>
 
 # Azure for SREs  
-### *Build • Operate • Scale Reliable Systems on Microsoft Azure*
 
 <div class="intro-box">
-A **practical, real-world course** designed to help you think like a **Site Reliability Engineer (SRE)** while working with **Microsoft Azure**.
+
+A practical, real-world course designed to help you think like a Site Reliability Engineer (SRE) while working with Microsoft Azure.
 </div>
 
 ---

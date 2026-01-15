@@ -138,6 +138,6 @@ Learning is best when it’s collaborative. Join the community and lets learn to
 </div>
 
 <div class="custom-footer">
-  © {{ site.time | date: '%Y' }} Azure for SREs — Built by Abhiram Mangde  
+  © Azure for SREs — Built by Abhiram Mangde  
   | Connect with me on <a href="https://in.linkedin.com/in/abhiram-mangde-759b3a20b" target="_blank">LinkedIn</a>
 </div>
