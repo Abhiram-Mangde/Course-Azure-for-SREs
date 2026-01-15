@@ -99,6 +99,7 @@ Further you can move to advance folder where details on each Module is explained
 # Course Modules
 
 ## 🟦 Module 1: Introduction to Azure & SRE
+
 **Assessment:** *Quiz on cloud concepts and Azure basics*
 
 ### Lesson 1.1: What is Cloud Computing?
@@ -121,10 +122,9 @@ Further you can move to advance folder where details on each Module is explained
 - **Step-by-step guide** to signing up and exploring the portal
 - **Demo:** Create a free account and navigate the dashboard
 
----
-
 
 ## 🟦 Module 2: Core Azure Services for SREs
+
 **Assessment:** *Hands-on lab: Create and manage resources*
 
 ### Lesson 2.1: Resource Groups & Subscriptions
@@ -155,9 +155,8 @@ Further you can move to advance folder where details on each Module is explained
 - **Analogy:** Azure AD = employee list, RBAC = job title/permissions
 - **Demo:** Create a user, assign Reader role, test permissions
 
----
-
 ## 🟦 Module 3: Observability & Monitoring
+
 **Assessment:** *Quiz and dashboard creation lab*
 
 ### Lesson 3.1: Monitoring & Observability Fundamentals
@@ -183,10 +182,8 @@ Further you can move to advance folder where details on each Module is explained
 - **SRE Note:** Avoid alert fatigue, tune thresholds
 - **Demo:** Create and trigger alerts, receive notifications
 
----
-
-
 ## 🟦 Module 4: Keeping Systems Reliable
+
 **Assessment:** *Quiz and reliability scenario lab*
 
 ### Lesson 4.1: What is Reliability? (SLI, SLO, SLA)
@@ -222,10 +219,8 @@ Further you can move to advance folder where details on each Module is explained
 - Use Load Balancers and Auto-Scaling for resilience
 - Protect data and apps with Backup and DR strategies
 
----
-
-
 ## 🟦 Module 5: Automation & DevOps for Beginners
+
 **Assessment:** *Lab: Automate resource deployment and CI/CD pipeline*
 
 ### Lesson 5.1: Introduction to Infrastructure as Code (IaC)
@@ -260,9 +255,8 @@ Further you can move to advance folder where details on each Module is explained
 - Build pipelines in Azure DevOps
 - Automate deployments with GitHub Actions
 
----
-
 ## 🟦 Module 6: Security & Cost Management
+
 **Assessment:** *Lab: Secure resources and set up cost alerts*
 
 ### Lesson 6.1: Security Best Practices Every SRE Must Know
@@ -299,7 +293,6 @@ Further you can move to advance folder where details on each Module is explained
 - Use Security Center & Defender
 - Configure NSGs & Firewalls
 - Monitor costs and set alerts
----
 
 ## 🟦 Module 7: Hands-On Projects (Guided Labs)
 **Assessment:** *Complete all guided labs and submit project reports*
@@ -349,9 +342,8 @@ Further you can move to advance folder where details on each Module is explained
 - Manage costs effectively
 - Portfolio-ready skills for interviews/resumes
 
----
-
 ## 🟦 Module 8: Career Prep, Best Practices & Conclusion
+
 **Assessment:** *Final project and career reflection*
 
 ### Lesson 8.1: Best Practices for Azure SREs
@@ -381,6 +373,7 @@ Congratulations! 🎉 By completing this course, you have:
 - Mastered Azure basics and SRE fundamentals
 - Built real-world projects for your portfolio
 - Learned how to prepare for interviews and career growth
+
 ---
 
 ### Advance Topics - Azure Services Specific
