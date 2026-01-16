@@ -66,13 +66,13 @@ title: Blog
   <div class="blog-tile">
     <h3>Why SREs Need to Understand Networking</h3>
     <p>Networking is the backbone of reliability. Learn why every SRE must master it in Azure.</p>
-    <a href="{{ "/blogs/srenetworking/" | relative_url }}">Read Blog</a>
+    <a href="{{ "/blogs/SREBlogs/" | relative_url }}">Read Blog</a>
   </div>
 
   <div class="blog-tile">
     <h3>Why SRE, PowerShell, and AI Integration is the Future of IT Operations</h3>
     <p>Site Reliability Engineers (SREs) are under increasing pressure to maintain high availability, scalability, and performance across complex infrastructures. Traditional monitoring and manual scripts are no longer enough. That’s where PowerShell and AI come in — transforming how SREs manage, automate, and predict IT operations.</p>
-    <a href="{{ "/blogs/srepowershell/" | relative_url }}">Read Blog</a>
+    <a href="{{ "/blogs/PowerShellBlogs/" | relative_url }}">Read Blog</a>
   </div>
 
 </div>
