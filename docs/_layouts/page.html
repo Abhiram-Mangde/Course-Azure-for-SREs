@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     /* ============================= */
@@ -18,6 +18,7 @@
     body {
       display: flex;
       flex-direction: column;
+      min-height: 100vh; /* full viewport height */
       font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
       color: #323130;
       background: #ffffff;
@@ -27,26 +28,14 @@
     /* MAIN LAYOUT */
     /* ============================= */
 
-    .layout {
-      display: flex;
-      flex: 1;                 /* <-- THIS pushes footer down */
-      max-width: 1400px;
+    main.content {
+      flex: 1; /* fill remaining vertical space */
+      max-width: 900px;
       width: 100%;
       margin: 0 auto;
-    }
-
-    aside.sidebar {
-      width: 240px;            /* reduced width */
-      padding: 24px;
-      border-right: 1px solid #edebe9;
-      box-sizing: border-box;
-    }
-
-    main.content {
-      flex: 1;
       padding: 32px;
       line-height: 1.6;
-      max-width: 900px;        /* prevents wide empty space */
+      box-sizing: border-box;
     }
 
     /* ============================= */
@@ -57,25 +46,20 @@
       border-top: 1px solid #edebe9;
       padding: 16px 24px;
       font-size: 14px;
+      text-align: center;
+      background: #f9f9f9;
     }
   </style>
 
   {{ site.head }}
 </head>
-
 <body>
 
   {% include header.html %}
 
-  <div class="layout">
-    <aside class="sidebar">
-      {% include sidebar.html %}
-    </aside>
-
-    <main class="content">
-      {{ content }}
-    </main>
-  </div>
+  <main class="content">
+    {{ content }}
+  </main>
 
   {% include footer.html %}
 
