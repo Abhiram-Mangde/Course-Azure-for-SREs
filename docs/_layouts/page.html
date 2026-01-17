@@ -4,15 +4,45 @@
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MS Learn uses system fonts -->
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: #323130;
+      background: #ffffff;
+    }
+
+    /* Main layout: sidebar + content */
+    .layout {
+      display: flex;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    main.content {
+      flex: 1;
+      padding: 32px;
+      line-height: 1.6;
+    }
+  </style>
+
   {{ site.head }}
 </head>
 <body>
 
   {% include header.html %}
 
-  <main class="content">
-    {{ content }}
-  </main>
+  <div class="layout">
+    <aside class="sidebar">
+      {% include sidebar.html %}
+    </aside>
+
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
 
   {% include footer.html %}
 

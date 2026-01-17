@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Why SREs Need to Understand Networking
+permalink: /blogs/SREBlogs/
 ---
 
 # Why SREs Need to Understand Networking
