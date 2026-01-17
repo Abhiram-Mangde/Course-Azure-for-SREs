@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Course
+permalink: /course/
 ---
 
 <style>
