@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Why SRE, PowerShell, and AI Integration is the Future of IT Operations
+permalink: /blogs/PowerShellBlogs/
 ---
 
 # Why SRE, PowerShell, and AI Integration is the Future of IT Operations

@@ -1,84 +1,54 @@
+<!-- ========================= -->
+<!-- MS LEARN STYLE HEADER -->
+<!-- ========================= -->
 <header class="site-header">
   <style>
-    .content { 
-      padding-top: 100px; 
-    }
-    
+    /* MS Learn uses clean white headers */
     .site-header {
-      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      padding: 20px 40px;
+      background: #ffffff;
+      border-bottom: 1px solid #edebe9;
+      padding: 12px 32px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-      animation: slideDown 1s ease;
     }
 
     .site-header h1 {
       margin: 0;
-      font-size: 1.8rem;
-      font-weight: bold;
-      background: linear-gradient(90deg, #00c6ff, #ffd700);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: glowPulse 3s infinite;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0078d4; /* Azure blue */
     }
 
     .nav-links {
       display: flex;
-      gap: 25px;
+      gap: 20px;
     }
 
     .nav-links a {
-      color: #fff;
       text-decoration: none;
+      color: #323130;
+      font-size: 0.95rem;
       font-weight: 500;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background: #ffd700;
-      transition: width 0.3s ease;
     }
 
     .nav-links a:hover {
-      color: #ffd700;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    @keyframes slideDown {
-      from {transform: translateY(-50px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-
-    @keyframes glowPulse {
-      0% {text-shadow: 0 0 10px rgba(255,215,0,0.6);}
-      50% {text-shadow: 0 0 20px rgba(0,198,255,0.8);}
-      100% {text-shadow: 0 0 10px rgba(255,215,0,0.6);}
+      color: #0078d4;
     }
   </style>
 
+  <!-- Product / Learning Path Title -->
   <h1>Azure for SREs</h1>
+
+  <!-- Top navigation like Microsoft Learn -->
   <nav class="nav-links">
-    <a href="{{ "/" | relative_url }}">Home</a>
-    <a href="{{ "/about" | relative_url }}">About</a>
-    <a href="{{ "/course" | relative_url }}">Course</a>
-    <a href="{{ "/blog" | relative_url }}">Blogs</a>
-    <a href="{{ "/casestudy" | relative_url }}">Case Study</a>
-    <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions" target="_blank">Discussions</a>
+    <a href="{{ "/" | relative_url }}">Overview</a>
+    <a href="{{ "/course" | relative_url }}">Learning Path</a>
+    <a href="{{ "/blog" | relative_url }}">Articles</a>
+    <a href="{{ "/casestudy" | relative_url }}">Case Studies</a>
+    <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs" target="_blank">GitHub</a>
   </nav>
 </header>
