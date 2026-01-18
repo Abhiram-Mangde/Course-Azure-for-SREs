@@ -1,3 +1,8 @@
+---
+layout: page
+title: Setup Azure Key Vault with RBAC
+---
+
 # Setup Azure Key Vault with RBAC
 
 ## Objective:

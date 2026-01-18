@@ -1,3 +1,8 @@
+---
+layout: page
+title: Azure EntraId
+---
+
 # Azure Microsoft Entra ID Service
 
 Welcome to the advance part of this course designed to help Site Reliability Engineers (SREs) understand Microsoft Entra ID from scratch to advanced levels. This Service is focused on conceptual clarity, practical examples, and real-world applications.
@@ -575,3 +580,21 @@ Central to detecting threats and responding quickly to minimize impact.
 - Policies prevent deviation from this standard.
 
 ---
+
+## Hands-On Activities
+Learn by doing real-world scenarios:
+
+- [Assign Budget Alerts]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/AssignBudgetAlerts' | relative_url }})
+- [Audit VMs Without Defender]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/AuditVMsWithoutDefender' | relative_url }})
+- [Configure PIM for Admin]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/ConfigurePIMForAdmin' | relative_url }})
+- [Connect Resources to Sentinel]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/ConnectResourcesToSentinel' | relative_url }})
+- [Create NSG + ASG for Web Apps]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/CreateNSG+ASGForWebApps' | relative_url }})
+- [Deploy Firewall with Custom Rules]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/DeployFirewallWithCustomRules' | relative_url }})
+- [Enable Microsoft Defender]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/EnableMicrosoftDefender' | relative_url }})
+- [Encrypt Customer-Managed Key]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/EncryptCustomerManagedKey' | relative_url }})
+- [Governance in Azure]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/GovernanceInAzure' | relative_url }})
+- [Investigate Sign-In Anomaly]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/InvestigateSignInAnomaly' | relative_url }})
+- [Secure Guest B2B Access]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/SecureGuestB2BAccess' | relative_url }})
+- [Set Up Azure Key Vault with RBAC]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/SetupAzureKeyVaultWithRBAC' | relative_url }})
+- [Set Up Conditional Access]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/SetupConditionalAccess' | relative_url }})
+- [Store Access Secrets in Key Vault]({{ '/azureservices/Azure Entra Id/Microsoft EntraId HandsOn Activities/StoreAccessSecretsInKeyVault' | relative_url }})

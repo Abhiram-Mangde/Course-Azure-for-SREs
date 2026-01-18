@@ -1,3 +1,8 @@
+---
+layout: page
+title: Encrypt an Azure VM’s Disk with a Customer Managed Key (CMK)
+---
+
 # Encrypt an Azure VM’s Disk with a Customer Managed Key (CMK)
 
 ## Objective

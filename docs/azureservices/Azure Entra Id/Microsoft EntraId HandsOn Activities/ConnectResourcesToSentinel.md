@@ -1,3 +1,8 @@
+---
+layout: page
+title: Connect Azure Resources to Microsoft Sentinel
+---
+
 # Connect Azure Resources to Microsoft Sentinel
 
 ## Objective 

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Hands-On Lab: Secure Guest (B2B) Access on Azure AD via Azure Portal
+---
+
 # Hands-On Lab: Secure Guest (B2B) Access on Azure AD via Azure Portal
 
 ## Overview

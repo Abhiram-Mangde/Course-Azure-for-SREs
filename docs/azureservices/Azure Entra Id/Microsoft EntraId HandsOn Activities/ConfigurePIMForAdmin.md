@@ -1,3 +1,8 @@
+---
+layout: page
+title: Configure Privileged Identity Management (PIM) for Global Admin Role
+---
+
 # Configure Privileged Identity Management (PIM) for Global Admin Role
 
 ## What is Privileged Identity Management (PIM)?

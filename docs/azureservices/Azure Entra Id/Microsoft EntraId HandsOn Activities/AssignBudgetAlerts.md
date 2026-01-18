@@ -1,3 +1,8 @@
+---
+layout: page
+title: Assign Budget Alerts
+---
+
 # Assign Budget Alerts to a Subscription in Azure
 
 ## Objective

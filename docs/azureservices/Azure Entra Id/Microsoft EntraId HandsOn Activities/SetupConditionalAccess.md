@@ -1,3 +1,8 @@
+---
+layout: page
+title: Hands-On Activity: Setup Conditional Access for Admins in Azure Entra ID
+---
+
 # Hands-On Activity: Setup Conditional Access for Admins in Azure Entra ID
 
 ## What is Conditional Access?
