@@ -1,3 +1,8 @@
+---
+layout: page
+title: Securely Storing and Accessing Secrets in Azure Key Vault
+---
+
 # Securely Storing and Accessing Secrets in Azure Key Vault
 
 ## Objective

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Creating NSG and ASG Rules for a Web App in Azure
+---
+
 # Creating NSG and ASG Rules for a Web App in Azure
 
 ## This Hands-On activity is to secure a web application hosted on Azure by creating and applying Network Security Groups (NSGs) and Application Security Groups (ASGs).

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Enable and Configure Microsoft Defender for Cloud
+---
+
 # Enable and Configure Microsoft Defender for Cloud
 
 ## Objective

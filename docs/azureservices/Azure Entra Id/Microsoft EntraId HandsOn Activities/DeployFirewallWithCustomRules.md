@@ -1,3 +1,8 @@
+---
+layout: page
+title: Deploy Azure Firewall with Custom Rules
+---
+
 # Deploy Azure Firewall with Custom Rules
 
 Hands-On Activity to Deploy Azure Firewall, configure custom network and application rules, and validate traffic filtering behavior. This helps learners understand how to implement centralized, stateful firewalling for their Azure network environment.

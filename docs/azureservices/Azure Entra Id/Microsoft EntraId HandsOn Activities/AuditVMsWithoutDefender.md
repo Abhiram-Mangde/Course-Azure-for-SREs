@@ -1,3 +1,8 @@
+---
+layout: page
+title: Auditing Azure VMs Without Defender Agent
+---
+
 # Auditing Azure VMs Without Defender Agent
 
 ## Objective: 

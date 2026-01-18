@@ -1,3 +1,8 @@
+---
+layout: page
+title: Create and Apply an Azure Policy to Deny Specific IP Addresses
+---
+
 # Create and Apply an Azure Policy to Deny Specific IP Addresses
 
 ## Objective: Understand the role of Azure Policy in enforcing governance and compliance.

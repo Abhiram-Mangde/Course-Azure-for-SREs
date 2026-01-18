@@ -1,3 +1,8 @@
+---
+layout: page
+title: Investigating a Sign-In Anomaly via Azure Logs
+---
+
 # Investigating a Sign-In Anomaly via Azure Logs
 
 ## Objective: 
