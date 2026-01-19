@@ -13,31 +13,31 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
 <div class="service-card">
   <h3>📈 Azure Monitor</h3>
   <p>Observability, metrics, logs, and alerts.</p>
-  <a href="{{ '/azure-services/Azure-Monitor/' | relative_url }}">Explore</a>
+  <a href="{{ '/azureservices/Azure Monitor/' | relative_url }}">Explore</a>
 </div>
 
 <div class="service-card">
   <h3>💻 Azure Virtual Machines</h3>
   <p>Compute, scaling, and availability.</p>
-  <a href="{{ '/azure-services/Azure-Virtual-Machines/' | relative_url }}">Explore</a>
+  <a href="{{ '/azureservices/Azure Virtual Machines/' | relative_url }}">Explore</a>
 </div>
 
 <div class="service-card">
   <h3>☸️ Azure Kubernetes Service</h3>
   <p>Production-grade container orchestration.</p>
-  <a href="{{ '/azure-services/Azure-Kubernetes-Service/' | relative_url }}">Explore</a>
+  <a href="{{ '/azureservices/Azure Kubernetes Service/' | relative_url }}">Explore</a>
 </div>
 
 <div class="service-card">
   <h3>🔐 Azure Entra ID</h3>
   <p>Identity, access, and reliability.</p>
-  <a href="{{ '/azure-services/Azure-Entra-Id/' | relative_url }}">Explore</a>
+  <a href="{{ '/azureservices/Azure Entra Id/' | relative_url }}">Explore</a>
 </div>
 
 <div class="service-card">
   <h3>⚙️ Automation Account</h3>
   <p>Operational automation at scale.</p>
-  <a href="{{ '/azure-services/Azure-Automation-Account/' | relative_url }}">Explore</a>
+  <a href="{{ '/azureservices/Azure Automation Account/' | relative_url }}">Explore</a>
 </div>
 
 </div>
@@ -70,3 +70,4 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
   color: #0078d4;
 }
 </style>
+
