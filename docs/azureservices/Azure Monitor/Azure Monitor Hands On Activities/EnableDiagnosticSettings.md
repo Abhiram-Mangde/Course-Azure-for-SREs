@@ -1,3 +1,8 @@
+---
+layout: page
+title: Enable Diagnostic Settings on Key Azure Services
+---
+
 # Enable Diagnostic Settings on Key Azure Services
 
 ## Objectives

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Azure Monitor
+---
+
 # 1. What is Azure Monitor?
 
 ## Conceptually:

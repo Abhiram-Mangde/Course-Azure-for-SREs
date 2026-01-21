@@ -1,3 +1,8 @@
+---
+layout: page
+title: Install and Verify Azure Monitor Agent (AMA) on an Azure VM
+---
+
 # Install and Verify Azure Monitor Agent (AMA) on an Azure VM
 
 ## Objective:
