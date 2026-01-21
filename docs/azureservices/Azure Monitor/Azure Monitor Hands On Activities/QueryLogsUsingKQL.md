@@ -1,3 +1,8 @@
+---
+layout: page
+title: Querying Azure Logs using Kusto Query Language (KQL)
+---
+
 # Querying Azure Logs using Kusto Query Language (KQL)
 
 ## Learning Objectives

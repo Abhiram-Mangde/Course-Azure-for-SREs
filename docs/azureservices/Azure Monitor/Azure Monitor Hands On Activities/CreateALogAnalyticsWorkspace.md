@@ -1,3 +1,8 @@
+---
+layout: page
+title: Create and Link a Log Analytics Workspace
+---
+
 # Create and Link a Log Analytics Workspace
 
 ## Objectives
