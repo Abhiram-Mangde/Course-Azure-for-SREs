@@ -38,7 +38,7 @@ client = SecretClient(vault_url=KV_URI, credential=credential)
 # Retrieve the secret
 # ----------------------------------------------------
 try:
-    print(f"Retrieving secret '{SECRET_NAME}' from Key Vault...")
+    print("Retrieving secret from Key Vault...")
     secret = client.get_secret(SECRET_NAME)
     print("Secret retrieved successfully!")
     print(f"Secret Value: {secret.value}")  # For demo only — do NOT print in production
