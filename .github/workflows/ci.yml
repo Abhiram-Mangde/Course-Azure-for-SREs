@@ -1,5 +1,8 @@
 name: Course Content CI # Name of the GitHub Actions workflow
 
+permissions:
+  contents: read
+
 on:
   push: # Name of the GitHub Actions workflow
     paths:
