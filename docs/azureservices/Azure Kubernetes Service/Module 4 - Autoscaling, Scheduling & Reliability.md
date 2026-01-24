@@ -1,3 +1,8 @@
+---
+layout: page
+title: Autoscaling, Scheduling & Reliability Engineering in AKS
+---
+
 # Autoscaling, Scheduling & Reliability Engineering in AKS
 
 This module shows how Kubernetes ensures reliability, scalability, and self-healing, and how SREs design systems for zero downtime.

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Azure Kubernetes Service (AKS) – Reliability Patterns for SREs
+---
+
 # Azure Kubernetes Service (AKS) – Reliability Patterns for SREs
 
 **Why Reliability Matters in AKS**

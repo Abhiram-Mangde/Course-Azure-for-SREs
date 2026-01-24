@@ -1,3 +1,8 @@
+---
+layout: page
+title: Azure Automation Accounts – Complete Guide
+---
+
 # Azure Automation Accounts – Complete Guide
 
 This guide provides a comprehensive explanation of Azure Automation Accounts, covering all essential concepts, services, and features. It is designed for learners who want to master automation in Azure, especially in DevOps and SRE roles.

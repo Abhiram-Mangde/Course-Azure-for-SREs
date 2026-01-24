@@ -1,3 +1,8 @@
+---
+layout: page
+title: Getting Started With AKS
+---
+
 # Getting Started With AKS
 
 This module transitions students from understanding Kubernetes to actually understanding the design and architecture of AKS.

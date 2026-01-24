@@ -1,3 +1,8 @@
+---
+layout: page
+title: Observability, Logging & Monitoring in AKS
+---
+
 # Observability, Logging & Monitoring in AKS
 
 Monitoring is the **heart of SRE work.**
