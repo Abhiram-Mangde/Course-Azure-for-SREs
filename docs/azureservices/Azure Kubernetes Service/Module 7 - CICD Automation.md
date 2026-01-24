@@ -1,3 +1,8 @@
+---
+layout: page
+title: CI/CD, GitOps & Deployment Automation
+---
+
 # CI/CD, GitOps & Deployment Automation
 
 This module is where developers, DevOps, and SREs converge.

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Security & Governance in AKS
+---
+
 # Security & Governance in AKS
 
 This module addresses production-grade, SRE-level security—the part that often makes or breaks enterprise adoption.

@@ -1,3 +1,8 @@
+---
+layout: page
+title: AKS Networking
+---
+
 # AKS Networking
 
 Networking is the most confusing part of Kubernetes for most engineers.

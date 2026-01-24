@@ -1,3 +1,8 @@
+---
+layout: page
+title: Foundations: Containers, Kubernetes & Why AKS Exists
+---
+
 # Foundations: Containers, Kubernetes & Why AKS Exists
 
 This module builds the mental model required before even touching AKS.
