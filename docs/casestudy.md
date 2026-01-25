@@ -48,9 +48,9 @@ permalink: /casestudy/
 </div>
 
 <div class="case-tile">
-<h3>Cost Optimization</h3>
-<p>How a startup reduced monthly cloud spend by 40% using Azure Cost Management.</p>
-<a href="{{ "/casestudy/cost-optimization/" | relative_url }}">Read case study</a>
+<h3>Analysis Microsoft Stock</h3>
+<p>Understanding Microsoft Stock Through Technology, Business & Markets</p>
+<a href="{{ "/casestudy/Analysis Microsoft Stock/" | relative_url }}">Read case study</a>
 </div>
 
 <div class="case-tile">
