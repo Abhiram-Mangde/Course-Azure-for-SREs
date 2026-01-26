@@ -54,9 +54,9 @@ permalink: /casestudy/
 </div>
 
 <div class="case-tile">
-<h3>Incident Response with Observability</h3>
-<p>How a financial services app improved resolution time with Azure Monitor.</p>
-<a href="{{ "/casestudy/incident-response/" | relative_url }}">Read case study</a>
+<h3>Reliability During Traffic</h3>
+<p>Building Reliability During Traffic Spikes Using SRE Principles on Azure</p>
+<a href="{{ "/casestudy/Reliability During Traffic/" | relative_url }}">Read case study</a>
 </div>
 
 </div>
