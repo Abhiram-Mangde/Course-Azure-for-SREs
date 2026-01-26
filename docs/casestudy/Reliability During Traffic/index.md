@@ -1,3 +1,8 @@
+---
+layout: page
+title: Case Study – Building Reliability During Traffic Spikes Using SRE Principles on Azure
+---
+
 # Building Reliability During Traffic Spikes Using SRE Principles on Azure
 ## Problem Statement
 A mid-sized product company operates a customer-facing web application hosted on Microsoft Azure.
