@@ -182,41 +182,31 @@ Explore Azure Services from an SRE Perspective
 <div class="azure-tile">
 <h3>Automation Account</h3>
 <p>Automate operational tasks</p>
-<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Automation%20Account" target="_blank">
-Open module
-</a>
+<a href="{{ '/azureservices/Azure Automation Account/' | relative_url }}">Open Module</a>
 </div>
 
 <div class="azure-tile">
 <h3>Azure Entra ID</h3>
 <p>Identity & access reliability</p>
-<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Entra%20Id" target="_blank">
-Open module
-</a>
+<a href="{{ '/azureservices/Azure Entra Id/' | relative_url }}">Open Module</a>
 </div>
 
 <div class="azure-tile">
 <h3>Azure Kubernetes Service</h3>
 <p>Production-grade AKS</p>
-<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Kubernetes%20Service" target="_blank">
-Open module
-</a>
+<a href="{{ '/azureservices/Azure Kubernetes Service/' | relative_url }}">Open Module </a>
 </div>
 
 <div class="azure-tile">
 <h3>Azure Monitor</h3>
 <p>Observability & alerts</p>
-<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Monitor" target="_blank">
-Open module
-</a>
+<a href="{{ '/azureservices/Azure Monitor/' | relative_url }}">Open Module</a>
 </div>
 
 <div class="azure-tile">
 <h3>Azure Virtual Machines</h3>
 <p>Compute Services</p>
-<a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Virtual%20Machines" target="_blank">
-Open module
-</a>
+<a href="{{ '/azureservices/Azure Virtual Machines/' | relative_url }}">Open Module</a>
 </div>
 
 </div>
