@@ -43,7 +43,7 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
 <div class="azure-tile">
 <h3>📦 Azure Content Delivery Network</h3>
 <p>classic CDN service</p>
-<a href="{{ '/azureservices/Azure CDN/' | relative_url }}">Open Module</a>
+<a href="{{ '/azureservices/Azure CDN/' | relative_url }}">Explore</a>
 </div>
 
 </div>
@@ -76,5 +76,6 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
   color: #0078d4;
 }
 </style>
+
 
 
