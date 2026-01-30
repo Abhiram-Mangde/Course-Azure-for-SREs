@@ -209,6 +209,12 @@ Explore Azure Services from an SRE Perspective
 <a href="{{ '/azureservices/Azure Virtual Machines/' | relative_url }}">Open Module</a>
 </div>
 
+<div class="azure-tile">
+<h3>Azure Content Delivery Network</h3>
+<p>classic CDN service</p>
+<a href="{{ '/azureservices/Azure CDN/' | relative_url }}">Open Module</a>
+</div>
+
 </div>
 
 <p style="margin-top:16px;">
