@@ -40,6 +40,12 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
   <a href="{{ '/azureservices/Azure Automation Account/' | relative_url }}">Explore</a>
 </div>
 
+<div class="azure-tile">
+<h3>📦 Azure Content Delivery Network</h3>
+<p>classic CDN service</p>
+<a href="{{ '/azureservices/Azure CDN/' | relative_url }}">Open Module</a>
+</div>
+
 </div>
 
 <style>
@@ -70,4 +76,5 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
   color: #0078d4;
 }
 </style>
+
 
