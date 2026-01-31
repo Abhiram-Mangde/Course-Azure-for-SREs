@@ -350,3 +350,4 @@ Learn more about each indiviual Service in Azure with Hands-On Activities
 > "Thank you for learning with me. This course is your foundation for a successful Azure SRE career. Keep building, keep practicing, and remember — reliability is a mindset. Wishing you success in your IT journey!"
 
 `Note: Feel free to fork and update the repo or add any information that I would have missed in the Repo using a Pull Request.`
+
