@@ -46,6 +46,12 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
 <a href="{{ '/azureservices/Azure CDN/' | relative_url }}">Explore</a>
 </div>
 
+<div class="azure-tile">
+<h3>🌍 Azure Front Door</h3>
+<p>A Modern Global CDN + Edge Platform</p>
+<a href="{{ '/azureservices/Azure Front Door/' | relative_url }}">Explore</a>
+</div>
+
 </div>
 
 <style>
@@ -76,6 +82,7 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
   color: #0078d4;
 }
 </style>
+
 
 
 
