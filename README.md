@@ -335,6 +335,8 @@ Learn more about each indiviual Service in Azure with Hands-On Activities
 - [Azure Kubernetes Service](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Kubernetes%20Service)
 - [Azure Monitor](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Monitor)
 - [Azure Virtual Machines](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Virtual%20Machines)
+- [Azure CDN](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/docs/azureservices/Azure%20CDN)
+- [Azure Front Door](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/docs/azureservices/Azure%20Front%20Door)
 
 ### HandsOn Activities
 [Azure EntraId HandsOn Activities](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Azure%20Entra%20Id/Microsoft%20EntraId%20Hands%20On%20Activities)
