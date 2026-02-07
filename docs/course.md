@@ -5,10 +5,6 @@ permalink: /course/
 ---
 
 <style>
-/* ============================= */
-/* MS LEARN – COURSE PAGE */
-/* ============================= */
-
 :root {
   --ms-blue: #0078d4;
   --ms-dark: #323130;
@@ -16,12 +12,12 @@ permalink: /course/
   --ms-border: #edebe9;
 }
 
-/* Limit readable width like Microsoft Learn */
+/* Page width */
 .content {
   max-width: 960px;
 }
 
-/* Section headings */
+/* Headings */
 h1, h2, h3 {
   color: var(--ms-dark);
   font-weight: 600;
@@ -33,7 +29,7 @@ h2 {
   margin-top: 40px;
 }
 
-/* Docs-style callout */
+/* Callout */
 .course-callout {
   background: var(--ms-gray);
   border-left: 4px solid var(--ms-blue);
@@ -41,7 +37,28 @@ h2 {
   margin: 20px 0;
 }
 
-/* Module navigation cards (flat, docs-style) */
+/* Course selector cards */
+.course-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.course-card {
+  border: 1px solid var(--ms-border);
+  padding: 24px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  border-color: var(--ms-blue);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Module tiles */
 .course-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -55,10 +72,6 @@ h2 {
   background: #ffffff;
 }
 
-.course-tile h3 {
-  margin-top: 0;
-}
-
 .course-tile a {
   color: var(--ms-blue);
   font-weight: 600;
@@ -68,99 +81,169 @@ h2 {
 .course-tile a:hover {
   text-decoration: underline;
 }
+
+/* Hide / show */
+.hidden {
+  display: none;
+}
 </style>
 
 # Course Overview
 
 <div class="course-callout">
-This comprehensive course is designed for aspiring and junior Site Reliability Engineers (SREs) who want to master Microsoft Azure fundamentals and SRE best practices.
+This repository provides structured, hands-on learning paths for
+Site Reliability Engineering and Kusto Query Language on Azure.
 </div>
 
-Through hands-on labs, real-world projects, and practical demos, learners will gain the skills needed to build, monitor, automate, and secure cloud-native systems on Azure.
+---
 
-- [Discussion and Challenges Board](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions)
+## Select a Course
+
+<div class="course-selector">
+
+  <div class="course-card" onclick="showCourse('sre')">
+    <h3>🧑‍💻 Azure SRE Course</h3>
+    <p>
+      Learn Azure fundamentals, SRE principles, observability,
+      automation, security, and real-world reliability practices.
+    </p>
+  </div>
+
+  <div class="course-card" onclick="showCourse('kql')">
+    <h3>📊 KQL for Observability</h3>
+    <p>
+      Master Kusto Query Language for logs, metrics,
+      time-series analysis, alerts, and incident response.
+    </p>
+  </div>
+
+</div>
 
 ---
 
-## Who Should Take This Course?
-- **Beginners** interested in cloud computing and Azure
-- **Junior SREs, DevOps engineers, and IT professionals**
-- **Students and career changers** seeking hands-on Azure experience
+<!-- ================= SRE COURSE ================= -->
 
----
+<div id="sre-course" class="hidden">
 
-## Prerequisites
-- No prior cloud or SRE experience required
-- Optional: Familiarity with IT concepts or programming
-
----
-
-## Learning Objectives
-By the end of this course, you will be able to:
-- Understand core Azure services and SRE principles
-- Deploy, monitor, and manage resources in Azure
-- Automate infrastructure and application deployments
-- Implement security and cost management best practices
-- Build portfolio-ready projects for interviews and career growth
-- Advance Topics: Details about each Service in Azure
-
----
-
-## Course Structure
-The course is divided into modules, each with beginner-friendly explanations, hands-on labs, demo ideas, and assessment suggestions.
-
----
-
-## Course Modules
+<h2>Azure SRE — Course Modules</h2>
 
 <div class="course-tiles">
 
-<div class="course-tile">
-<h3>Module 1</h3>
-<p>Introduction to Azure & SRE</p>
-<a href="{{ "/Module-1-Introduction-to-Azure-SRE/" | relative_url }}">Open module</a>
+  <div class="course-tile">
+    <h3>Module 1</h3>
+    <p>Introduction to Azure & SRE</p>
+    <a href="{{ "/Module-1-Introduction-to-Azure-SRE/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 2</h3>
+    <p>Core Azure Services</p>
+    <a href="{{ "/Module-2-Core-Azure-Services/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 3</h3>
+    <p>Observability & Monitoring</p>
+    <a href="{{ "/Module-3-Observability-Monitoring/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 4</h3>
+    <p>Keeping Systems Reliable</p>
+    <a href="{{ "/Module-4-Keeping-Systems-Reliable/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 5</h3>
+    <p>Automation & DevOps</p>
+    <a href="{{ "/Module-5-Automation-DevOps/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 6</h3>
+    <p>Security & Cost Management</p>
+    <a href="{{ "/Module-6-Security-Cost-Management/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 7</h3>
+    <p>Hands-On Projects</p>
+    <a href="{{ "/Module-7-Hands-On-Project/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 8</h3>
+    <p>Career Prep & Best Practices</p>
+    <a href="{{ "/Module-8-Career-Prep-Best-Practices/" | relative_url }}">Open module</a>
+  </div>
+
+</div>
 </div>
 
-<div class="course-tile">
-<h3>Module 2</h3>
-<p>Core Azure Services for SREs</p>
-<a href="{{ "/Module-2-Core-Azure-Services/" | relative_url }}">Open module</a>
+<!-- ================= KQL COURSE ================= -->
+
+<div id="kql-course" class="hidden">
+
+<h2>KQL for Observability — Course Modules</h2>
+
+<div class="course-tiles">
+
+  <div class="course-tile">
+    <h3>Module 1</h3>
+    <p>KQL Fundamentals</p>
+    <a href="{{ "/kql/module-01-introduction/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 2</h3>
+    <p>Data Model & Types</p>
+    <a href="{{ "/kql/module-02-data-model/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 3</h3>
+    <p>Filtering & Projection</p>
+    <a href="{{ "/kql/module-03-filtering/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 4</h3>
+    <p>Aggregation & Summarization</p>
+    <a href="{{ "/kql/module-04-aggregation/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 5</h3>
+    <p>Time-Series Analysis</p>
+    <a href="{{ "/kql/module-05-time-series/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 6</h3>
+    <p>Joins & Parsing</p>
+    <a href="{{ "/kql/module-06-joins-parsing/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 7</h3>
+    <p>Visualization & Alerts</p>
+    <a href="{{ "/kql/module-07-visualization/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 8</h3>
+    <p>Advanced KQL & Labs</p>
+    <a href="{{ "/kql/module-08-advanced/" | relative_url }}">Open module</a>
+  </div>
+
+</div>
 </div>
 
-<div class="course-tile">
-<h3>Module 3</h3>
-<p>Observability & Monitoring</p>
-<a href="{{ "/Module-3-Observability-Monitoring/" | relative_url }}">Open module</a>
-</div>
+<script>
+function showCourse(course) {
+  document.getElementById('sre-course').classList.add('hidden');
+  document.getElementById('kql-course').classList.add('hidden');
 
-<div class="course-tile">
-<h3>Module 4</h3>
-<p>Keeping Systems Reliable</p>
-<a href="{{ "/Module-4-Keeping-Systems-Reliable/" | relative_url }}">Open module</a>
-</div>
-
-<div class="course-tile">
-<h3>Module 5</h3>
-<p>Automation & DevOps</p>
-<a href="{{ "/Module-5-Automation-DevOps/" | relative_url }}">Open module</a>
-</div>
-
-<div class="course-tile">
-<h3>Module 6</h3>
-<p>Security & Cost Management</p>
-<a href="{{ "/Module-6-Security-Cost-Management/" | relative_url }}">Open module</a>
-</div>
-
-<div class="course-tile">
-<h3>Module 7</h3>
-<p>Hands-On Projects</p>
-<a href="{{ "/Module-7-Hands-On-Project/" | relative_url }}">Open module</a>
-</div>
-
-<div class="course-tile">
-<h3>Module 8</h3>
-<p>Career Prep & Best Practices</p>
-<a href="{{ "/Module-8-Career-Prep-Best-Practices/" | relative_url }}">Open module</a>
-</div>
-
-</div>
+  document.getElementById(course + '-course').classList.remove('hidden');
+}
+</script>
