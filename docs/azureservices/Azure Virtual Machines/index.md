@@ -1,3 +1,8 @@
+---
+layout: page
+title: Azure Virtual Machine
+---
+
 # Azure Virtual Machines
 
 ## Table of Contents
