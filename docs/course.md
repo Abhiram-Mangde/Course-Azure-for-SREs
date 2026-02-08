@@ -191,49 +191,49 @@ Site Reliability Engineering and Kusto Query Language on Azure.
   <div class="course-tile">
     <h3>Module 1</h3>
     <p>KQL Fundamentals</p>
-    <a href="{{ "/kql-course/module-01-Introduction-To-Kql/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-1-Introduction-To-Kql/" | relative_url }}">Open module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 2</h3>
     <p>Data Model & Types</p>
-    <a href="{{ "/kql-course/module-02-data-model/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-2-data-model/" | relative_url }}">Open module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 3</h3>
     <p>Filtering & Projection</p>
-    <a href="{{ "/kql-course/module-03-filtering/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-3-filtering/" | relative_url }}">Open module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 4</h3>
     <p>Aggregation & Summarization</p>
-    <a href="{{ "/kql-course/module-04-aggregation/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-4-aggregation/" | relative_url }}">Open module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 5</h3>
     <p>Time-Series Analysis</p>
-    <a href="{{ "/kql-course/module-05-time-series/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-5-time-series/" | relative_url }}">Open module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 6</h3>
     <p>Joins & Parsing</p>
-    <a href="{{ "/kql-course/module-06-joins-parsing/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-6-joins-parsing/" | relative_url }}">Open module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 7</h3>
     <p>Visualization & Alerts</p>
-    <a href="{{ "/kql-course/module-07-visualization/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-7-visualization/" | relative_url }}">Open module</a>
   </div>
 
   <div class="course-tile">
     <h3>Module 8</h3>
     <p>Advanced KQL & Labs</p>
-    <a href="{{ "/kql-course/module-08-advanced/" | relative_url }}">Open module</a>
+    <a href="{{ "/kql-course/Module-8-advanced/" | relative_url }}">Open module</a>
   </div>
 
 </div>
