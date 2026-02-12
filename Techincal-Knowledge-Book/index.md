@@ -77,7 +77,6 @@ DP-900 is a foundational certification from Microsoft focused on Data concepts i
 - Understand analytics and big data basics.
 
 **Concepts Learnt:**
-
 1. What is Data
 2. Types of Data (Structured, Semi-Structured, Unstructured)
 3. Relational Data
@@ -101,3 +100,138 @@ DP-900 is a foundational certification from Microsoft focused on Data concepts i
 - Analytical workloads vs transactional workloads.
 
 > DP-900 gave me foundational knowledge of data concepts in a cloud environment. I learned about relational and non-relational databases, Azure SQL services, Azure Cosmos DB, big data concepts, data warehousing, ETL processes, and data visualization using Power BI. It helped me understand how data is stored, processed, and analyzed in Azure.
+
+# 4: Microsoft AZ-104 (Azure Administrator Associate)
+
+AZ-104 is an Associate-level certification focused on Azure Administration. It moves me from basic knowledge to practical implementation.
+
+**Helps to:**
+- Implement Azure infrastructure.
+- Monitor and secure Azure environments.
+- Manage storage accounts.
+- Implement identity and access management.
+- Apply governance policies.
+
+**Concepts Learnt:**
+1. Microsoft Entra ID
+    - User management
+    - Group management
+    - Role assignments
+    - Authentication & Authorization
+2. Manage Identites and Governance
+3. Configure and Manage Virtual networks for Administrators
+4. Implement and Manage Storage
+5. Deploy and manage Azure compute resources
+6. Monitor and back up Azure resources
+7. Azure Networking
+8. Azure Resource Manager (ARM Templates)
+
+**After Completion what you should know or are expected to answer:**
+- Implement Azure infrastructure.
+- Manage identities and access.
+- Configure and secure networks.
+- Deploy and manage VMs.
+- Manage storage securely.
+- Monitor cloud environments.
+- Implement governance policies.
+- Automate deployments.
+- Support production cloud environments.
+
+> AZ-104 validated my ability to implement, manage, and monitor Azure environments. I gained hands-on experience in managing virtual machines, storage, networking, identity, security, and governance. I can configure VNets, manage Microsoft Entra ID, implement RBAC, monitor systems using Azure Monitor, and automate deployments using CLI and ARM templates. This certification proves I can manage real-world Azure infrastructure.
+
+# 5. Microsoft AZ-220 (Azure IoT Developer)
+
+AZ-220 is an Associate-level certification for Azure IoT Developers. 
+
+**Helps to:**
+- Design and implement end-to-end IoT solutions in Azure.
+- Configure and manage Azure IoT Hub.
+- Enable secure device-to-cloud and cloud-to-device communication.
+- Provision and manage devices at scale using Device Provisioning Service (DPS).
+- Deploy and manage IoT Edge solutions.
+- Process and route IoT telemetry data.
+- Integrate IoT solutions with business systems and Azure Digital Twins.
+- Monitor, troubleshoot, and optimize IoT environments.
+- Implement strong security for devices and cloud services.
+- Work with cross-functional teams (architects, data engineers, security teams).
+
+**Concepts Learnt:**
+1. IoT Hub Infrastructure
+    - Create and configure IoT Hub.
+    - Register and manage devices.
+    - Configure IoT Hub tiers and scaling.
+    - Implement device twins and module twins.
+    - Use TLS for secure communication.
+
+2. Device Communication
+    - Device-to-cloud messaging.
+    - Cloud-to-device messaging.
+    - File upload from devices.
+    - Use Azure IoT SDKs.
+    - Optimize message size and throughput.
+    - Choose appropriate communication protocols (MQTT, AMQP, HTTPS).
+
+3. Device Provisioning and Lifecycle
+    - Create and configure Device Provisioning Service (DPS).
+    - Create enrollments.
+    - Link DPS to IoT Hub.
+    - Automatically provision devices.
+    - Decommission and manage device lifecycle.
+    - Use Automatic Device Management.
+
+4. Azure IoT Central
+    - Create device templates using DTDL.
+    - Manage devices and jobs.
+    - Configure rules, actions, dashboards.
+    - Manage security and tenants.
+    - Use IoT Central APIs.
+
+5. IoT Edge
+    - Set up IoT Edge devices.
+    - Install container runtime.
+    - Deploy IoT Edge modules.
+    - Create deployment manifests.
+    - Configure module routing.
+    - Publish modules to Azure Container Registry.
+    - Implement offline support.
+    - Configure IoT Edge certificates.
+    - Implement layered edge hierarchy.
+
+6. Business Integration
+    - Configure IoT Hub message routing.
+    - Send data to Event Hubs, Storage, Service Bus.
+    - Integrate with Azure Digital Twins.
+    - Create and manage Digital Twin models.
+    - Map IoT telemetry to Digital Twins.
+    - Query and update Digital Twin graph.
+
+7. Data Processing
+    - Use Azure Stream Analytics.
+    - Write Stream Analytics queries.
+    - Filter and transform IoT telemetry.
+    - Use Azure Functions for event processing.
+    - Configure Event Grid integration.
+
+8. Monitoring and Troubleshooting
+    - Configure alerts and metrics.
+    - Enable diagnostic logs.
+    - Monitor IoT Edge metrics.
+    - Troubleshoot device connectivity issues.
+    - Validate device twin properties.
+    - Troubleshoot message loss.
+    - Test IoT Hub failover.
+
+9. Security
+    - Implement shared access keys and key rotation.
+    - Configure managed identities.
+    - Implement HSM and TPM (conceptual).  
+    - Secure networking with IP filtering and private endpoints.
+    - Configure Microsoft Defender for IoT.
+    - Implement TLS encryption and access control policies.
+
+**After Completion what you should know or are expected to answer:**
+- Design an IoT architecture.
+- Secure communication between devices and cloud.
+- Manage device lifecycle.
+- Process streaming IoT data.
+- Troubleshoot production IoT systems.
