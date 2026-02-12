@@ -2,17 +2,17 @@
 
 AZ-900 is a foundational certification from Microsoft. It is the starting point for a career in Cloud Computing with Microsoft Azure.
 
-**Helps to:**
+### Helps to:
 - Understand how cloud systems work and basic cloud computing concepts.
 - Work with Azure environments and understand Microsoft Azure services.
 - Understand how Azure is managed, secured, and governed.
 
-**Divided into three najor learning modules:**
+### Divided into three najor learning modules:
 1. Introduction to Cloud Infrastructure: Describe cloud concepts
 2. Introduction to Cloud Infrastructure: Describe Azure architecture and services
 3. Introduction to Cloud Infrastructure: Describe Azure management and governance
 
-**Concepts Learnt:**
+### Concepts Learnt:
 1. Cloud Service Models (IaaS, PaaS, SaaS)
 2. Cloud Deployment Models (Public, Private, Hybrid)
 3. Core Azure Architectural Components (Region, Availability Zone, Resource Group, Subscription)
@@ -21,7 +21,7 @@ AZ-900 is a foundational certification from Microsoft. It is the starting point 
 6. Governance Tools (Azure Policy, Resource Locks, Blueprints)
 7. Management Tools (Portal, CLI, PowerShell, Monitor)
 
-**After Completion what you should know or are expected to answer:**
+### After Completion what you should know or are expected to answer:
 - Explain cloud computing.
 - Compare IaaS, PaaS, SaaS.
 - Design basic Azure architecture.
@@ -37,12 +37,12 @@ AZ-900 is a foundational certification from Microsoft. It is the starting point 
 
 AI-900 is a foundational certification from Microsoft. It builds awareness and understanding of AI solutions in Azure.
 
-**Helps to:**
+### Helps to:
 - Understand AI concepts and Machine Learning fundamentals.
 - Know AI services in Azure.
 - Identify which Azure service is used for which AI solution.
 
-**Concepts Learnt:**
+### Concepts Learnt:
 1. Introduction to Artificial Intelligence (AI)
 2. Machine Learning (Supervised, Unsupervised, Reinforcement)
 3. Computer Vision
@@ -51,7 +51,7 @@ AI-900 is a foundational certification from Microsoft. It builds awareness and u
 6. Generative AI
 7. Azure AI Services (Azure Machine Learning, Azure AI Services, Azure AI Bot Service)
 
-**After Completion what you should know or are expected to answer:**
+### After Completion what you should know or are expected to answer:
 1. Explain AI Concepts & Differentiate between ML, NLP, Computer Vision, and Generative AI.
 2. Understand basic ML model concepts.
 3. Understand Responsible AI principles.
@@ -69,14 +69,14 @@ AI-900 is a foundational certification from Microsoft. It builds awareness and u
 
 DP-900 is a foundational certification from Microsoft focused on Data concepts in Azure. It builds a strong foundation in cloud data technologies.
 
-**Helps to:**
+### Helps to:
 - Understand core data concepts, how data is stored and managed.
 - Understand different types of databases.
 - Understand relational and non-relational data.
 - Understand Azure data services.
 - Understand analytics and big data basics.
 
-**Concepts Learnt:**
+### Concepts Learnt:
 1. What is Data
 2. Types of Data (Structured, Semi-Structured, Unstructured)
 3. Relational Data
@@ -89,7 +89,7 @@ DP-900 is a foundational certification from Microsoft focused on Data concepts i
 10. Data Analytics Concepts (Descriptive Analytics, Diagnostic Analytics, Predictive Analytics, Prescriptive Analytics)
 11. Azure Analytics Services (Azure Synapse Analytics, Azure Data Factory, Azure Stream Analytics, Power BI)
 
-**After Completion what you should know or are expected to answer:**
+### After Completion what you should know or are expected to answer:
 - Explain structured vs unstructured data.
 - Database design principles.
 - Data storage models.
@@ -105,14 +105,14 @@ DP-900 is a foundational certification from Microsoft focused on Data concepts i
 
 AZ-104 is an Associate-level certification focused on Azure Administration. It moves me from basic knowledge to practical implementation.
 
-**Helps to:**
+### Helps to:
 - Implement Azure infrastructure.
 - Monitor and secure Azure environments.
 - Manage storage accounts.
 - Implement identity and access management.
 - Apply governance policies.
 
-**Concepts Learnt:**
+### Concepts Learnt:
 1. Microsoft Entra ID
     - User management
     - Group management
@@ -126,7 +126,7 @@ AZ-104 is an Associate-level certification focused on Azure Administration. It m
 7. Azure Networking
 8. Azure Resource Manager (ARM Templates)
 
-**After Completion what you should know or are expected to answer:**
+### After Completion what you should know or are expected to answer:
 - Implement Azure infrastructure.
 - Manage identities and access.
 - Configure and secure networks.
@@ -143,7 +143,7 @@ AZ-104 is an Associate-level certification focused on Azure Administration. It m
 
 AZ-220 is an Associate-level certification for Azure IoT Developers. 
 
-**Helps to:**
+### Helps to:
 - Design and implement end-to-end IoT solutions in Azure.
 - Configure and manage Azure IoT Hub.
 - Enable secure device-to-cloud and cloud-to-device communication.
@@ -155,7 +155,7 @@ AZ-220 is an Associate-level certification for Azure IoT Developers.
 - Implement strong security for devices and cloud services.
 - Work with cross-functional teams (architects, data engineers, security teams).
 
-**Concepts Learnt:**
+### Concepts Learnt:
 1. IoT Hub Infrastructure
     - Create and configure IoT Hub.
     - Register and manage devices.
@@ -229,9 +229,10 @@ AZ-220 is an Associate-level certification for Azure IoT Developers.
     - Configure Microsoft Defender for IoT.
     - Implement TLS encryption and access control policies.
 
-**After Completion what you should know or are expected to answer:**
+### After Completion what you should know or are expected to answer:
 - Design an IoT architecture.
 - Secure communication between devices and cloud.
 - Manage device lifecycle.
 - Process streaming IoT data.
 - Troubleshoot production IoT systems.
+
