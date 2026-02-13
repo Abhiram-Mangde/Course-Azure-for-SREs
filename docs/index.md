@@ -221,6 +221,12 @@ Explore Azure Services from an SRE Perspective
 <a href="{{ '/azureservices/Azure Front Door/' | relative_url }}">Open Module</a>
 </div>
 
+<div class="azure-tile">
+<h3>📘 Azure AI Service</h3>
+<p>Collection of pre-built artificial intelligence APIs provided by Microsoft.</p>
+<a href="{{ '/azureservices/Azure AI Service/' | relative_url }}">Explore</a>
+</div>
+
 </div>
 
 <p style="margin-top:16px;">
