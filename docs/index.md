@@ -4,8 +4,9 @@ title: Home
 ---
 
 <style>
+
 /* ============================= */
-/* MS LEARN DESIGN SYSTEM */
+/* MICROSOFT-STYLE LANDING PAGE */
 /* ============================= */
 
 :root {
@@ -15,48 +16,115 @@ title: Home
   --ms-border: #edebe9;
 }
 
-/* Page base */
+/* Global */
+body {
+  line-height: 1.6;
+}
+
 .content {
-  max-width: 960px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-/* Headings */
-h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: var(--ms-dark);
-  margin-bottom: 16px;
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+  background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
+  color: white;
+  padding: 90px 50px;
+  border-radius: 10px;
+  margin-bottom: 70px;
+  position: relative;
+  overflow: hidden;
 }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--ms-dark);
-  margin-top: 40px;
-  border-bottom: 1px solid var(--ms-border);
-  padding-bottom: 6px;
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255,255,255,0.15);
+  filter: blur(100px);
+  top: -100px;
+  right: -100px;
 }
 
-h3 {
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-sub {
   font-size: 1.2rem;
+  max-width: 650px;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: white;
+  color: #0078d4;
+  padding: 12px 22px;
   font-weight: 600;
-  color: var(--ms-dark);
+  border-radius: 4px;
+  text-decoration: none;
 }
 
-/* Intro callout (MS Learn style) */
-.intro-box {
-  background: var(--ms-gray);
-  border-left: 4px solid var(--ms-blue);
-  padding: 20px;
-  margin: 24px 0;
-  font-size: 1.05rem;
+.btn-primary:hover {
+  background: #f3f2f1;
 }
 
-/* Tables */
+.btn-secondary {
+  border: 1px solid white;
+  padding: 12px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ============================= */
+/* SECTION STYLING */
+/* ============================= */
+
+.section {
+  margin-bottom: 70px;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--ms-border);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.alt-section {
+  background: #faf9f8;
+  padding: 50px 40px;
+  border-radius: 8px;
+}
+
+/* ============================= */
+/* TABLES */
+/* ============================= */
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 24px 0;
+  margin: 20px 0;
 }
 
 th, td {
@@ -67,22 +135,36 @@ th, td {
 
 th {
   background: var(--ms-gray);
-  font-weight: 600;
 }
 
-/* Azure module cards */
+/* ============================= */
+/* CARDS */
+/* ============================= */
+
 .azure-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 24px;
   margin-top: 20px;
 }
 
 .azure-tile {
-  background: #ffffff;
+  background: white;
   border: 1px solid var(--ms-border);
-  border-radius: 4px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 24px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.azure-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-color: #d2d0ce;
+}
+
+.azure-tile h3 {
+  margin-top: 0;
 }
 
 .azure-tile p {
@@ -92,7 +174,7 @@ th {
 
 .azure-tile a {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   color: var(--ms-blue);
   font-weight: 600;
   text-decoration: none;
@@ -102,57 +184,86 @@ th {
   text-decoration: underline;
 }
 
-/* CTA (Docs-style) */
+/* ============================= */
+/* CTA */
+/* ============================= */
+
 .cta-box {
   background: var(--ms-gray);
   border: 1px solid var(--ms-border);
-  padding: 24px;
-  margin-top: 40px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* ============================= */
+/* ANIMATIONS */
+/* ============================= */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 </style>
 
-# Azure for SREs
+<!-- HERO -->
 
-<div class="intro-box">
-A practical, real-world course designed to help you think like a Site Reliability Engineer (SRE) while working with Microsoft Azure.
-</div>
+<section class="hero fade-in">
+  <h1>Azure for SREs</h1>
+  <p class="hero-sub">
+    Learn how to design Azure systems that survive failure.
+    Think like a real-world Site Reliability Engineer.
+  </p>
 
----
+  <div class="hero-actions">
+    <a href="{{ "/course" | relative_url }}" class="btn-primary">
+      Start Learning
+    </a>
 
-## Why Azure for SREs?
+    <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs" class="btn-secondary">
+      View on GitHub
+    </a>
+  </div>
+</section>
 
-Most courses teach *what Azure services do*.  
-Most SRE content teaches *theory without context*.
+<!-- WHY SECTION -->
 
-**This course combines both.**
+<section class="section fade-in">
+<h2>Why Azure for SREs?</h2>
 
-You will learn **how systems fail in production**, **why they fail**, and **how SREs design Azure architectures that survive failure**.
+Most courses teach <em>what Azure services do</em>.  
+Most SRE content teaches <em>theory without context</em>.
 
----
+<strong>This course combines both.</strong>
 
-## Who Is This Course For?
+You’ll learn how systems fail in production, why they fail, and how SREs design Azure architectures that survive failure.
+
+</section>
+
+<!-- AUDIENCE -->
+
+<section class="section alt-section fade-in">
+<h2>Who Is This Course For?</h2>
 
 | Role | What You’ll Gain |
 |------|------------------|
 | Beginners | Clear cloud & SRE fundamentals |
 | Junior SREs | Real-world reliability patterns |
 | DevOps Engineers | Azure + SRE skills combined |
-| Students / Career Switchers | Hands-on, job-ready experience |
+| Students / Career Switchers | Hands-on job-ready experience |
 
----
+</section>
 
-## What You’ll Learn
+<!-- ROADMAP -->
 
-- **SRE fundamentals applied to Azure**
-- **Reliability & Scaling patterns**
-- **Monitoring, Alerting & Incident Response**
-- **Infrastructure as Code**
-- **Real-world Case Studies, failures & recovery scenarios**
-
----
-
-## Course Roadmap
+<section class="section fade-in">
+<h2>Course Roadmap</h2>
 
 | Module | Focus Area |
 |------|------------|
@@ -160,29 +271,30 @@ You will learn **how systems fail in production**, **why they fail**, and **how 
 | 2️⃣ | Core Azure Services for SREs |
 | 3️⃣ | Observability & Monitoring |
 | 4️⃣ | Keeping Systems Reliable |
-| 5️⃣ | Automation & DevOps (Beginner Friendly) |
+| 5️⃣ | Automation & DevOps |
 | 6️⃣ | Security & Cost Management |
-| 7️⃣ | Hands-On Projects (Guided Labs) |
-| 8️⃣ | Career Prep, Best Practices & Conclusion |
+| 7️⃣ | Hands-On Projects |
+| 8️⃣ | Career Prep & Best Practices |
 
-<div style="margin-top:16px;">
-  <a href="{{ "/course" | relative_url }}" style="color:#0078d4; font-weight:600;">
-    → Explore Full Course Page
-  </a>
-</div>
+</section>
 
----
+<!-- SERVICES -->
 
-## Advanced Azure Topics
-
-Explore Azure Services from an SRE Perspective
+<section class="section alt-section fade-in">
+<h2>Advanced Azure Topics</h2>
 
 <div class="azure-tiles">
 
 <div class="azure-tile">
-<h3>Automation Account</h3>
-<p>Automate operational tasks</p>
-<a href="{{ '/azureservices/Azure Automation Account/' | relative_url }}">Open Module</a>
+<h3>Azure Kubernetes Service</h3>
+<p>Production-grade AKS reliability patterns</p>
+<a href="{{ '/azureservices/Azure Kubernetes Service/' | relative_url }}">Open Module</a>
+</div>
+
+<div class="azure-tile">
+<h3>Azure Monitor</h3>
+<p>Observability & incident response</p>
+<a href="{{ '/azureservices/Azure Monitor/' | relative_url }}">Open Module</a>
 </div>
 
 <div class="azure-tile">
@@ -192,84 +304,36 @@ Explore Azure Services from an SRE Perspective
 </div>
 
 <div class="azure-tile">
-<h3>Azure Kubernetes Service</h3>
-<p>Production-grade AKS</p>
-<a href="{{ '/azureservices/Azure Kubernetes Service/' | relative_url }}">Open Module </a>
-</div>
-
-<div class="azure-tile">
-<h3>Azure Monitor</h3>
-<p>Observability & alerts</p>
-<a href="{{ '/azureservices/Azure Monitor/' | relative_url }}">Open Module</a>
-</div>
-
-<div class="azure-tile">
 <h3>Azure Virtual Machines</h3>
-<p>Compute Services</p>
+<p>Compute resilience & scaling</p>
 <a href="{{ '/azureservices/Azure Virtual Machines/' | relative_url }}">Open Module</a>
 </div>
 
-<div class="azure-tile">
-<h3>Azure Content Delivery Network</h3>
-<p>classic CDN service</p>
-<a href="{{ '/azureservices/Azure CDN/' | relative_url }}">Open Module</a>
 </div>
 
-<div class="azure-tile">
-<h3>🌍 Azure Front Door</h3>
-<p>A Modern Global CDN + Edge Platform</p>
-<a href="{{ '/azureservices/Azure Front Door/' | relative_url }}">Open Module</a>
-</div>
+</section>
 
-<div class="azure-tile">
-<h3>📘 Azure AI Service</h3>
-<p>Collection of pre-built artificial intelligence APIs provided by Microsoft.</p>
-<a href="{{ '/azureservices/Azure AI Services/' | relative_url }}">Open Module</a>
-</div>
+<!-- CTA -->
 
-</div>
-
-<p style="margin-top:16px;">
-📌 <em>Each module includes concepts, real-world scenarios, and hands-on labs.</em>
-</p>
-
----
-
-## Learn by Doing
-
-This course focuses heavily on **practice over theory**:
-
-- Guided hands-on labs  
-- Failure simulations  
-- Incident-style troubleshooting  
-- Reliability-first architecture design  
-
----
-
-## Community & Collaboration
-
-- Ask questions in **[GitHub Discussions](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions)**
-- Participate in incident simulations
-- Learn from real-world experiences
-- Contribute via **[Contributing Guidelines](https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/blob/main/CONTRIBUTING.md)**
-
----
-
+<section class="section fade-in">
 <div class="cta-box">
 <strong>How to Get Started</strong><br><br>
-1️⃣ Start with <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Module-1-Introduction-to-Azure-SRE">Module 1 – Introduction to Azure & SRE</a><br>
+1️⃣ Start with <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/tree/main/Module-1-Introduction-to-Azure-SRE">Module 1 – Introduction</a><br>
 2️⃣ Follow the roadmap step-by-step<br>
-3️⃣ Join Discussions and ask questions<br>
-4️⃣ Build → Break → Fix → Learn
+3️⃣ Build → Break → Fix → Learn
 </div>
+</section>
 
----
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
 
-## Support the Project
-
-If this course helps you:
-- ⭐ Star the repository  
-- 🍴 Fork it  
-- 💬 Share feedback  
-
-Together, let’s build **reliable cloud systems**
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
+});
+</script>
