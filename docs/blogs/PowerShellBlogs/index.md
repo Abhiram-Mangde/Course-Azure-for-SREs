@@ -126,14 +126,14 @@ That’s where **PowerShell and AI integration** transforms the game.
 
 <div class="fade-in">
 
-Site Reliability Engineering (SRE) applies **software engineering principles to infrastructure and operations**.
+Site Reliability Engineering (SRE) applies software engineering principles to infrastructure and operations.
 
 SREs are responsible for:
 
-- Ensuring **system reliability and uptime**
-- Automating repetitive operational tasks
-- Monitoring **KPIs like latency, error rates, and traffic**
-- Responding proactively to incidents
+    - Ensuring: system reliability and uptime
+    - Automating: repetitive operational tasks
+    - Monitoring: KPIs like latency, error rates, and traffic
+    - Responding proactively to incidents
 
 SRE blends DevOps practices, coding skills, and operational expertise — making it essential in modern cloud platforms like Azure.
 
@@ -147,11 +147,11 @@ SRE blends DevOps practices, coding skills, and operational expertise — making
 
 PowerShell is Microsoft’s automation framework that enables SREs to:
 
-- **Automate repetitive tasks**
-- Manage servers, services, and configurations
-- Work across Windows, Linux, and cloud platforms
-- Query and manipulate structured objects
-- Create repeatable workflows for infrastructure
+    - Automate repetitive tasks
+    - Manage servers, services, and configurations
+    - Work across Windows, Linux, and cloud platforms
+    - Query and manipulate structured objects
+    - Create repeatable workflows for infrastructure
 
 </div>
 
@@ -173,11 +173,11 @@ Integrating AI with PowerShell takes automation from reactive to predictive.
 
 AI can:
 
-- Detect anomalies in logs
-- Predict outages before they happen
-- Suggest remediation steps
-- Optimize cloud scaling decisions
-- Reduce false-positive alerts
+    - Detect anomalies in logs
+    - Predict outages before they happen
+    - Suggest remediation steps
+    - Optimize cloud scaling decisions
+    - Reduce false-positive alerts
 
 PowerShell executes the action.  
 AI decides when and why.
@@ -190,17 +190,13 @@ AI decides when and why.
 
 <div class="fade-in">
 
-### Boost Operational Efficiency
-Automate hundreds of manual processes and focus on strategic engineering work.
+Boost Operational Efficiency: Automate hundreds of manual processes and focus on strategic engineering work.
 
-### Improve Reliability
-Predict failures before users are impacted.
+Improve Reliability: Predict failures before users are impacted.
 
-### Optimize Cloud Costs
-Scale intelligently based on AI-driven insights.
+Optimize Cloud Costs: Scale intelligently based on AI-driven insights.
 
-### Increase Career Value
-Engineers who understand scripting + AI + reliability stand out immediately.
+Increase Career Value: Engineers who understand scripting + AI + reliability stand out immediately.
 
 </div>
 
@@ -230,8 +226,7 @@ This is no longer futuristic — it’s becoming the new operational standard.
 
 <div class="fade-in">
 
-The future is not just automation.  
-The future is **intelligent automation**.
+The future is not just automation. The future is intelligent automation.
 
 SRE provides the reliability mindset.  
 PowerShell provides automation power.  
