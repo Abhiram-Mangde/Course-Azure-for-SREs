@@ -15,11 +15,6 @@ title: Azure Services
   --ms-border: #edebe9;
 }
 
-/* Page width */
-.content {
-  max-width: 960px;
-}
-
 /* Headings */
 h1 {
   font-size: 2.2rem;
