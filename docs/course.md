@@ -12,11 +12,6 @@ permalink: /course/
   --ms-border: #edebe9;
 }
 
-/* Page width */
-.content {
-  max-width: 960px;
-}
-
 /* Headings */
 h1, h2, h3 {
   color: var(--ms-dark);
