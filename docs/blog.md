@@ -53,4 +53,10 @@ permalink: /blog/
 <a href="{{ "/blogs/PowerShellBlogs/" | relative_url }}">Read article</a>
 </div>
 
+<div class="blog-tile">
+<h3>5 Layers of AI</h3>
+<p>A Simple Framework to Understand How AI Really Works.</p>
+<a href="{{ "/blogs/AI/" | relative_url }}">Read article</a>
+</div>
+
 </div>
