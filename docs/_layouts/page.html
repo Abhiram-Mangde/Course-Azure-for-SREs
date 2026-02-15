@@ -21,7 +21,28 @@
       min-height: 100vh;
       font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
       color: #323130;
-      background: #f3f2f1; /* Microsoft light gray */
+      background: #f3f2f1;
+    }
+
+    /* ============================= */
+    /* BREADCRUMB */
+    /* ============================= */
+
+    .breadcrumb {
+      max-width: 960px;
+      margin: 20px auto 0 auto;
+      padding: 0 20px;
+      font-size: 0.85rem;
+      color: #605e5c;
+    }
+
+    .breadcrumb a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
     }
 
     /* ============================= */
@@ -37,7 +58,7 @@
     }
 
     /* ============================= */
-    /* DYNAMIC CANVAS (ALL MD PAGES) */
+    /* DYNAMIC CANVAS */
     /* ============================= */
 
     .canvas {
@@ -51,12 +72,10 @@
       transition: all 0.3s ease;
     }
 
-    /* Subtle hover lift */
     .canvas:hover {
       box-shadow: 0 8px 28px rgba(0,0,0,0.08);
     }
 
-    /* Typography polish inside canvas */
     .canvas h1 {
       margin-top: 0;
       font-weight: 600;
@@ -98,6 +117,20 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* ============================= */
+    /* RESPONSIVE */
+    /* ============================= */
+
+    @media (max-width: 768px) {
+      .canvas {
+        padding: 28px;
+      }
+
+      .breadcrumb {
+        font-size: 0.75rem;
+      }
+    }
   </style>
 
   {{ site.head }}
@@ -106,6 +139,31 @@
 <body>
 
   {% include header.html %}
+
+  <!-- ============================= -->
+  <!-- BREADCRUMB NAVIGATION -->
+  <!-- ============================= -->
+  <nav class="breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a>
+
+    {% assign url_parts = page.url | split: '/' %}
+    {% assign path = '' %}
+
+    {% for part in url_parts %}
+      {% unless part == '' or forloop.last %}
+        {% assign path = path | append: '/' | append: part %}
+        /
+        <a href="{{ path | relative_url }}">
+          {{ part | replace: '-', ' ' | capitalize }}
+        </a>
+      {% endunless %}
+    {% endfor %}
+
+    {% unless page.url == '/' %}
+      /
+      <span>{{ page.title }}</span>
+    {% endunless %}
+  </nav>
 
   <main class="content">
     <div class="canvas fade-in">
