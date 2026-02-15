@@ -14,21 +14,43 @@
 
     .footer-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between;  /* Left group + Right group */
       align-items: center;
       flex-wrap: wrap;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;   /* spacing between ©, Terms, Privacy */
     }
 
     .site-footer a {
       color: #0078d4;
       text-decoration: none;
     }
+
+    .footer-container p {
+      margin: 0;
+    }
   </style>
 
   <div class="footer-container">
-    <p>© {{ site.time | date: '%Y' }} Azure for SREs</p>
+    
+    <!-- LEFT SIDE -->
+    <div class="footer-left">
+      <p>© {{ site.time | date: '%Y' }} Azure for SREs</p>
+      <a href="/terms-and-conditions.html">Terms</a>
+      <a href="/privacy-policy.html">Privacy</a>
+    </div>
+
+    <!-- RIGHT SIDE -->
     <p>
-      Built by <a href="https://in.linkedin.com/in/abhiram-mangde-759b3a20b" target="_blank">Abhiram Mangde</a>
+      Built by 
+      <a href="https://in.linkedin.com/in/abhiram-mangde-759b3a20b" target="_blank">
+        Abhiram Mangde
+      </a>
     </p>
+
   </div>
 </footer>
