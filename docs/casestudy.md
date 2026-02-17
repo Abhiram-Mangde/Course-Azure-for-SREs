@@ -59,4 +59,10 @@ permalink: /casestudy/
 <a href="{{ "/casestudy/Reliability During Traffic/" | relative_url }}">Read case study</a>
 </div>
 
+<div class="case-tile">
+<h3>Why NSG and ASG Are Important for VM Optimization</h3>
+<p>Optimizing Virtual Machine Security and Performance Using NSG and ASG on Azure</p>
+<a href="{{ "/casestudy/Microsoft Azure/" | relative_url }}">Read case study</a>
+</div>
+
 </div>
