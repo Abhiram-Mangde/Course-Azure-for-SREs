@@ -131,6 +131,61 @@
         font-size: 0.75rem;
       }
     }
+
+    /* ============================= */
+    /* CHATBOT */
+    /* ============================= */
+
+    .chat-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 320px;
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      font-family: Arial, sans-serif;
+      z-index: 9999;
+    }
+
+    .chat-box {
+      height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .user-msg {
+      text-align: right;
+      background: #0078D4;
+      color: white;
+      padding: 6px;
+      margin: 5px;
+      border-radius: 6px;
+    }
+
+    .bot-msg {
+      text-align: left;
+      background: #f1f1f1;
+      padding: 6px;
+      margin: 5px;
+      border-radius: 6px;
+    }
+
+    .chat-container input {
+      width: 70%;
+      padding: 6px;
+    }
+
+    .chat-container button {
+      width: 25%;
+      padding: 6px;
+      background: #0078D4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
   </style>
 
   {{ site.head }}
@@ -188,6 +243,14 @@
       });
     });
   </script>
+
+  <div class="chat-container">
+  <div id="chatBox" class="chat-box"></div>
+  <input type="text" id="userInput" placeholder="Ask about the course..." />
+  <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="{{ '/chatbot.js' | relative_url }}"></script>
 
 </body>
 </html>
