@@ -154,7 +154,17 @@ function appendMessage(text, className) {
 
     // Add the "Read full page" link
     const link = document.createElement("a");
-    link.href = repoBase + parts[1].trim();
+    const rawPath = parts[1].trim();
+    // Basic validation to keep the link as a relative path under repoBase
+    // Disallow schemes ("://"), whitespace, and control characters
+    const safePathPattern = /^[^\s\x00-\x1F\x7F]*$/;
+    let safePath = "";
+    if (safePathPattern.test(rawPath) && !rawPath.includes("://")) {
+      // Ensure the path starts with a single "/"
+      safePath = rawPath.startsWith("/") ? rawPath : "/" + rawPath;
+    }
+    // Fallback to repoBase if the path is not considered safe
+    link.href = safePath ? (repoBase + safePath) : repoBase;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.textContent = "Read full page \u2192";
