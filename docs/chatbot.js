@@ -155,13 +155,20 @@ function appendMessage(text, className) {
     // Add the "Read full page" link
     const link = document.createElement("a");
     const rawPath = parts[1].trim();
-    // Basic validation to keep the link as a relative path under repoBase
-    // Disallow schemes ("://"), whitespace, and control characters
-    const safePathPattern = /^[^\s\x00-\x1F\x7F]*$/;
+    // Strict validation: allow only simple relative paths under repoBase.
+    // Disallow schemes (":"), protocol-relative URLs ("//"), query ("?"), and fragments ("#").
+    const safePathPattern = /^[a-zA-Z0-9/_\.\-]+$/;
     let safePath = "";
-    if (safePathPattern.test(rawPath) && !rawPath.includes("://")) {
-      // Ensure the path starts with a single "/"
-      safePath = rawPath.startsWith("/") ? rawPath : "/" + rawPath;
+    if (safePathPattern.test(rawPath)) {
+      // Normalize leading slash: collapse multiple slashes and ensure a single leading "/"
+      let normalized = rawPath.replace(/^\/+/, "/");
+      if (!normalized.startsWith("/")) {
+        normalized = "/" + normalized;
+      }
+      // Reject protocol-relative URLs like "//example.com"
+      if (!normalized.startsWith("//") && !normalized.includes(":") && !normalized.includes("?") && !normalized.includes("#")) {
+        safePath = normalized;
+      }
     }
     // Fallback to repoBase if the path is not considered safe
     link.href = safePath ? (repoBase + safePath) : repoBase;
