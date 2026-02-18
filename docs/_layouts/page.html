@@ -9,7 +9,6 @@
     /* ============================= */
     /* GLOBAL BASE STYLES */
     /* ============================= */
-
     html, body {
       height: 100%;
       margin: 0;
@@ -27,7 +26,6 @@
     /* ============================= */
     /* BREADCRUMB */
     /* ============================= */
-
     .breadcrumb {
       max-width: 960px;
       margin: 20px auto 0 auto;
@@ -48,7 +46,6 @@
     /* ============================= */
     /* MAIN LAYOUT */
     /* ============================= */
-
     main.content {
       flex: 1;
       display: flex;
@@ -56,10 +53,6 @@
       padding: 40px 20px;
       box-sizing: border-box;
     }
-
-    /* ============================= */
-    /* DYNAMIC CANVAS */
-    /* ============================= */
 
     .canvas {
       width: 100%;
@@ -76,25 +69,13 @@
       box-shadow: 0 8px 28px rgba(0,0,0,0.08);
     }
 
-    .canvas h1 {
-      margin-top: 0;
-      font-weight: 600;
-    }
-
-    .canvas h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #edebe9;
-      padding-bottom: 6px;
-    }
-
-    .canvas p {
-      font-size: 1.05rem;
-    }
+    .canvas h1 { margin-top: 0; font-weight: 600; }
+    .canvas h2 { margin-top: 40px; border-bottom: 1px solid #edebe9; padding-bottom: 6px; }
+    .canvas p { font-size: 1.05rem; }
 
     /* ============================= */
     /* FOOTER */
     /* ============================= */
-
     footer {
       border-top: 1px solid #edebe9;
       padding: 16px 24px;
@@ -106,7 +87,6 @@
     /* ============================= */
     /* FADE-IN ANIMATION */
     /* ============================= */
-
     .fade-in {
       opacity: 0;
       transform: translateY(25px);
@@ -121,32 +101,44 @@
     /* ============================= */
     /* RESPONSIVE */
     /* ============================= */
-
     @media (max-width: 768px) {
-      .canvas {
-        padding: 28px;
-      }
-
-      .breadcrumb {
-        font-size: 0.75rem;
-      }
+      .canvas { padding: 28px; }
+      .breadcrumb { font-size: 0.75rem; }
     }
 
     /* ============================= */
     /* CHATBOT */
     /* ============================= */
-
-    .chat-container {
+    #chatContainer {
       position: fixed;
       bottom: 20px;
       right: 20px;
       width: 320px;
-      background: white;
-      border-radius: 10px;
-      padding: 10px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
       font-family: Arial, sans-serif;
       z-index: 9999;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    #chatContainer #chatHeader {
+      background: #0078D4;
+      color: white;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #chatContainer #chatBody {
+      display: none;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+
+    #chatContainer.chat-open #chatBody {
+      display: block;
     }
 
     .chat-box {
@@ -154,28 +146,20 @@
       overflow-y: auto;
       margin-bottom: 10px;
       font-size: 14px;
-    }
-
-    .user-msg {
-      text-align: right;
-      background: #0078D4;
-      color: white;
-      padding: 6px;
-      margin: 5px;
-      border-radius: 6px;
-    }
-
-    .bot-msg {
-      text-align: left;
-      background: #f1f1f1;
-      padding: 6px;
-      margin: 5px;
-      border-radius: 6px;
+      background:#ffffff;
+      border-radius:6px;
+      padding:6px;
+      box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+      scroll-behavior: smooth;
     }
 
     .chat-container input {
       width: 70%;
       padding: 6px;
+      margin-right: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing:border-box;
     }
 
     .chat-container button {
@@ -185,7 +169,27 @@
       color: white;
       border: none;
       border-radius: 4px;
+      cursor:pointer;
     }
+
+    .user-msg {
+      text-align: right;
+      background: #0078D4;
+      color: white;
+      padding: 6px;
+      margin: 5px;
+      border-radius: 12px 6px 12px 6px;
+    }
+
+    .bot-msg {
+      text-align: left;
+      background: #f1f1f1;
+      padding: 6px;
+      margin: 5px;
+      border-radius: 6px 12px 6px 12px;
+    }
+
+    .user-msg:hover, .bot-msg:hover { opacity: 0.9; }
   </style>
 
   {{ site.head }}
@@ -200,10 +204,8 @@
   <!-- ============================= -->
   <nav class="breadcrumb">
     <a href="{{ '/' | relative_url }}">Home</a>
-
     {% assign url_parts = page.url | split: '/' %}
     {% assign path = '' %}
-
     {% for part in url_parts %}
       {% unless part == '' or forloop.last %}
         {% assign path = path | append: '/' | append: part %}
@@ -213,10 +215,8 @@
         </a>
       {% endunless %}
     {% endfor %}
-
     {% unless page.url == '/' %}
-      /
-      <span>{{ page.title }}</span>
+      / <span>{{ page.title }}</span>
     {% endunless %}
   </nav>
 
@@ -229,28 +229,29 @@
   {% include footer.html %}
 
   <script>
+    // Fade-in animation
     document.addEventListener("DOMContentLoaded", function() {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
+          if (entry.isIntersecting) entry.target.classList.add("show");
         });
       });
-
-      document.querySelectorAll(".fade-in").forEach(el => {
-        observer.observe(el);
-      });
+      document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
     });
   </script>
 
-  <div class="chat-container">
-  <div id="chatBox" class="chat-box"></div>
-  <input type="text" id="userInput" placeholder="Ask about the course..." />
-  <button onclick="sendMessage()">Send</button>
+  <!-- ============================= -->
+  <!-- CHATBOT -->
+  <!-- ============================= -->
+  <div id="chatContainer">
+    <div id="chatHeader" onclick="toggleChat()">Chat with Assistant</div>
+    <div id="chatBody">
+      <div id="chatBox" class="chat-box"></div>
+      <input type="text" id="userInput" placeholder="Ask about the course..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
   </div>
 
   <script src="{{ '/chatbot.js' | relative_url }}"></script>
-
 </body>
 </html>
