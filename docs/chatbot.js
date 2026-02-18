@@ -139,14 +139,26 @@ function appendMessage(text, className) {
   const messageDiv = document.createElement("div");
   messageDiv.className = className;
 
-  // Support clickable links
+  // Support clickable links without interpreting text as HTML
   if (text.includes("Read more:")) {
     const parts = text.split("Read more:");
-    messageDiv.innerHTML = `
-      ${parts[0]}
-      <br><br>
-      <a href="${repoBase}${parts[1].trim()}" target="_blank" rel="noopener noreferrer">Read full page →</a>
-    `;
+
+    // Add the preview text safely
+    const previewSpan = document.createElement("span");
+    previewSpan.innerText = parts[0];
+    messageDiv.appendChild(previewSpan);
+
+    // Add line breaks
+    messageDiv.appendChild(document.createElement("br"));
+    messageDiv.appendChild(document.createElement("br"));
+
+    // Add the "Read full page" link
+    const link = document.createElement("a");
+    link.href = repoBase + parts[1].trim();
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = "Read full page \u2192";
+    messageDiv.appendChild(link);
   } else {
     messageDiv.innerText = text;
   }
