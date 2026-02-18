@@ -1,4 +1,11 @@
 // =========================
+// BASE URL for your GitHub Pages repo
+// =========================
+
+const repoBase = "/Course-Azure-for-SREs"; // <-- your repo base path
+
+
+// =========================
 // KNOWLEDGE BASE LOADING
 // =========================
 
@@ -138,7 +145,7 @@ function appendMessage(text, className) {
     messageDiv.innerHTML = `
       ${parts[0]}
       <br><br>
-      <a href="${parts[1].trim()}" target="_blank">Read full page →</a>
+      <a href="${repoBase}${parts[1].trim()}" target="_blank" rel="noopener noreferrer">Read full page →</a>
     `;
   } else {
     messageDiv.innerText = text;

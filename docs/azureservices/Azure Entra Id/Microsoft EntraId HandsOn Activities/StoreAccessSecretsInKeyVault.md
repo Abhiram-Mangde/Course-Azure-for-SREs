@@ -56,7 +56,7 @@ Now store a secret (like a database connection string or API key):
 az keyvault secret set \
   --vault-name `keyvault-name` \
   --name "DbConnectionString" \
-  --value "Server=tcp:sre-sql.database.windows.net;Database=ProdDB;User Id=adminuser;Password=P@ssw0rd!"
+  --value "value"
 ```
 
 **Concept:**

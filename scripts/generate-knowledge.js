@@ -4,6 +4,8 @@ const path = require("path");
 const docsPath = path.join(__dirname, "../docs");
 const outputFile = path.join(docsPath, "knowledge.json");
 
+const repoBase = "/Course-Azure-for-SREs"; // <-- your GitHub Pages repo base path
+
 let knowledge = [];
 
 // Folders to ignore
@@ -54,7 +56,7 @@ function scanDirectory(dir) {
       knowledge.push({
         title: data.title,
         content: data.content,
-        url: "/" + relativePath.replace(".md", ".html")
+        url: repoBase + "/" + relativePath.replace(/\.md$/, "/").toLowerCase()
       });
     }
   });
