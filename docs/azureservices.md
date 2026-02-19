@@ -142,6 +142,12 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
   <a href="{{ '/azureservices/Azure AI Services/' | relative_url }}">Explore →</a>
 </div>
 
+<div class="service-card">
+  <h3>🔹Azure Digital Twins</h3>
+  <p>A Cloud platform service that lets you create live digital replicas of environments and systems</p>
+  <a href="{{ '/azureservices/Azure Digital Twin/' | relative_url }}">Explore →</a>
+</div>
+
 </div>
 
 <script>
