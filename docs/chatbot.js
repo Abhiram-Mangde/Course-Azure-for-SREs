@@ -1,11 +1,4 @@
 // =========================
-// BASE URL for your GitHub Pages repo
-// =========================
-
-const repoBase = "/Course-Azure-for-SREs"; // <-- your repo base path
-
-
-// =========================
 // KNOWLEDGE BASE LOADING
 // =========================
 
@@ -17,7 +10,6 @@ fetch("knowledge.json")
   .then(data => {
     knowledgeBase = data;
     knowledgeLoaded = true;
-    console.log("Knowledge base loaded:", knowledgeBase.length, "entries");
   })
   .catch(error => {
     console.error("Error loading knowledge base:", error);
@@ -44,13 +36,16 @@ function cleanInput(input) {
 
 
 // =========================
-// SMART CONTENT SEARCH
+// SMART SEARCH
 // =========================
 
 function getBotResponse(input) {
 
   if (!knowledgeLoaded) {
-    return "Knowledge base is still loading. Please try again in a moment.";
+    return {
+      answer: "Knowledge base is still loading. Please try again.",
+      suggestions: []
+    };
   }
 
   const cleanedInput = cleanInput(input);
@@ -62,21 +57,12 @@ function getBotResponse(input) {
   for (let item of knowledgeBase) {
 
     let score = 0;
-
     const titleText = item.title.toLowerCase();
     const contentText = item.content.toLowerCase();
 
     inputWords.forEach(word => {
-
-      // Weight title matches higher
-      if (titleText.includes(word)) {
-        score += 3;
-      }
-
-      if (contentText.includes(word)) {
-        score += 1;
-      }
-
+      if (titleText.includes(word)) score += 3;
+      if (contentText.includes(word)) score += 1;
     });
 
     if (score > highestScore) {
@@ -87,18 +73,32 @@ function getBotResponse(input) {
 
   if (bestMatch && highestScore > 0) {
 
-    const preview = bestMatch.content.substring(0, 250);
-
-    return `
-Here’s what I found in "${bestMatch.title}":
-
-${preview}...
-
-Read more: ${bestMatch.url}
-    `;
+    return {
+      answer: bestMatch.content.substring(0, 300) + "...",
+      suggestions: generateSuggestions(inputWords)
+    };
   }
 
-  return "I couldn’t find a strong match. Try asking about Azure services, SRE modules, KQL, architecture patterns, or projects.";
+  return {
+    answer: "I couldn’t find a strong match. Try asking about Azure services, SRE modules, KQL, architecture patterns, or projects.",
+    suggestions: ["What modules are covered?", "What is Azure Monitor?", "Explain KQL basics"]
+  };
+}
+
+
+// =========================
+// GENERATE FOLLOW-UP QUESTIONS
+// =========================
+
+function generateSuggestions(words) {
+  const suggestions = [];
+
+  words.forEach(word => {
+    suggestions.push(`Explain ${word} in detail`);
+    suggestions.push(`How does ${word} work?`);
+  });
+
+  return suggestions.slice(0, 3);
 }
 
 
@@ -109,19 +109,19 @@ Read more: ${bestMatch.url}
 function sendMessage() {
   const inputField = document.getElementById("userInput");
   const userText = inputField.value.trim();
-
   if (!userText) return;
 
   appendMessage(userText, "user-msg");
 
-  // Show typing indicator
-  appendMessage("Searching course content...", "bot-msg typing");
+  appendMessage("Thinking...", "bot-msg typing");
 
   setTimeout(() => {
     removeTypingIndicator();
 
-    const botResponse = getBotResponse(userText);
-    appendMessage(botResponse, "bot-msg");
+    const response = getBotResponse(userText);
+
+    appendMessage(response.answer, "bot-msg");
+    appendSuggestions(response.suggestions);
 
   }, 600);
 
@@ -130,57 +130,35 @@ function sendMessage() {
 
 
 // =========================
-// APPEND MESSAGE
+// MESSAGE RENDERING
 // =========================
 
 function appendMessage(text, className) {
   const chatBox = document.getElementById("chatBox");
-
   const messageDiv = document.createElement("div");
   messageDiv.className = className;
-
-  // Support clickable links without interpreting text as HTML
-  if (text.includes("Read more:")) {
-    const parts = text.split("Read more:");
-
-    // Add the preview text safely
-    const previewSpan = document.createElement("span");
-    previewSpan.innerText = parts[0];
-    messageDiv.appendChild(previewSpan);
-
-    // Add line breaks
-    messageDiv.appendChild(document.createElement("br"));
-    messageDiv.appendChild(document.createElement("br"));
-
-    // Add the "Read full page" link
-    const link = document.createElement("a");
-    const rawPath = parts[1].trim();
-    // Strict validation: allow only simple relative paths under repoBase.
-    // Disallow schemes (":"), protocol-relative URLs ("//"), query ("?"), and fragments ("#").
-    const safePathPattern = /^[a-zA-Z0-9/_\.\-]+$/;
-    let safePath = "";
-    if (safePathPattern.test(rawPath)) {
-      // Normalize leading slash: collapse multiple slashes and ensure a single leading "/"
-      let normalized = rawPath.replace(/^\/+/, "/");
-      if (!normalized.startsWith("/")) {
-        normalized = "/" + normalized;
-      }
-      // Reject protocol-relative URLs like "//example.com"
-      if (!normalized.startsWith("//") && !normalized.includes(":") && !normalized.includes("?") && !normalized.includes("#")) {
-        safePath = normalized;
-      }
-    }
-    // Fallback to repoBase if the path is not considered safe
-    link.href = safePath ? (repoBase + safePath) : repoBase;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = "Read full page \u2192";
-    messageDiv.appendChild(link);
-  } else {
-    messageDiv.innerText = text;
-  }
-
+  messageDiv.innerText = text;
   chatBox.appendChild(messageDiv);
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+function appendSuggestions(suggestions) {
+  const chatBox = document.getElementById("chatBox");
+
+  const container = document.createElement("div");
+  container.className = "suggestions";
+
+  suggestions.forEach(text => {
+    const btn = document.createElement("button");
+    btn.innerText = text;
+    btn.onclick = () => {
+      document.getElementById("userInput").value = text;
+      sendMessage();
+    };
+    container.appendChild(btn);
+  });
+
+  chatBox.appendChild(container);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
@@ -190,37 +168,28 @@ function appendMessage(text, className) {
 // =========================
 
 function removeTypingIndicator() {
-  const chatBox = document.getElementById("chatBox");
-  const typing = chatBox.querySelector(".typing");
-
-  if (typing) {
-    chatBox.removeChild(typing);
-  }
+  const typing = document.querySelector(".typing");
+  if (typing) typing.remove();
 }
 
 
 // =========================
-// ENTER KEY SUPPORT
+// ENTER KEY
 // =========================
 
 document.addEventListener("DOMContentLoaded", () => {
   const inputField = document.getElementById("userInput");
-
-  if (inputField) {
-    inputField.addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        sendMessage();
-      }
-    });
-  }
+  inputField.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") sendMessage();
+  });
 });
 
 
 // =========================
-// CHAT TOGGLE
+// TOGGLE CHAT
 // =========================
 
 function toggleChat() {
-  const chatbot = document.getElementById("chatContainer");
-  chatbot.classList.toggle("chat-open");
+  const chat = document.getElementById("chatWindow");
+  chat.classList.toggle("open");
 }
