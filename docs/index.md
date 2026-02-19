@@ -242,6 +242,12 @@ Explore Azure Services from an SRE Perspective
 <a href="{{ '/azureservices/Azure AI Services/' | relative_url }}">Open Module</a>
 </div>
 
+<div class="azure-tile">
+  <h3>🔹Azure Digital Twins</h3>
+  <p>A Cloud platform service that lets you create live digital replicas of environments and systems</p>
+  <a href="{{ '/azureservices/Azure Digital Twin/' | relative_url }}">Open Module</a>
+</div>
+
 </div>
 
 <p style="margin-top:16px;">
