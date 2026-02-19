@@ -107,10 +107,19 @@ Site Reliability Engineering and Kusto Query Language on Azure.
   <div class="course-card" onclick="showCourse('kql')">
     <h3>📊 KQL for Observability</h3>
     <p>
-      Master Kusto Query Language for logs, metrics,
+      Learn Kusto Query Language for logs, metrics,
       time-series analysis, alerts, and incident response.
     </p>
   </div>
+
+  <div class="course-card" onclick="showCourse('dtdl')">
+  <h3>🏗️ Azure Digital Twins & DTDL</h3>
+  <p>
+    Learn Digital Twin modeling, DTDL architecture, graph relationships,
+    and production-ready system modeling from beginner to architect level.
+  </p>
+</div>
+
 
 </div>
 
@@ -234,11 +243,84 @@ Site Reliability Engineering and Kusto Query Language on Azure.
 </div>
 </div>
 
+<!-- ================= DTDL COURSE ================= -->
+
+<div id="dtdl-course" class="hidden">
+
+<h2>Azure Digital Twins & DTDL — Course Modules</h2>
+
+<div class="course-tiles">
+
+  <div class="course-tile">
+    <h3>Module 1</h3>
+    <p>Digital Twin Thinking & Architecture</p>
+    <a href="{{ "/dtdl-course/Module-1-Digital-Twin-Thinking/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 2</h3>
+    <p>DTDL Fundamentals & Structure</p>
+    <a href="{{ "/dtdl-course/Module-2-DTDL-Fundamentals/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 3</h3>
+    <p>Properties vs Telemetry Deep Dive</p>
+    <a href="{{ "/dtdl-course/Module-3-Properties-Telemetry/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 4</h3>
+    <p>Relationships & Graph Modeling</p>
+    <a href="{{ "/dtdl-course/Module-4-Relationships-Graph/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 5</h3>
+    <p>Inheritance, Components & Advanced Modeling</p>
+    <a href="{{ "/dtdl-course/Module-5-Advanced-Modeling/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 6</h3>
+    <p>Schema Types, Enums & Complex Models</p>
+    <a href="{{ "/dtdl-course/Module-6-Schemas-DeepDive/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 7</h3>
+    <p>Real-World Smart Factory Case Study</p>
+    <a href="{{ "/dtdl-course/Module-7-Case-Study/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 8</h3>
+    <p>Production Best Practices & Architecture Patterns</p>
+    <a href="{{ "/dtdl-course/Module-8-Best-Practices/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 9</h3>
+    <p>Hands-On Labs & Model Deployment</p>
+    <a href="{{ "/dtdl-course/Module-9-Hands-On-Labs/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 10</h3>
+    <p>Capstone Project & Interview Prep</p>
+    <a href="{{ "/dtdl-course/Module-10-Capstone/" | relative_url }}">Open module</a>
+  </div>
+
+</div>
+</div>
+
 <script>
 function showCourse(course) {
   document.getElementById('sre-course').classList.add('hidden');
   document.getElementById('kql-course').classList.add('hidden');
+  document.getElementById('dtdl-course').classList.add('hidden');
 
   document.getElementById(course + '-course').classList.remove('hidden');
 }
 </script>
+
