@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Why SREs Need to Understand Networking
-permalink: /blogs/SREBlogs/
+title: "Why SREs Need to Understand Networking"
+date: 2026-02-10
+categories: [SRE]
 ---
 
 <style>
