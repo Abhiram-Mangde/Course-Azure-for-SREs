@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Why SRE, PowerShell, and AI Integration is the Future of IT Operations
-permalink: /blogs/PowerShellBlogs/
+title: "Why SREs Need to Understand Networking"
+date: 2026-02-01
+categories: [SRE]
 ---
 
 <style>

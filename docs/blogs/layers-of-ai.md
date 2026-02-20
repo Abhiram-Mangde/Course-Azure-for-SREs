@@ -1,7 +1,9 @@
 ---
-layout: page
-title: The 5 Layers of AI A Simple Framework to Understand How AI Really Works
-permalink: /blogs/AI/
+layout: default
+title: "Layers of AI"
+date: 2026-02-15
+categories: [AI]
+description: "A simple framework to understand how AI really works."
 ---
 
 # The 5 Layers of AI A Simple Framework to Understand How AI Really Works
