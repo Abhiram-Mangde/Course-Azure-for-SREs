@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Layers of AI"
 date: 2026-02-15
 categories: [AI]
