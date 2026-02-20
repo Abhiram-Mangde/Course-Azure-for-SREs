@@ -41,22 +41,23 @@ permalink: /blog/
 
 <div class="blog-tiles">
 
-<div class="blog-tile">
-<h3>Why SREs Need to Understand Networking</h3>
-<p>Networking is the backbone of reliability. Learn why every SRE must master it in Azure.</p>
-<a href="{{ "/blogs/SREBlogs/" | relative_url }}">Read article</a>
-</div>
+{% assign blog_pages = site.pages | where_exp: "page", "page.path contains 'blogs/'" %}
+{% assign blog_pages = blog_pages | sort: "date" | reverse %}
 
-<div class="blog-tile">
-<h3>Why SRE, PowerShell, and AI Integration is the Future of IT Operations</h3>
-<p>How PowerShell and AI are transforming reliability engineering and automation.</p>
-<a href="{{ "/blogs/PowerShellBlogs/" | relative_url }}">Read article</a>
-</div>
+{% for page in blog_pages %}
+  <div class="blog-tile">
+    <h3>{{ page.title }}</h3>
 
-<div class="blog-tile">
-<h3>5 Layers of AI</h3>
-<p>A Simple Framework to Understand How AI Really Works.</p>
-<a href="{{ "/blogs/AI/" | relative_url }}">Read article</a>
-</div>
+    <p>
+      {% if page.description %}
+        {{ page.description }}
+      {% else %}
+        {{ page.excerpt | strip_html | truncate: 120 }}
+      {% endif %}
+    </p>
+
+    <a href="{{ page.url | relative_url }}">Read article</a>
+  </div>
+{% endfor %}
 
 </div>
