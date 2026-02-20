@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Why SREs Need to Understand Networking"
+title: "Why SRE, PowerShell, and AI Integration is the Future of IT Operations"
 date: 2026-02-01
 categories: [SRE]
 ---
