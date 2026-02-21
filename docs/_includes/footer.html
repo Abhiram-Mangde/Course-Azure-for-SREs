@@ -1,56 +1,80 @@
 <!-- ========================= -->
-<!-- MS LEARN STYLE FOOTER -->
+<!-- RESPONSIVE PROFESSIONAL FOOTER -->
 <!-- ========================= -->
+
 <footer class="site-footer">
   <style>
     .site-footer {
       background: #f3f2f1;
       border-top: 1px solid #edebe9;
-      padding: 20px 32px;
-      margin-top: auto;
+      padding: 30px 24px;
       font-size: 0.9rem;
       color: #605e5c;
     }
 
     .footer-container {
+      max-width: 1100px;
+      margin: 0 auto;
       display: flex;
-      justify-content: space-between;  /* Left group + Right group */
+      justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      gap: 12px;
     }
 
     .footer-left {
       display: flex;
       align-items: center;
-      gap: 20px;   /* spacing between ©, Terms, Privacy */
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     .site-footer a {
       color: #0078d4;
       text-decoration: none;
+      transition: 0.2s ease;
     }
 
-    .footer-container p {
-      margin: 0;
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-muted {
+      font-size: 0.85rem;
+      color: #8a8886;
+    }
+
+    /* ===== Tablet ===== */
+    @media (max-width: 1024px) {
+      .site-footer {
+        padding: 24px 20px;
+      }
+    }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
     }
   </style>
 
   <div class="footer-container">
-    
-    <!-- LEFT SIDE -->
     <div class="footer-left">
-      <p>© {{ site.time | date: '%Y' }} Azure for SREs</p>
-      <a href="{{ "/terms" | relative_url }}">Terms</a>
-      <a href="{{ "/privacy" | relative_url }}">Privacy</a>
+      <span class="footer-muted">
+        © 2025 Azure for SREs
+      </span>
+      <a href="{{ '/terms' | relative_url }}">Terms</a>
+      <a href="{{ '/privacy' | relative_url }}">Privacy</a>
     </div>
 
-    <!-- RIGHT SIDE -->
-    <p>
+    <span class="footer-muted">
       Built by 
       <a href="https://in.linkedin.com/in/abhiram-mangde-759b3a20b" target="_blank">
         Abhiram Mangde
       </a>
-    </p>
-
+    </span>
   </div>
 </footer>
