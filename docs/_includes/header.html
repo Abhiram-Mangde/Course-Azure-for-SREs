@@ -1,86 +1,77 @@
 <!-- ========================= -->
-<!-- MS LEARN STYLE HEADER -->
+<!-- RESPONSIVE PROFESSIONAL HEADER -->
 <!-- ========================= -->
+
 <header class="site-header">
   <style>
-    /* MS Learn uses clean white headers */
     .site-header {
       background: #ffffff;
       border-bottom: 1px solid #edebe9;
-      padding: 12px 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    /* Azure Logo Section */
-    .site-header h1 {
-      margin: 0;
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #0078d4; /* Azure blue */
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 24px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
     }
-    
-    .site-header h1 img {
-      height: 30px; /* Adjust logo size */
-      margin-right: 10px;
+
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #0078d4;
+      text-decoration: none;
+      letter-spacing: -0.3px;
     }
 
-    /* Navigation links */
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 24px;
       align-items: center;
     }
 
     .nav-links a {
       text-decoration: none;
       color: #323130;
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 500;
+      padding: 6px 0;
       position: relative;
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
       color: #0078d4;
     }
 
-    /* Active Link Styling */
-    .nav-links a.active {
-      color: #005a9e; /* Darker blue for active link */
-    }
-
-    /* Adding underline on hover */
-    .nav-links a:hover::after {
-      content: '';
+    /* Animated underline */
+    .nav-links a::after {
+      content: "";
       position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: -4px;
       left: 0;
-      background-color: #0078d4;
+      bottom: -6px;
+      width: 0%;
+      height: 2px;
+      background: #0078d4;
+      transition: width 0.25s ease;
     }
 
-    /* Call to Action (CTA) Buttons */
-    .cta-button {
-      background-color: #0078d4;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 20px;
-      font-weight: bold;
-      text-decoration: none;
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
     }
 
-    .cta-button:hover {
-      background-color: #005a9e;
+    .nav-links a.active {
+      color: #005a9e;
+      font-weight: 600;
     }
 
-    /* Hamburger menu (mobile screens) */
+    /* Hamburger */
     .hamburger {
       display: none;
       flex-direction: column;
@@ -94,60 +85,61 @@
       background-color: #0078d4;
     }
 
-    /* Mobile responsiveness */
-    @media screen and (max-width: 768px) {
-      .site-header {
-        padding: 12px 16px;
+    /* ===== Tablet ===== */
+    @media (max-width: 1024px) {
+      .header-container {
+        padding: 12px 20px;
       }
+    }
 
+    /* ===== Mobile ===== */
+    @media (max-width: 768px) {
       .nav-links {
         display: none;
         flex-direction: column;
-        gap: 15px;
         position: absolute;
         top: 60px;
         right: 20px;
         background: white;
         padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .hamburger {
-        display: flex;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        gap: 16px;
       }
 
       .nav-links.active {
         display: flex;
       }
+
+      .hamburger {
+        display: flex;
+      }
     }
   </style>
 
-  <!-- Header Section -->
-  <h1>
-    Azure for SRE
-  </h1>
+  <div class="header-container">
+    <a href="{{ '/' | relative_url }}" class="site-title">
+      Azure for SRE
+    </a>
 
-  <!-- Top navigation like Microsoft Learn -->
-  <nav class="nav-links">
-    <a href="{{ "/" | relative_url }}" class="active">Home</a>
-    <a href="{{ "/course" | relative_url }}">Course</a>
-    <a href="{{ "/blogs" | relative_url }}">Blogs</a>
-    <a href="{{ "/casestudy" | relative_url }}">Case Studies</a>
-    <a href="{{ "/azureservices" | relative_url }}">Azure Services Hub</a>
-    <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions" target="_blank">Community</a>
-  </nav>
+    <nav class="nav-links">
+      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+      <a href="{{ '/course' | relative_url }}" class="{% if page.url contains 'course' %}active{% endif %}">Course</a>
+      <a href="{{ '/blogs' | relative_url }}" class="{% if page.url contains 'blogs' %}active{% endif %}">Blogs</a>
+      <a href="{{ '/casestudy' | relative_url }}" class="{% if page.url contains 'casestudy' %}active{% endif %}">Case Studies</a>
+      <a href="{{ '/azureservices' | relative_url }}" class="{% if page.url contains 'azureservices' %}active{% endif %}">Azure Hub</a>
+      <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions" target="_blank">Community</a>
+    </nav>
 
-  <!-- Hamburger Icon for mobile -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </header>
 
 <script>
-  // Function to toggle the mobile menu
   function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
