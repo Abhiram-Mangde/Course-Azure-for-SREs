@@ -6,14 +6,20 @@ permissions:
 on:
   push: # Name of the GitHub Actions workflow
     paths:
-      - '**/*' # Run the workflow for changes to any file
+      # - '**/*' # Run the workflow for changes to any file
+      - 'docs/**/*.md'
+      - 'scripts/**/*.js'
+      - '.github/workflows/**'
   pull_request:
     paths:
-      - '**/*'
+      # - '**/*'
+      - 'docs/**/*.md'
+      - 'scripts/**/*.js'
+      - '.github/workflows/**'
 
 jobs:
   content-checks:
-    name: CI - Content Quality & Validation
+    name: CI - Content Quality & Knowledge Generation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -53,6 +59,16 @@ jobs:
           python Sample-ProjectFiles/scripts/validate_structure.py
           python Sample-ProjectFiles/scripts/access_secrets_keyvault_script.py
         continue-on-error: true
+
+      - name: Generate Knowledge Base # Generate a knowledge base from the content using a custom script
+        run: |
+          node scripts/generate-knowledge.js
+
+      - name: Upload knowledge.json artifact # Upload as Artifact (Build Output)
+        uses: actions/upload-artifact@v4
+        with:
+          name: knowledge-base
+          path: docs/knowledge.json
 
       - name: Generate Markdown Report
         run: |
