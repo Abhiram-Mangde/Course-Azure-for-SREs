@@ -2,7 +2,7 @@ name: Course Content CD
 
 on:
   workflow_run:
-    workflows: ["Course Content CI/CD"]
+    workflows: ["Course Content CI"]
     types:
       - completed
 
