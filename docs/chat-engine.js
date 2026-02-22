@@ -13,7 +13,7 @@ class KnowledgeEngine {
 
   async init() {
     try {
-      const response = await fetch("/knowledge.json");
+      const response = await fetch("docs/knowledge.json");
       this.knowledgeBase = await response.json();
       this.loaded = true;
     } catch (error) {
