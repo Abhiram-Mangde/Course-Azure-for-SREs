@@ -125,7 +125,6 @@ For Site Reliability Engineers, reliability lives in how packets move.
 <div class="fade-in">
 
 Every production system depends on:
-
 - DNS resolution  
 - Service-to-service communication  
 - Load balancers  
