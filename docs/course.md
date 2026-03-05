@@ -118,8 +118,16 @@ Site Reliability Engineering and Kusto Query Language on Azure.
     Learn Digital Twin modeling, DTDL architecture, graph relationships,
     and production-ready system modeling from beginner to architect level.
   </p>
-</div>
+  </div>
 
+  <div class="course-card" onclick="showCourse('rag')">
+  <h3>🤖 Retrieval Augmented Generation (RAG)</h3>
+  <p>
+    Learn how modern AI assistants work by combining LLMs with
+    external knowledge. Build RAG systems from fundamentals to
+    production-ready architectures.
+  </p>
+  </div>
 
 </div>
 
@@ -314,11 +322,107 @@ Site Reliability Engineering and Kusto Query Language on Azure.
 </div>
 </div>
 
+<!-- ================= RAG COURSE ================= -->
+
+<div id="rag-course" class="hidden">
+
+<h2>Retrieval Augmented Generation (RAG) — Course Modules</h2>
+
+<div class="course-tiles">
+
+  <div class="course-tile">
+    <h3>Module 1</h3>
+    <p>Introduction to Retrieval Augmented Generation</p>
+    <a href="{{ "/rag-course/Module-1-Introduction-to-RAG/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 2</h3>
+    <p>Language Models and Their Limitations</p>
+    <a href="{{ "/rag-course/Module-2-Language-Models-and-Limitations/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 3</h3>
+    <p>The Knowledge Retrieval Problem</p>
+    <a href="{{ "/rag-course/Module-3-Knowledge-Retrieval-Problem/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 4</h3>
+    <p>Embeddings and Vector Representations</p>
+    <a href="{{ "/rag-course/Module-4-Embeddings/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 5</h3>
+    <p>Vector Similarity and Search</p>
+    <a href="{{ "/rag-course/Module-5-Vector-Similarity/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 6</h3>
+    <p>Vector Databases</p>
+    <a href="{{ "/rag-course/Module-6-Vector-Databases/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 7</h3>
+    <p>Chunking Strategies for Documents</p>
+    <a href="{{ "/rag-course/Module-7-Chunking-Strategies/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 8</h3>
+    <p>RAG Architecture</p>
+    <a href="{{ "/rag-course/Module-8-RAG-Architecture/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 9</h3>
+    <p>Building a Basic RAG System</p>
+    <a href="{{ "/rag-course/Module-9-Basic-RAG-System/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 10</h3>
+    <p>Advanced RAG Techniques</p>
+    <a href="{{ "/rag-course/Module-10-Advanced-RAG-Techniques/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 11</h3>
+    <p>Building Production RAG Systems</p>
+    <a href="{{ "/rag-course/Module-11-Building-Production-RAG-System/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 12</h3>
+    <p>Evaluating and Improving RAG Systems</p>
+    <a href="{{ "/rag-course/Module-12-Evaluating-and-Improving-RAG-Systems/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 13</h3>
+    <p>Industry RAG Architectures and Design Patterns</p>
+    <a href="{{ "/rag-course/Module-13-Industry-RAG-Architectures/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 14</h3>
+    <p>End-to-End RAG Project</p>
+    <a href="{{ "/rag-course/Module-14-End-to-End-RAG-Project/" | relative_url }}">Open module</a>
+  </div>
+
+</div>
+</div>
+
 <script>
 function showCourse(course) {
   document.getElementById('sre-course').classList.add('hidden');
   document.getElementById('kql-course').classList.add('hidden');
   document.getElementById('dtdl-course').classList.add('hidden');
+  document.getElementById('rag-course').classList.add('hidden');
 
   document.getElementById(course + '-course').classList.remove('hidden');
 }
