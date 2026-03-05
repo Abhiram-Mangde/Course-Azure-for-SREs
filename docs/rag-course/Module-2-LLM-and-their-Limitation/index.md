@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 2 - Language Models and Their Limitations
-permalink: /rag-course/Module-2-LLM-and-their-Limitation
+permalink: /rag-course/Module-2-LLM-and-their-Limitation/
 ---
 
 # Language Models and Their Limitations

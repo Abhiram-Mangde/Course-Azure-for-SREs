@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 3 - The Knowledge Retrieval Problem
-permalink: /rag-course/Module-3-The-Knowledge-Retrieval-Problem
+permalink: /rag-course/Module-3-The-Knowledge-Retrieval-Problem/
 ---
 
 # The Knowledge Retrieval Problem

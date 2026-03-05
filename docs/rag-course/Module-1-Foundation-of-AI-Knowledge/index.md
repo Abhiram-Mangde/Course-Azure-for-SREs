@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 1 - Foundation of AI Knowledge
-permalink: /rag-course/Module-1-Foundation-of-AI-Knowledge
+permalink: /rag-course/Module-1-Foundation-of-AI-Knowledge/
 ---
 
 # Foundations of AI Knowledge

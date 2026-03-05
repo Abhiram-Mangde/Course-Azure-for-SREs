@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 14 - End to End RAG Project
-permalink: /rag-course/Module-14-End-to-End-RAG-Project
+permalink: /rag-course/Module-14-End-to-End-RAG-Project/
 ---
 
 # End-to-End RAG Project

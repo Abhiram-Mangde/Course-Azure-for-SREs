@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 6 - Vector Databases
-permalink: /rag-course/Module-6-Vector-Databases
+permalink: /rag-course/Module-6-Vector-Databases/
 ---
 
 # Vector Databases

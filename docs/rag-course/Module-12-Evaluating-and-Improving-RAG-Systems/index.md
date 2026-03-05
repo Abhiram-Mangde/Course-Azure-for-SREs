@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 12 - Evaluating and Improving RAG Systems
-permalink: /rag-course/Module-12-Evaluating-and-Improving-RAG-Systems
+permalink: /rag-course/Module-12-Evaluating-and-Improving-RAG-Systems/
 ---
 
 # Evaluating and Improving RAG Systems
