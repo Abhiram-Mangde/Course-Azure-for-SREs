@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 11 - Building a Production Ready RAG System
-permalink: /rag-course/Module-11-Building-Production-RAG-System
+permalink: /rag-course/Module-11-Building-Production-RAG-System/
 ---
 
 # Building a Production Ready RAG System

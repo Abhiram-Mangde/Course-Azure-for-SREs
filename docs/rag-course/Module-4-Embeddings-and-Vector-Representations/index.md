@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 4 - Embeddings and Vector Representations
-permalink: /rag-course/Module-4-Embeddings-and-Vector-Representations
+permalink: /rag-course/Module-4-Embeddings-and-Vector-Representations/
 ---
 
 # Embeddings and Vector Representations

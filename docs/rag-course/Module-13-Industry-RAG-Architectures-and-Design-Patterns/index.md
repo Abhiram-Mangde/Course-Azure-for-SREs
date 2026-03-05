@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 13 - Industry RAG Architectures and Design Patterns
-permalink: /rag-course/Module-13-Industry-RAG-Architectures-and-Design-Patterns
+permalink: /rag-course/Module-13-Industry-RAG-Architectures-and-Design-Patterns/
 ---
 
 # Industry RAG Architectures and Design Patterns

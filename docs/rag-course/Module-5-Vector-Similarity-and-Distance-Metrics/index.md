@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 5 - Vector Similarity and Distance Metrics
-permalink: /rag-course/Module-5-Vector-Similarity-and-Distance-Metrics
+permalink: /rag-course/Module-5-Vector-Similarity-and-Distance-Metrics/
 ---
 
 # Vector Similarity and Distance Metrics

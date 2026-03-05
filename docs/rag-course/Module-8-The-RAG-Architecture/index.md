@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 8 - The RAG Architecture
-permalink: /rag-course/Module-8-The-RAG-Architecture
+permalink: /rag-course/Module-8-The-RAG-Architecture/
 ---
 
 # The RAG Architecture

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Module 9 - Building a Basic RAG System
-permalink: /rag-course/Module-9-Building-a-Basic-RAG-System
+permalink: /rag-course/Module-9-Building-a-Basic-RAG-System/
 ---
 
 # Building a Basic RAG System
