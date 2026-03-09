@@ -148,6 +148,12 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
   <a href="{{ '/azureservices/Azure Digital Twin/' | relative_url }}">Explore →</a>
 </div>
 
+<div class="service-card">
+  <h3>🔹Azure Logic App</h3>
+  <p>Azure Logic Apps is a cloud service that helps automate workflows and integrate different systems without writing much code.</p>
+  <a href="{{ '/azureservices/Azure Logic App/' | relative_url }}">Explore →</a>
+</div>
+
 </div>
 
 <script>

@@ -248,6 +248,12 @@ Explore Azure Services from an SRE Perspective
   <a href="{{ '/azureservices/Azure Digital Twin/' | relative_url }}">Open Module</a>
 </div>
 
+<div class="azure-tile">
+  <h3>🔹Azure Logic App</h3>
+  <p>Azure Logic Apps is a cloud service that helps automate workflows and integrate different systems without writing much code</p>
+  <a href="{{ '/azureservices/Azure Logic App/' | relative_url }}">Open Module</a>
+</div>
+
 </div>
 
 <p style="margin-top:16px;">
