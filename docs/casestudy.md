@@ -65,4 +65,10 @@ permalink: /casestudy/
 <a href="{{ "/casestudy/Microsoft Azure/" | relative_url }}">Read case study</a>
 </div>
 
+<div class="case-tile">
+<h3>Migration from Public Azure Cloud to Private Azure Cloud</h3>
+<p>How migration helped a Financial Company to better growth</p>
+<a href="{{ "/casestudy/Cloud Migration/" | relative_url }}">Read case study</a>
+</div>
+
 </div>
