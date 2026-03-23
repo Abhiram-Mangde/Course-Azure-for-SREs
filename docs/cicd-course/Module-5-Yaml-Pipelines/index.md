@@ -49,3 +49,45 @@ trigger:
 ```
 
 > YAML is indentation-sensitive 
+
+## 3. YAML Pipeline Structure
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  appName: 'my-app'
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    steps:
+    - script: echo "Building..."
+```
+
+### Components
+
+- **trigger**: `Defines when pipeline runs`
+- **pool** : `Defines infrastructure (VM)`
+- **variables** : `Store reusable values`
+- **stages** : `High-level phases (Build, Deploy)`
+- **jobs** : `Logical grouping of steps`
+- **steps** : `Actual tasks`
+
+## Best Practices
+- Keep YAML clean and readable
+- Use templates
+- Use variables
+- Avoid duplication
+- Validate before commit
+
+## Summary
+- YAML pipelines = CI/CD as code
+- Structured into stages, jobs, steps
+- Variables and templates improve efficiency
+- Security is critical
