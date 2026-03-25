@@ -129,6 +129,13 @@ Site Reliability Engineering and Kusto Query Language on Azure.
   </p>
   </div>
 
+  <div class="course-card" onclick="showCourse('cicd')">
+  <h3>CI/CD Pipelines</h3>
+  <p>
+    Learn how to automate and deploy your application via pipelines.
+  </p>
+  </div>
+
 </div>
 
 ---
@@ -417,12 +424,54 @@ Site Reliability Engineering and Kusto Query Language on Azure.
 </div>
 </div>
 
+<!-- ================= CI/CD ================= -->
+
+<div id="cicd-course" class="hidden">
+
+<h2>CI/CD Pipelines</h2>
+
+<div class="course-tiles">
+
+  <div class="course-tile">
+    <h3>Module 1</h3>
+    <p>Course Overview</p>
+    <a href="{{ "/cicd-course/Module-1-Course-Overview/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 2</h3>
+    <p>DevOps Foundation</p>
+    <a href="{{ "/cicd-course/Module-2-DevOps-Foundation/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 3</h3>
+    <p>Continuous Integration</p>
+    <a href="{{ "/cicd-course/Module-3-Continuous-Integration/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 4</h3>
+    <p>Continuous Delivery & Deployment</p>
+    <a href="{{ "/cicd-course/Module-4-Continuous-Delivery-Deployment/" | relative_url }}">Open module</a>
+  </div>
+
+  <div class="course-tile">
+    <h3>Module 5</h3>
+    <p>YAML Pipelines</p>
+    <a href="{{ "/cicd-course/Module-5-Yaml-Pipeline/" | relative_url }}">Open module</a>
+  </div>
+
+</div>
+</div>
+
 <script>
 function showCourse(course) {
   document.getElementById('sre-course').classList.add('hidden');
   document.getElementById('kql-course').classList.add('hidden');
   document.getElementById('dtdl-course').classList.add('hidden');
   document.getElementById('rag-course').classList.add('hidden');
+  document.getElementById('cicd-course').classList.add('hidden');
 
   document.getElementById(course + '-course').classList.remove('hidden');
 }
