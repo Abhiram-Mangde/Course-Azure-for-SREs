@@ -254,6 +254,12 @@ Explore Azure Services from an SRE Perspective
   <a href="{{ '/azureservices/Azure Logic App/' | relative_url }}">Open Module</a>
 </div>
 
+<div class="azure-tile">
+  <h3>🔹Azure Migrate</h3>
+  <p>A centralized hub that helps organizations discover, assess, and migrate on-premises workloads (VMs, databases, applications) to Azure, along with cost estimation and post-migration optimization.</p>
+  <a href="{{ '/azureservices/Azure Migrate/' | relative_url }}">Open Module</a>
+</div>
+
 </div>
 
 <p style="margin-top:16px;">
