@@ -71,4 +71,10 @@ permalink: /casestudy/
 <a href="{{ "/casestudy/Cloud Migration/" | relative_url }}">Read case study</a>
 </div>
 
+<div class="case-tile">
+<h3>Migration from AWS to Azure</h3>
+<p>HMigration of SAP ECC from AWS to Azure with S/4HANA Transformation</p>
+<a href="{{ "/casestudy/SAP Migration/" | relative_url }}">Read case study</a>
+</div>
+
 </div>
