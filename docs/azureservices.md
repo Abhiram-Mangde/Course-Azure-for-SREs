@@ -149,15 +149,21 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
 </div>
 
 <div class="service-card">
-  <h3>🔹Azure Logic App</h3>
+  <h3>🧠 Azure Logic App</h3>
   <p>Azure Logic Apps is a cloud service that helps automate workflows and integrate different systems without writing much code.</p>
   <a href="{{ '/azureservices/Azure Logic App/' | relative_url }}">Explore →</a>
 </div>
 
 <div class="service-card">
-  <h3>🧠 Azure Migration</h3>
+  <h3>🎯 Azure Migration</h3>
   <p>A centralized hub that helps organizations discover, assess, and migrate on-premises workloads (VMs, databases, applications) to Azure, along with cost estimation and post-migration optimization.</p>
   <a href="{{ '/azureservices/Azure Migrate/' | relative_url }}">Explore →</a>
+</div>
+
+<div class="service-card">
+  <h3>🌐 Azure Virtual Network</h3>
+  <p>a Virtual Network (VNet) is the foundation of all networking.</p>
+  <a href="{{ '/azureservices/Azure Virtual Network/' | relative_url }}">Explore →</a>
 </div>
 
 </div>
