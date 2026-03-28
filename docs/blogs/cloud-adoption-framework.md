@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Cloud Adoption Framework"
-date: 2026-03-5
+date: 2026-03-05
 categories: [Cloud]
 description: "CAF is a roadmap that helps you move from on-premises to cloud in a structured, secure, and scalable way."
 ---
@@ -140,4 +140,3 @@ Let’s say a company wants to move its **E-commerce Application** to cloud:
 | Ready    | Prepare house   |
 | Adopt    | Move in         |
 | Govern   | Live & maintain |
----
