@@ -41,22 +41,22 @@ permalink: /blogs/
 
 <div class="blog-tiles">
 
-{% assign blog_pages = site.pages | where: "dir", "/blogs/" %}
+{% assign blog_pages = site.pages | where_exp: "page", "page.path contains 'blogs/'" %}
 {% assign blog_pages = blog_pages | sort: "date" | reverse %}
 
-{% for post in blog_pages %}
+{% for page in blog_pages %}
   <div class="blog-tile">
-    <h3>{{ post.title }}</h3>
+    <h3>{{ page.title }}</h3>
 
     <p>
-      {% if post.description %}
-        {{ post.description }}
+      {% if page.description %}
+        {{ page.description }}
       {% else %}
-        {{ post.excerpt | strip_html | truncate: 120 }}
+        {{ [page].excerpt | strip_html | truncate: 120 }}
       {% endif %}
     </p>
 
-    <a href="{{ post.url | relative_url }}">Read article</a>
+    <a href="{{ page.url | relative_url }}">Read article</a>
   </div>
 {% endfor %}
 
