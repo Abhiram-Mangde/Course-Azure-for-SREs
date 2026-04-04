@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Case Study - Migration of SAP ECC from AWS to Azure with S/4HANA Transformation
+title: "Case Study - Migration of SAP ECC from AWS to Azure with S/4HANA Transformation"
+date: 2026-02-25
+categories: [CaseStudy]
+description: "A global enterprise running SAP ECC on AWS aimed to modernize its ERP platform by migrating to SAP S/4HANA while also transitioning to Microsoft Azure. Using Azure Migrate, the organization executed a phased migration strategy, ensuring minimal downtime, optimized cost, and reduced risk."
 ---
 
 # Migration of SAP ECC from AWS to Azure with S/4HANA Transformation

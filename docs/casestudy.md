@@ -5,10 +5,6 @@ permalink: /casestudy/
 ---
 
 <style>
-/* ============================= */
-/* MS LEARN – CASE STUDIES */
-/* ============================= */
-
 .case-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -41,40 +37,25 @@ permalink: /casestudy/
 
 <div class="case-tiles">
 
-<div class="case-tile">
-<h3>High Availability in Azure</h3>
-<p>How a retail company achieved 99.99% uptime during seasonal traffic spikes.</p>
-<a href="{{ "/casestudy/High-Availability/" | relative_url }}">Read case study</a>
-</div>
+{% assign case_pages = site.pages | where_exp: "page", "page.path contains 'casestudy/'" %}
+{% assign case_pages = case_pages | sort: "date" | reverse %}
 
-<div class="case-tile">
-<h3>Analysis Microsoft Stock</h3>
-<p>Understanding Microsoft Stock Through Technology, Business & Markets</p>
-<a href="{{ "/casestudy/Analysis Microsoft Stock/" | relative_url }}">Read case study</a>
-</div>
+{% for page in case_pages %}
+  {% unless page.url == "/casestudy/" %}
+  <div class="case-tile">
+    <h3>{{ page.title }}</h3>
 
-<div class="case-tile">
-<h3>Reliability During Traffic</h3>
-<p>Building Reliability During Traffic Spikes Using SRE Principles on Azure</p>
-<a href="{{ "/casestudy/Reliability During Traffic/" | relative_url }}">Read case study</a>
-</div>
+    <p>
+      {% if page.description %}
+        {{ page.description }}
+      {% else %}
+        {{ page.excerpt | strip_html | truncate: 120 }}
+      {% endif %}
+    </p>
 
-<div class="case-tile">
-<h3>Why NSG and ASG Are Important for VM Optimization</h3>
-<p>Optimizing Virtual Machine Security and Performance Using NSG and ASG on Azure</p>
-<a href="{{ "/casestudy/Microsoft Azure/" | relative_url }}">Read case study</a>
-</div>
-
-<div class="case-tile">
-<h3>Migration from Public Azure Cloud to Private Azure Cloud</h3>
-<p>How migration helped a Financial Company to better growth</p>
-<a href="{{ "/casestudy/Cloud Migration/" | relative_url }}">Read case study</a>
-</div>
-
-<div class="case-tile">
-<h3>Migration from AWS to Azure</h3>
-<p>HMigration of SAP ECC from AWS to Azure with S/4HANA Transformation</p>
-<a href="{{ "/casestudy/SAP Migration/" | relative_url }}">Read case study</a>
-</div>
+    <a href="{{ page.url | relative_url }}">Read case study</a>
+  </div>
+  {% endunless %}
+{% endfor %}
 
 </div>

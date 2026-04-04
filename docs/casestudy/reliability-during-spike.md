@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Case Study – Building Reliability During Traffic Spikes Using SRE Principles on Azure
+title: "Case Study - Building Reliability During Traffic Spikes Using SRE Principles on Azure"
+date: 2026-02-20
+categories: [CaseStudy]
+description: "A mid-sized product company operates a customer-facing web application hosted on Microsoft Azure.The application supports approximately 50,000 daily active users and experiences traffic peaks during **business hours and marketing campaigns"
 ---
 
 # Building Reliability During Traffic Spikes Using SRE Principles on Azure
@@ -14,7 +17,6 @@ During a major marketing campaign, the system failed to handle a sudden surge in
 
 ## Existing Azure Architecture
 The application is built on the following Azure services:
-
 - Azure Application Gateway (WAF enabled)
 - Azure App Service (Web API layer)
 - Azure SQL Database
