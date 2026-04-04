@@ -1,16 +1,17 @@
 ---
 layout: page
-title: Case Study – High Availability in Azure
+title: "Case Study - Building High Availability in Azure During Traffic Spikes"
+date: 2026-02-10
+categories: [CaseStudy]
+description: "A retail company needed to ensure their e-commerce site remained available during seasonal traffic spikes."
 ---
 
 # Case Study: Building High Availability in Azure During Traffic Spikes
-**Scenario:** A retail company needed to ensure their e-commerce site remained available during seasonal traffic spikes. 
 
-**Challenge:** Sudden surges in traffic caused downtime and poor customer experience.  
-
-**Solution:** Implemented Azure Load Balancer and Traffic Manager across multiple regions.
-
-**Outcome:** Achieved 99.99% uptime during peak sales.
+- **Scenario:** A retail company needed to ensure their e-commerce site remained available during seasonal traffic spikes. 
+- **Challenge:** Sudden surges in traffic caused downtime and poor customer experience.  
+- **Solution:** Implemented Azure Load Balancer and Traffic Manager across multiple regions.
+- **Outcome:** Achieved 99.99% uptime during peak sales.
 
 
 ## Introduction

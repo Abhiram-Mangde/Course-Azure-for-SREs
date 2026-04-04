@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Understanding Microsoft Stock Through Technology, Business & Markets
+title: "Case Study - Understanding Microsoft Stock Through Technology, Business & Markets"
+date: 2026-02-01
+categories: [CaseStudy]
+description: "A capital markets professional wanted to understand whether Microsoft is a strong long-term equity candidate (1–2 years horizon)."
 ---
 
 # Understanding Microsoft Stock Through Technology, Business & Markets
 
 ## THE CHALLENGE (Problem Statement)
-
 A capital markets professional wanted to understand whether Microsoft is a strong long-term equity candidate (1–2 years horizon). The challenge was not prediction, but education:
 - How does Microsoft actually make money?
 - How sustainable is its growth?

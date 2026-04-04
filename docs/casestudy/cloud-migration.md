@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Case Study – Migration from Public Azure Cloud to Private Azure Cloud
+title: "Case Study – Migration from Public Azure Cloud to Private Azure Cloud"
+date: 2026-02-05
+categories: [CaseStudy]
+description: "Public cloud multi-tenant environments were considered higher risk for regulatory audits"
 ---
 
 # Migration from Public Azure Cloud to Private Azure Cloud

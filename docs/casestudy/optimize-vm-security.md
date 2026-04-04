@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Case Study – Optimizing Virtual Machine Security and Performance Using NSG and ASG on Azure
+title: "Case Study - Optimizing Virtual Machine Security and Performance Using NSG and ASG on Azure"
+date: 2026-02-15
+categories: [CaseStudy]
+description: "A mid-sized enterprise migrated its internal business application and customer portal to Microsoft Azure Virtual Machines."
 ---
 
 # Optimizing Virtual Machine Security and Performance Using NSG and ASG on Azure
