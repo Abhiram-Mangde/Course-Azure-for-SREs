@@ -3,7 +3,7 @@ layout: page
 title: "Case Study - Building Reliability During Traffic Spikes Using SRE Principles on Azure"
 date: 2026-02-20
 categories: [CaseStudy]
-description: "A mid-sized product company operates a customer-facing web application hosted on Microsoft Azure.The application supports approximately 50,000 daily active users and experiences traffic peaks during **business hours and marketing campaigns"
+description: "A mid-sized product company operates a customer-facing web application hosted on Microsoft Azure.The application supports approximately 50,000 daily active users and experiences traffic peaks during business hours and marketing campaigns"
 ---
 
 # Building Reliability During Traffic Spikes Using SRE Principles on Azure
