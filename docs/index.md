@@ -266,6 +266,12 @@ Explore Azure Services from an SRE Perspective
   <a href="{{ '/azureservices/Azure Virtual Network/' | relative_url }}">Open Module</a>
 </div>
 
+<div class="azure-tile">
+  <h3>🟦 Azure IoT Hub</h3>
+  <p>Azure IoT acts as a system that lets physical things talk to the cloud.</p>
+  <a href="{{ '/azureservices/Azure IoT Hub/' | relative_url }}">Open Module</a>
+</div>
+
 </div>
 
 <p style="margin-top:16px;">

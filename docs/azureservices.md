@@ -162,8 +162,14 @@ Each service includes **concepts, real-world use cases, and hands-on labs**.
 
 <div class="service-card">
   <h3>🌐 Azure Virtual Network</h3>
-  <p>a Virtual Network (VNet) is the foundation of all networking.</p>
+  <p>A Virtual Network (VNet) is the foundation of all networking.</p>
   <a href="{{ '/azureservices/Azure Virtual Network/' | relative_url }}">Explore →</a>
+</div>
+
+<div class="service-card">
+  <h3>🟦 Azure IoT Hub</h3>
+  <p>Azure IoT acts as a system that lets physical things talk to the cloud.</p>
+  <a href="{{ '/azureservices/Azure IoT Hub/' | relative_url }}">Explore →</a>
 </div>
 
 </div>
