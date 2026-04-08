@@ -46,25 +46,24 @@ permalink: /azureconcepts/
   border-radius: 8px;
 }
 
-/* Base image styling */
-.mfa-diagram img {
-  max-width: 80%;       /* smaller than full width */
-  margin: 0 auto;
-  display: block;
-  border: 1px solid #edebe9;
-  border-radius: 8px;
-  background: #fff;
-  padding: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-
-/* Responsive container */
 .mfa-diagram {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
+  border: 1px solid #edebe9;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px auto;
+  max-width: 700px;   /* keeps it contained */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
+
+.mfa-diagram img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
 
 /* Mobile optimization */
 @media (max-width: 768px) {
