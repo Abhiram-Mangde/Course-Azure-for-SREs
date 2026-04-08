@@ -66,7 +66,7 @@ Without MFA, if someone stole your password, they could log in. With MFA, theyâ€
 *This diagram illustrates:*
 
 <div class="mfa-diagram">
-  ![Azure MFA Diagram]({{ '/azureconcepts/mfa.png' | relative_url }})
+  <img src="{{ '/azureconcepts/mfa.png' | relative_url }}" alt="Azure MFA Diagram">
 </div>
 
 1. Enter Password â†’ User types username and password.
