@@ -35,6 +35,57 @@ permalink: /azureconcepts/
 .concept-tile a:hover {
   text-decoration: underline;
 }
+
+/* ============================= */
+/* RESPONSIVE IMAGE FIX FOR MFA DIAGRAM */
+/* ============================= */
+
+/* Base image styling */
+.mfa-diagram img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Responsive container */
+.mfa-diagram {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .mfa-diagram img {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .concept-tile {
+    padding: 12px;
+  }
+
+  .concept-tile h3 {
+    font-size: 1.1em;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .mfa-diagram img {
+    width: 100%;
+  }
+
+  .concept-tile {
+    padding: 10px;
+  }
+
+  .concept-tile h3 {
+    font-size: 1em;
+  }
+}
 </style>
 
 # Important Concepts in Azure
