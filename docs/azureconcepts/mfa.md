@@ -65,7 +65,10 @@ Without MFA, if someone stole your password, they could log in. With MFA, they�
 ## MFA Login Flow Diagram  
 *This diagram illustrates:*
 
-![Azure MFA Diagram]({{ '/docs/azureconcepts/mfa.png' | relative_url }})
+<div class="mfa-diagram">
+  ![Azure MFA Diagram]({{ '/docs/azureconcepts/mfa.png' | relative_url }})
+</div>
+
 1. Enter Password → User types username and password.
 2. Verify Second Factor → Options like Authenticator app, SMS/call, or fingerprint/OTP.
 3. Access Granted → Secure access to Azure resources once both checks succeed.

@@ -14,12 +14,14 @@ permalink: /azureconcepts/
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
   margin-top: 20px;
+  overflow: hidden;   /* prevents content from spilling out */
 }
 
 .concept-tile {
   border: 1px solid #edebe9;
   padding: 16px;
   background: #ffffff;
+  overflow: hidden;   /* ensures children stay inside */
 }
 
 .concept-tile h3 {
@@ -36,9 +38,13 @@ permalink: /azureconcepts/
   text-decoration: underline;
 }
 
-/* ============================= */
-/* RESPONSIVE IMAGE FIX FOR MFA DIAGRAM */
-/* ============================= */
+.concept-tile .mfa-diagram img {
+  max-width: 100%;   /* ensures it never exceeds the card */
+  height: auto;      /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
 
 /* Base image styling */
 .mfa-diagram img {
