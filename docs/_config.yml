@@ -1,3 +1,4 @@
 theme: minima
 title: Azure for SREs
 description: Practical Azure & AKS course for Site Reliability Engineers
+baseurl: "/Course-Azure-for-SREs"
