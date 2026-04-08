@@ -48,12 +48,16 @@ permalink: /azureconcepts/
 
 /* Base image styling */
 .mfa-diagram img {
-  max-width: 100%;
-  height: auto;
+  max-width: 80%;       /* smaller than full width */
+  margin: 0 auto;
   display: block;
-  margin: 20px auto;
+  border: 1px solid #edebe9;
   border-radius: 8px;
+  background: #fff;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 
 /* Responsive container */
 .mfa-diagram {
