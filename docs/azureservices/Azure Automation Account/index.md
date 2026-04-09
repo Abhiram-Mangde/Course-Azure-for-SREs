@@ -166,13 +166,13 @@ workflow Restart-MultipleVMs {
 Runbooks often require shared data, credentials, or modules to run securely and consistently. Azure Automation provides a set of Assets to simplify this.
 
 | Asset Type       | Description                                                                |
-| ---------------- | -------------------------------------------------------------------------- |
+| ---              | ---                                                                        |
 | **Variables**    | Store reusable values (e.g., region = "eastus")                            |
 | **Credentials**  | Secure storage for username/password combinations                          |
 | **Certificates** | Used for secure communications and authentication                          |
 | **Connections**  | Store authentication contexts for services like Azure, OMS, or custom APIs |
 | **Modules**      | PowerShell/Python libraries (Az, MSGraph, etc.) available to runbooks      |
----
+
 
 ### Examples: Using Assets in Runbooks
 
@@ -217,12 +217,8 @@ Connect-AzAccount `
 | Hybrid Worker      | Run scripts on on-prem or custom VMs         |
 | Authoring Options  | Portal, VS Code, GitHub, or uploaded script  |
 | Automation Assets  | Variables, credentials, connections, modules |
----
 
----
-
-# 3: Execution and Scheduling in Azure Automation
-
+## 3: Execution and Scheduling in Azure Automation
 Runbooks are only useful if they can be executed reliably and flexibly. This section explains the different ways to **start runbooks**, how to **schedule them**, and how to **manage parameters, errors, and logs**.
 
 ## Runbook Execution Methods
@@ -237,7 +233,6 @@ Azure Automation allows you to trigger runbooks using multiple methods:
 | **Alert Trigger**| Triggered by Azure Monitor or Log Analytics alerts |
 | **Hybrid Worker**| Execute on on-premise or custom VM |
 
----
 
 ### I. Manual Execution
 
@@ -328,10 +323,8 @@ If a runbook needs to interact with on-prem resources or systems not reachable b
 | Error Handling          | Use Try/Catch and write logs            |
 | Job Monitoring          | View status, input, output in portal    |
 | Alerting & Notification | Get alerts via Action Groups or Monitor |
----
----
 
-# 4. Automation Assets
+## 4. Automation Assets
 
 **Automation Assets** are reusable resources in Azure Automation that help you **simplify scripts**, **store shared data securely**, and **manage dependencies** across multiple runbooks.
 
@@ -402,11 +395,8 @@ Modules are PowerShell or Python packages used in your runbooks. Azure Automatio
 | **Certificates** | Authenticate using certs for APIs or services     |
 | **Connections**  | Structured authentication info (e.g., AzureRunAs) |
 | **Modules**      | Libraries used in PowerShell/Python runbooks      |
----
----
 
-# 5. Hybrid Runbook Worker
-
+## 5. Hybrid Runbook Worker
 Not all automation tasks can be done in the cloud. Sometimes, you need to run scripts on **on-premises servers**, **other clouds**, or **restricted environments**. That’s where **Hybrid Runbook Workers** come in.
 
 ## What is a Hybrid Runbook Worker?
@@ -430,10 +420,7 @@ Think of it as a **bridge between Azure and your private environment**.
 | **HRW Agent** | Software that connects your machine to Azure Automation |
 | **Job Runtime** | Billed just like cloud jobs — by execution time |
 
----
-
 ## Installing Hybrid Runbook Worker
-
 ### Requirements:
 - Windows Server 2012 R2 or later (Linux support is via Azure Arc)
 - PowerShell 5.1 or newer
@@ -481,8 +468,6 @@ The runbook will then execute **locally on the VM** instead of in the Azure sand
 | Automate 3rd-party systems | E.g., VMware, file shares, Active Directory |
 | Enforce DSC on local machines | Apply configurations via Azure Automation DSC |
 
----
-
 ## Monitoring and Logging
 
 Hybrid Workers send **job logs** back to Azure, just like cloud jobs.
@@ -519,9 +504,7 @@ In:
 | **Secure** | Supports credential encryption, firewalls, private links |
 | **Ideal for** | On-prem automation, hybrid scenarios, complex jobs |
 
----
-
-# 6. Desired State Configuration (DSC) with Azure Automation
+## 6. Desired State Configuration (DSC) with Azure Automation
 
 **Desired State Configuration (DSC)** is a **declarative configuration management** platform built into PowerShell. When used with **Azure Automation**, it allows you to **define**, **deploy**, and **maintain** consistent configurations on virtual machines (VMs) or servers — whether they are in **Azure**, **on-prem**, or other cloud providers.
 
@@ -580,7 +563,7 @@ InstallIIS
 | -------- | ----------------------------------------------------------------------------------------------- |
 | **Pull** | Nodes check in with Azure periodically to pull and apply the latest configuration (Recommended) |
 | **Push** | Admin pushes the config manually to the node (for testing or one-time use)                      |
----
+
 
 ### Use Cases for DSC
 | Use Case                                 | Why DSC?                                      |
@@ -591,7 +574,6 @@ InstallIIS
 | Configure registry keys                  | Enforce registry settings for compliance      |
 | Install applications via packages        | Use `Package` resource to install software    |
 | Maintain file/folder structures          | Ensure certain files exist or do not exist    |
----
 
 ### Summary
 
@@ -603,6 +585,4 @@ InstallIIS
 | **Pull Model**      | Nodes retrieve config from Azure and report back         |
 | **Compliance**      | Track if a node matches its assigned configuration       |
 | **Use With Hybrid** | Can apply DSC to on-prem VMs or non-Azure environments   |
----
----
 

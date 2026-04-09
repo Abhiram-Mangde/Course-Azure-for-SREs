@@ -46,8 +46,9 @@ If one workload misbehaves → **entire cluster impacted**
 **Reliability Pattern**
 
 Use multiple node pools:
+
 | Node Pool        | Purpose                            |
-| ---------------- | ---------------------------------- |
+| --- | --- |
 | `system`         | Core Kubernetes & Azure components |
 | `app`            | Production workloads               |
 | `spot` / `batch` | Non-critical or batch jobs         |
@@ -134,8 +135,8 @@ Without probes:
 
 **Reliability Pattern**
 
-| Probe     | Purpose                        |
-| --------- | ------------------------------ |
+| Problem     | Purpose                      |
+| ---| --- |
 | Liveness  | Restart broken containers      |
 | Readiness | Stop traffic to unhealthy pods |
 

@@ -4,7 +4,6 @@ title: Azure EntraId
 ---
 
 # Azure Microsoft Entra ID Service
-
 Welcome to the advance part of this course designed to help Site Reliability Engineers (SREs) understand Microsoft Entra ID from scratch to advanced levels. This Service is focused on conceptual clarity, practical examples, and real-world applications.
 
 ## How to Use This Course
@@ -139,7 +138,6 @@ Entra ID Governance is about **managing identities and access in an organized, s
 | Contractor offboards | Lifecycle Workflow | Automatically removes access & disables account |
 | Quarterly review of sensitive groups | Access Review | Managers receive prompt to validate membership |
 | Employee changes department | Lifecycle Workflow | Revokes old access, applies new department access |
----
 
 - **Real-world analogy**:  
   Employees return keys when they leave a job. You don’t want ex-employees walking into your office months later.
@@ -174,7 +172,6 @@ Entra ID Governance is about **managing identities and access in an organized, s
 | Conditional Access   | Grant/deny access based on risk  | Conditional Access Policies              |
 | Governance           | Manage access lifecycle          | Access Reviews, Entitlement Management   |
 | Privileged Access    | Secure high-impact roles         | PIM, Audit Logs, Approval Workflows      |
----
 
 #### Real-World Analogy
 
@@ -300,8 +297,6 @@ Securing your cloud resources isn’t just about who can log in—it’s also ab
 | **Azure Firewall**     | Centralized, stateful packet filtering              | Block all traffic except `*.microsoft.com`            |
 | **Private Endpoints**  | Private, secure access to Azure PaaS services       | Connect to Azure SQL without public IP exposure       |
 | **DDoS Protection**    | Protect from large-scale, automated attacks         | Automatically block bot traffic during a surge        |
-
----
 
 ### 4. Data Protection
 
