@@ -28,8 +28,9 @@ A global enterprise running SAP ECC on AWS aimed to modernize its ERP platform b
 
 ## Strategy Chosen
 ### Two-Phase Approach
+
 | Phase   | Description                     |
-| ------- | ------------------------------- |
+| --- | --- |
 | Phase 1 | Rehost SAP ECC from AWS → Azure |
 | Phase 2 | Convert ECC → S/4HANA           |
 

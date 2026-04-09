@@ -60,6 +60,7 @@ While some components scaled automatically, critical dependencies did not, expos
 - No early warning alerts fired before user impact
 
 ### 2. Why It Failed?
+
 | Layer         | Issue                                     |
 | ------------- | ----------------------------------------- |
 | Application   | No graceful degradation mechanism         |

@@ -57,8 +57,9 @@ These were easier to manage in private infrastructure.
 ## Why Hybrid Cloud Was Not Selected
 
 Although hybrid architecture was evaluated, the client rejected it for the following reasons:
+
 | Reason                 | Explanation                                                     |
-| ---------------------- | --------------------------------------------------------------- |
+| ---| --- |
 | Compliance risk        | Hybrid architectures still involve data flowing to public cloud |
 | Operational complexity | Managing two environments increased operational overhead        |
 | Security policy        | Internal governance mandated full internal control              |
@@ -145,7 +146,7 @@ Infrastructure setup included:
 **Migration techniques used:**
 
 | Workload Type    | Migration Method                |
-| ---------------- | ------------------------------- |
+| --- | --- |
 | Virtual Machines | Lift-and-shift replication      |
 | Databases        | Backup & restore migration      |
 | Applications     | Containerization where possible |
