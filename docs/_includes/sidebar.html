@@ -3,13 +3,30 @@
   <ul>
     {% assign current_track = nil %}
     {% for track in site.data.navigation.tracks %}
-      {% if track.url != '/' and page.url contains track.url %}
-        {% assign current_track = track %}
+      {% if track.url != '/' %}
+        {% assign track_start = track.url | slice: 0, 1 %}
+        {% if track_start == '/' %}
+          {% assign page_start = page.url | slice: 0, track.url | size %}
+          {% if page_start == track.url %}
+            {% assign current_track = track %}
+          {% endif %}
+        {% endif %}
       {% endif %}
     {% endfor %}
 
     {% for track in site.data.navigation.tracks %}
-      {% assign is_current = track.url != '/' and page.url contains track.url %}
+      {% if track.url != '/' %}
+        {% assign track_start = track.url | slice: 0, 1 %}
+        {% if track_start == '/' %}
+          {% assign page_prefix = page.url | slice: 0, track.url | size %}
+          {% assign is_current = page_prefix == track.url %}
+        {% else %}
+          {% assign is_current = false %}
+        {% endif %}
+      {% else %}
+        {% assign is_current = false %}
+      {% endif %}
+
       <li class="{% if is_current %}active{% endif %}">
         <a href="{{ track.url | relative_url }}">{{ track.title }}</a>
 
@@ -18,9 +35,11 @@
             {% if page.url != track.url %}
               <li><a href="{{ track.url | relative_url }}">Back to {{ track.title }}</a></li>
             {% endif %}
-            {% for module in track.modules %}
-              <li><a href="{{ module.url | relative_url }}">{{ module.title }}</a></li>
-            {% endfor %}
+            {% if track.modules %}
+              {% for module in track.modules %}
+                <li><a href="{{ module.url | relative_url }}">{{ module.title }}</a></li>
+              {% endfor %}
+            {% endif %}
           </ul>
         {% endif %}
       </li>
