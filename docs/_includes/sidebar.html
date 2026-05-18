@@ -1,0 +1,29 @@
+<div class="sidebar-block">
+  <h3>Learning Paths</h3>
+  <ul>
+    {% assign current_track = nil %}
+    {% for track in site.data.navigation.tracks %}
+      {% if track.url != '/' and page.url contains track.url %}
+        {% assign current_track = track %}
+      {% endif %}
+    {% endfor %}
+
+    {% for track in site.data.navigation.tracks %}
+      {% assign is_current = track.url != '/' and page.url contains track.url %}
+      <li class="{% if is_current %}active{% endif %}">
+        <a href="{{ track.url | relative_url }}">{{ track.title }}</a>
+
+        {% if is_current %}
+          <ul>
+            {% if page.url != track.url %}
+              <li><a href="{{ track.url | relative_url }}">Back to {{ track.title }}</a></li>
+            {% endif %}
+            {% for module in track.modules %}
+              <li><a href="{{ module.url | relative_url }}">{{ module.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
