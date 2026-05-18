@@ -116,19 +116,3 @@ tracks:
         url: /cicd-course/Module-4-Continuous-Delivery-Deployment/
       - title: Module 5 - YAML Pipelines
         url: /cicd-course/Module-5-Yaml-Pipelines/
-  - id: kql-observability
-    title: KQL for Observability
-    description: Learn Kusto Query Language for logs, metrics, and reliability diagnostics.
-    url: /kql-course/
-  - id: digital-twins
-    title: Azure Digital Twins
-    description: Learn DTDL, modeling, and digital twin architecture.
-    url: /dtdl-course/
-  - id: rag-systems
-    title: RAG Systems
-    description: Learn retrieval-augmented generation and knowledge-driven AI architectures.
-    url: /rag-course/
-  - id: cicd
-    title: CI/CD Pipelines
-    description: Learn automation and deployment pipelines on Azure.
-    url: /cicd-course/
