@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 1 - Course Overview adn Fundamentals
 permalink: /dtdl-course/Module-1-Course-Overview/
 ---

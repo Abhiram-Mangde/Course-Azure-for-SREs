@@ -1,0 +1,134 @@
+main:
+  - title: Home
+    url: /
+  - title: Course
+    url: /course/
+  - title: Azure Hub
+    url: /azureservices/
+  - title: Azure Concepts
+    url: /azureconcepts/
+  - title: Blogs
+    url: /blogs/
+  - title: Case Studies
+    url: /casestudy/
+  - title: Community
+    url: https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions
+
+tracks:
+  - id: azure-sre
+    title: Azure for SREs
+    description: Learn Azure fundamentals, observability, automation, and reliability engineering.
+    url: /sre-course/
+    modules:
+      - title: Module 1 - Introduction to Azure & SRE
+        url: /sre-course/Module-1-Introduction-to-Azure-SRE/
+      - title: Module 2 - Core Azure Services
+        url: /sre-course/Module-2-Core-Azure-Services/
+      - title: Module 3 - Observability & Monitoring
+        url: /sre-course/Module-3-Observability-Monitoring/
+      - title: Module 4 - Keeping Systems Reliable
+        url: /sre-course/Module-4-Keeping-Systems-Reliable/
+      - title: Module 5 - Automation & DevOps
+        url: /sre-course/Module-5-Automation-DevOps/
+      - title: Module 6 - Security & Cost Management
+        url: /sre-course/Module-6-Security-Cost-Management/
+      - title: Module 7 - Hands-On Projects
+        url: /sre-course/Module-7-Hands-On-Projects/
+      - title: Module 8 - Career Prep & Best Practices
+        url: /sre-course/Module-8-Career-Prep-Best-Practices/
+  - id: kql-observability
+    title: KQL for Observability
+    description: Learn Kusto Query Language for logs, metrics, and reliability diagnostics.
+    url: /kql-course/
+    modules:
+      - title: Module 1 - Introduction to KQL
+        url: /kql-course/Module-1-Introduction-To-Kql/
+  - id: digital-twins
+    title: Azure Digital Twins
+    description: Learn DTDL, modeling, and digital twin architecture.
+    url: /dtdl-course/
+    modules:
+      - title: Module 1 - Digital Twin Thinking
+        url: /dtdl-course/Module-1-Digital-Twin-Thinking/
+      - title: Module 2 - DTDL Fundamentals
+        url: /dtdl-course/Module-2-DTDL-Fundamentals/
+      - title: Module 3 - Properties & Telemetry
+        url: /dtdl-course/Module-3-Properties-Telemetry/
+      - title: Module 4 - Relationships Graph
+        url: /dtdl-course/Module-4-Relationships-Graph/
+      - title: Module 5 - Advanced Modeling
+        url: /dtdl-course/Module-5-Advanced-Modeling/
+      - title: Module 6 - Schemas Deep Dive
+        url: /dtdl-course/Module-6-Schemas-DeepDive/
+      - title: Module 7 - Case Study
+        url: /dtdl-course/Module-7-Case-Study/
+      - title: Module 8 - Best Practices
+        url: /dtdl-course/Module-8-Best-Practices/
+      - title: Module 9 - Hands-On Labs
+        url: /dtdl-course/Module-9-Hands-On-Labs/
+      - title: Module 10 - Capstone
+        url: /dtdl-course/Module-10-Capstone/
+  - id: rag-systems
+    title: RAG Systems
+    description: Learn retrieval-augmented generation and knowledge-driven AI architectures.
+    url: /rag-course/
+    modules:
+      - title: Module 1 - Foundation of AI Knowledge
+        url: /rag-course/Module-1-Foundation-of-AI-Knowledge/
+      - title: Module 2 - LLMs and Their Limitations
+        url: /rag-course/Module-2-LLM-and-their-Limitation/
+      - title: Module 3 - The Knowledge Retrieval Problem
+        url: /rag-course/Module-3-The-Knowledge-Retrieval-Problem/
+      - title: Module 4 - Embeddings and Vector Representations
+        url: /rag-course/Module-4-Embeddings-and-Vector-Representations/
+      - title: Module 5 - Vector Similarity and Distance Metrics
+        url: /rag-course/Module-5-Vector-Similarity-and-Distance-Metrics/
+      - title: Module 6 - Vector Databases
+        url: /rag-course/Module-6-Vector-Databases/
+      - title: Module 7 - Document Chunking Strategies
+        url: /rag-course/Module-7-Document-Chunking-Strategies/
+      - title: Module 8 - The RAG Architecture
+        url: /rag-course/Module-8-The-RAG-Architecture/
+      - title: Module 9 - Building a Basic RAG System
+        url: /rag-course/Module-9-Building-a-Basic-RAG-System/
+      - title: Module 10 - Advanced RAG Techniques
+        url: /rag-course/Module-10-Advanced-RAG-Techniques/
+      - title: Module 11 - Building Production RAG Systems
+        url: /rag-course/Module-11-Building-Production-RAG-System/
+      - title: Module 12 - Evaluating and Improving RAG Systems
+        url: /rag-course/Module-12-Evaluating-and-Improving-RAG-Systems/
+      - title: Module 13 - Industry RAG Architectures and Design Patterns
+        url: /rag-course/Module-13-Industry-RAG-Architectures-and-Design-Patterns/
+      - title: Module 14 - End-to-End RAG Project
+        url: /rag-course/Module-14-End-to-End-RAG-Project/
+  - id: cicd
+    title: CI/CD Pipelines
+    description: Learn automation and deployment pipelines on Azure.
+    url: /cicd-course/
+    modules:
+      - title: Module 1 - Course Overview and Fundamentals
+        url: /cicd-course/Module-1-Course-Overview/
+      - title: Module 2 - DevOps Foundation
+        url: /cicd-course/Module-2-DevOps-Foundation/
+      - title: Module 3 - Continuous Integration
+        url: /cicd-course/Module-3-Continuous-Integration/
+      - title: Module 4 - Continuous Delivery & Deployment
+        url: /cicd-course/Module-4-Continuous-Delivery-Deployment/
+      - title: Module 5 - YAML Pipelines
+        url: /cicd-course/Module-5-Yaml-Pipelines/
+  - id: kql-observability
+    title: KQL for Observability
+    description: Learn Kusto Query Language for logs, metrics, and reliability diagnostics.
+    url: /kql-course/
+  - id: digital-twins
+    title: Azure Digital Twins
+    description: Learn DTDL, modeling, and digital twin architecture.
+    url: /dtdl-course/
+  - id: rag-systems
+    title: RAG Systems
+    description: Learn retrieval-augmented generation and knowledge-driven AI architectures.
+    url: /rag-course/
+  - id: cicd
+    title: CI/CD Pipelines
+    description: Learn automation and deployment pipelines on Azure.
+    url: /cicd-course/

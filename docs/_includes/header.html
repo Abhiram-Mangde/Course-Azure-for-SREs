@@ -123,13 +123,15 @@
     </a>
 
     <nav class="nav-links">
-      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-      <a href="{{ '/course' | relative_url }}" class="{% if page.url contains 'course' %}active{% endif %}">Course</a>
-      <a href="{{ '/blogs' | relative_url }}" class="{% if page.url contains 'blogs' %}active{% endif %}">Blogs</a>
-      <a href="{{ '/casestudy' | relative_url }}" class="{% if page.url contains 'casestudy' %}active{% endif %}">Case Studies</a>
-      <a href="{{ '/azureservices' | relative_url }}" class="{% if page.url contains 'azureservices' %}active{% endif %}">Azure Hub</a>
-      <a href="{{ '/azureconcepts' | relative_url }}" class="{% if page.url contains 'azureconcepts' %}active{% endif %}">Azure Concepts</a>
-      <a href="https://github.com/Abhiram-Mangde/Course-Azure-for-SREs/discussions" target="_blank">Community</a>
+      {% for item in site.data.navigation.main %}
+        {% if item.url contains 'http' %}
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+        {% else %}
+          <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url or (item.url != '/' and page.url contains item.url) %}active{% endif %}">
+            {{ item.title }}
+          </a>
+        {% endif %}
+      {% endfor %}
     </nav>
 
     <div class="hamburger" onclick="toggleMenu()">

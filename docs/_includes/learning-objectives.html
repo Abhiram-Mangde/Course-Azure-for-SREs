@@ -1,0 +1,6 @@
+{% if include.title %}<h2>{{ include.title }}</h2>{% else %}<h2>Learning Objectives</h2>{% endif %}
+<ul class="learning-objectives">
+  {% for objective in include.objectives %}
+    <li>{{ objective }}</li>
+  {% endfor %}
+</ul>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 3 - Continuous Integration
 permalink: /dtdl-course/Module-3-Continuous-Integration/
 ---
@@ -176,3 +176,4 @@ Fix:
 - Automate Testing: `Never rely on manual testing`
 - Fail Fast: `Detect issues early`
 - Use Pull Requests: `Never merge directly to main`
+

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 7 - Hands-On Projects (Guided Labs)
 ---
 
@@ -125,3 +125,4 @@ Apply your skills in real-world projects: deploy web apps, configure auto-scalin
 - [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/)
 - [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/)
 - [Azure Cost Management](https://learn.microsoft.com/en-us/azure/cost-management-billing/)
+

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 2 - Language Models and Their Limitations
 permalink: /rag-course/Module-2-LLM-and-their-Limitation/
 ---
@@ -191,3 +191,4 @@ We will explore:
 * why traditional search systems struggle with semantic understanding
 * how modern AI systems retrieve relevant information
 * the conceptual foundations behind **Retrieval-Augmented Generation**
+

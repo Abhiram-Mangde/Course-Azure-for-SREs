@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 8 - Career Prep, Best Practices & Conclusion
 ---
 
@@ -177,3 +177,4 @@ Congratulations! 🎉 By completing this course, you have:
 **Scenario:** You are preparing for your first Azure SRE job interview.
 
 **Instructions:**
+

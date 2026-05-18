@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 2 - DevOps Foundation
 permalink: /dtdl-course/Module-1-DevOps-Foundation/
 ---

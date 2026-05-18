@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 2 - DTDL Fundamentals & Structure
 permalink: /dtdl-course/Module-2-DTDL-Fundamentals/
 ---
@@ -344,4 +344,5 @@ In **Module 3**, we go deep into:
 - When to use each
 - Query implications
 - Real production scenarios
+
 

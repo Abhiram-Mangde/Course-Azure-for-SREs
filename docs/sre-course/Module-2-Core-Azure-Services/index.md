@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 2 - Core Azure Services for SREs
 ---
 
@@ -128,3 +128,4 @@ az role assignment create --assignee <user-email> --role Reader --resource-group
 ## Resources
 - [Azure CLI Documentation](https://learn.microsoft.com/en-us/cli/azure/)
 - [Azure Networking Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)
+

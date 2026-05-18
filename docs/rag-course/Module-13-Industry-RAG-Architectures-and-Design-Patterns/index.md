@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 13 - Industry RAG Architectures and Design Patterns
 permalink: /rag-course/Module-13-Industry-RAG-Architectures-and-Design-Patterns/
 ---
@@ -460,4 +460,5 @@ You will learn how to combine everything from this course to build a full RAG sy
 - retrieval
 - LLM generation
 - evaluation
+
 
