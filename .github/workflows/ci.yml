@@ -50,9 +50,13 @@ jobs:
           pip install yamllint
           pip install azure-identity azure-keyvault-secrets
 
+      - name: Lint Markdown files
+        run: |
+          markdownlint docs/**/*.md
+
       - name: Lint YAML files
         run: |
-          yamllint . || true
+          find . -name '*.yml' -o -name '*.yaml' | xargs yamllint
 
       - name: Validate folder structure
         run: |

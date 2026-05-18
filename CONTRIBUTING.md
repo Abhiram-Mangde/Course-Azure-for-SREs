@@ -79,7 +79,11 @@ Here are a few guidelines to follow when adding new content to the course:
 2. Accuracy: Ensure your content is accurate, up-to-date, and based on the latest Azure features and practices.
 3. Practicality: We aim to provide hands-on learning experiences. Where possible, include practical examples, real-world use cases, and clear, executable steps.
 4. Avoid Overly Complex Explanations: While advanced topics are welcome, try to break down concepts and avoid overwhelming readers with too much technical jargon or overly complex explanations.
-5. Link to External Resources: If relevant, link to official documentation, articles, or tutorials that can offer deeper explanations.
+5. Daily Learning Notes: Add daily learning notes under `docs/daily-learning/` when you make progress on a topic.
+   - Use the `docs/daily-learning/entry-template.md` file as a starting point.
+   - Name entries with a date prefix such as `YYYY-MM-DD-topic.md`.
+   - Include key learnings, commands, challenges, and next steps.
+6. Link to External Resources: If relevant, link to official documentation, articles, or tutorials that can offer deeper explanations.
 
 ## Issues and Discussion
 If you're not sure how to contribute, or you have ideas for improvements, feel free to open an issue:
