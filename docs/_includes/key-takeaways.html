@@ -1,0 +1,6 @@
+{% if include.title %}<h2>{{ include.title }}</h2>{% else %}<h2>Key Takeaways</h2>{% endif %}
+<ul class="key-takeaways">
+  {% for takeaway in include.takeaways %}
+    <li>{{ takeaway }}</li>
+  {% endfor %}
+</ul>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 5 - Inheritance, Components & Advanced Modeling
 permalink: /dtdl-course/Module-5-Advanced-Modeling/
 ---
@@ -333,3 +333,4 @@ In Module 6 we go deep into:
 This is where your models become fully expressive.
 
 You are now building enterprise-grade DTDL.
+

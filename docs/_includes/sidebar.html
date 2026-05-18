@@ -1,0 +1,17 @@
+  <div class="sidebar-block">
+    <h3>Learning Paths</h3>
+    <ul>
+      {% for track in site.data.navigation.tracks %}
+        <li>
+          <a href="{{ track.url | relative_url }}">{{ track.title }}</a>
+          {% if track.modules %}
+            <ul>
+              {% for module in track.modules %}
+                <li><a href="{{ module.url | relative_url }}">{{ module.title }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 3 - Properties vs Telemetry Deep Dive
 permalink: /dtdl-course/Module-3-Properties-Telemetry/
 ---
@@ -340,3 +340,4 @@ You will learn:
 - How to think like a system architect
 
 This is where Digital Twins become truly powerful.
+

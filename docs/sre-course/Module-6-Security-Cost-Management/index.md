@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 6 - Security & Cost Management
 ---
 
@@ -106,3 +106,4 @@ az network nsg rule create --resource-group DemoGroup --nsg-name DemoNSG --name 
 ## Resources
 - [Azure Security Center](https://learn.microsoft.com/en-us/azure/defender-for-cloud/)
 - [Azure Cost Management](https://learn.microsoft.com/en-us/azure/cost-management-billing/)
+

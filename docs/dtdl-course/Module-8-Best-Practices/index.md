@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 8 - Best Practices for Azure Digital Twins
 permalink: /dtdl-course/Module-8-Best-Practices/
 ---
@@ -97,3 +97,4 @@ You have completed the **DTDL Course**:
 - Built a real-world Smart Factory digital twin  
 - Explored deployment, integration, and operational best practices  
 - Now ready to design **robust, scalable, and maintainable Azure Digital Twins solutions**
+

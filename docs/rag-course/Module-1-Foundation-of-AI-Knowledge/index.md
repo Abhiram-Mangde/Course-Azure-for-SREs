@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 1 - Foundation of AI Knowledge
 permalink: /rag-course/Module-1-Foundation-of-AI-Knowledge/
 ---
@@ -163,3 +163,4 @@ These challenges lead directly to the need for **Retrieval-Augmented Generation*
 
 In the next module we will explore **how large language models work internally**.
 Understanding how models like **GPT-4** generate language will help explain **why they need retrieval systems to access knowledge**.
+

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 7 - Case Study
 permalink: /dtdl-course/Module-7-Case-Study/
 ---
@@ -218,3 +218,4 @@ This is a **full-stack real-world model**.
 - Get ready to **apply models in real scenarios**  
 
 You now have a full Smart Factory model that is production-ready!
+

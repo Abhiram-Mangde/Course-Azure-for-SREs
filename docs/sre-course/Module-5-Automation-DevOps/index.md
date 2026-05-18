@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 5 - Automation & DevOps for Beginners
 ---
 
@@ -163,3 +163,4 @@ jobs:
 - [Azure DevOps Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/)
 - [GitHub Actions for Azure](https://github.com/Azure/actions)
 - [Bicep Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
+

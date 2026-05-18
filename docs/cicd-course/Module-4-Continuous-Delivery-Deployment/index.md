@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 4 - Continuous Delivery and Deployment
 permalink: /dtdl-course/Module-4-Continuous-Delivery-Deployment/
 ---

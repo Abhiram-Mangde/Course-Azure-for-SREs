@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 4 - Keeping Systems Reliable
 ---
 
@@ -115,3 +115,4 @@ az vmss create --resource-group DemoGroup --name DemoScaleSet --image UbuntuLTS 
 - [Azure Reliability Documentation](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/overview)
 - [Azure Backup](https://learn.microsoft.com/en-us/azure/backup/)
 - [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/)
+

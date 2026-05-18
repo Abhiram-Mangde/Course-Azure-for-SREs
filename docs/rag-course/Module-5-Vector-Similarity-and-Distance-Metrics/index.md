@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 5 - Vector Similarity and Distance Metrics
 permalink: /rag-course/Module-5-Vector-Similarity-and-Distance-Metrics/
 ---
@@ -409,4 +409,5 @@ We will learn:
 * how vector databases store embeddings
 * how they perform fast similarity search
 * the role they play in modern RAG systems
+
 

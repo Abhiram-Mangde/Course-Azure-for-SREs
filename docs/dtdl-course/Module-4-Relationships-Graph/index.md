@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 4 - Relationships & Graph Modeling
 permalink: /dtdl-course/Module-4-Relationships-Graph/
 ---
@@ -373,3 +373,4 @@ In Module 5, we move to advanced modeling:
 - Enterprise modeling patterns
 
 This is where you move from modeler to architect.
+

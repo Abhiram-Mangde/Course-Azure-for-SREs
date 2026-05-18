@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 6 - Schema Types, Enums & Complex Models
 permalink: /dtdl-course/Module-6-Schemas-DeepDive/
 ---
@@ -389,3 +389,4 @@ You will:
 This is where everything comes together.
 
 You are now modeling like an enterprise architect.
+
