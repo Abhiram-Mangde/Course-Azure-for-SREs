@@ -13,22 +13,15 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: read
-      pages: write
-      id-token: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: docs
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+      
+      - name: Deploy Documentation
+        run: |
+          echo "Deploying course content..."
+          # Add deployment steps here (e.g., upload to Azure, publish docs)
 
       - name: Notify Success
         run: |
