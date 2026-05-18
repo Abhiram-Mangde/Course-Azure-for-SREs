@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 10 - Advanced RAG Techniques
 permalink: /rag-course/Module-10-Advanced-RAG-Techniques/
 ---

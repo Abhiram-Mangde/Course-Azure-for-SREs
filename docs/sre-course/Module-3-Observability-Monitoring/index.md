@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 3 - Observability & Monitoring
 ---
 
@@ -118,3 +118,4 @@ Learn how to monitor Azure resources, set up dashboards, analyze logs, and confi
 - [Azure Monitor Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/overview)
 - [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
 - [Log Analytics](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-tutorial)
+

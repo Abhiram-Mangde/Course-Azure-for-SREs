@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 11 - Building a Production Ready RAG System
 permalink: /rag-course/Module-11-Building-Production-RAG-System/
 ---
@@ -466,3 +466,4 @@ You will learn how to measure:
 - answer accuracy
 
 and how to continuously improve your RAG system.
+

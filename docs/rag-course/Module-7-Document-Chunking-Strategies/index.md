@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 7 - Document Chunking Strategies
 permalink: /rag-course/Module-7-Document-Chunking-Strategies/
 ---

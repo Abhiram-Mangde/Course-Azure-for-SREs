@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 9 - Hands On Lab
 permalink: /dtdl-course/Module-9-Hands-On-Lab/
 ---
@@ -167,3 +167,4 @@ WHERE Room.$dtId = 'Room1'
 
 You have **completed the Azure Digital Twins hands-on lab**.  
 You now have practical skills to design, deploy, and operate digital twin solutions in Azure.
+

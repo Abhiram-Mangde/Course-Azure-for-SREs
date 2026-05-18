@@ -1,0 +1,9 @@
+<div class="callout callout-warning">
+  {% if include.title %}<p class="callout-title">{{ include.title }}</p>{% endif %}
+  {% if include.message %}
+    {{ include.message | markdownify }}
+  {% endif %}
+  {% if include.content %}
+    {{ include.content | markdownify }}
+  {% endif %}
+</div>

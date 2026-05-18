@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 3 - The Knowledge Retrieval Problem
 permalink: /rag-course/Module-3-The-Knowledge-Retrieval-Problem/
 ---
@@ -188,3 +188,4 @@ In the next module we will explore **how machines represent meaning using vector
 We will introduce the concept of **embeddings**, which allow computers to transform text into numerical representations that capture semantic meaning.
 
 These representations are the foundation of modern semantic search and RAG systems.
+

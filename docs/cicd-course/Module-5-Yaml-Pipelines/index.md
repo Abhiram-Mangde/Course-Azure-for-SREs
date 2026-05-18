@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 5 - YAML Pipelines
 permalink: /dtdl-course/Module-5-Yaml-Pipelines/
 ---

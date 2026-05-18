@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 4 - Embeddings and Vector Representations
 permalink: /rag-course/Module-4-Embeddings-and-Vector-Representations/
 ---
@@ -314,3 +314,4 @@ We will learn:
 * nearest neighbor search
 
 These techniques allow machines to determine **which pieces of knowledge are most relevant to a user's query**.
+

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 6 - Vector Databases
 permalink: /rag-course/Module-6-Vector-Databases/
 ---
@@ -182,3 +182,4 @@ In the next module we will explore **Document Chunking Strategies**:
 * Why large documents need to be split
 * How to chunk text efficiently
 * How chunking impacts embeddings and retrieval
+

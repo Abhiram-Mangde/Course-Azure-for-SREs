@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    /* ============================= */
+    /* GLOBAL TYPOGRAPHY ENHANCEMENT */
+    /* ============================= */
+
+    html {
+      height: 100%;
+      margin: 0;
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #323130;
+      background: #f3f2f1;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.3;
+      letter-spacing: -0.2px;
+    }
+
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.7rem; }
+    h3 { font-size: 1.35rem; }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    ul, ol {
+      margin-bottom: 1.2rem;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: #0078d4;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #dcdcdc;
+      padding: 18px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    code {
+      background: #f3f2f1;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    pre code {
+      background: transparent;
+      padding: 0;
+    }
+
+    .breadcrumb {
+      max-width: 960px;
+      margin: 20px auto 0 auto;
+      padding: 0 20px;
+      font-size: 0.85rem;
+      color: #605e5c;
+    }
+
+    .breadcrumb a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    main.content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      background: #f3f2f1;
+    }
+
+    .canvas {
+      width: 100%;
+      max-width: 1100px;
+      background: #ffffff;
+      border: 1px solid #edebe9;
+      border-radius: 10px;
+      padding: 56px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    .canvas img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #edebe9;
+      border-radius: 8px;
+      background: #fff;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 1200px) {
+      .canvas {
+        padding: 30px 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      main.content {
+        padding: 20px 15px;
+      }
+      .canvas {
+        padding: 20px 20px;
+        max-width: 100%;
+      }
+    }
+
+    .canvas:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    }
+
+    .canvas h1 { margin-top: 0; }
+    .canvas h2 {
+      margin-top: 50px;
+      border-bottom: 1px solid #edebe9;
+      padding-bottom: 8px;
+    }
+
+    .lesson-shell {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 28px;
+      width: 100%;
+      max-width: 1320px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 92px;
+      align-self: start;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    .lesson-main {
+      min-width: 0;
+    }
+
+    .sidebar-block {
+      background: #ffffff;
+      border: 1px solid #edebe9;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    }
+
+    .sidebar-block h3 {
+      margin-top: 0;
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .sidebar-block ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar-block li + li {
+      margin-top: 10px;
+    }
+
+    .sidebar-block a {
+      color: #323130;
+      text-decoration: none;
+      display: block;
+      font-size: 0.95rem;
+    }
+
+    .sidebar-block a:hover {
+      color: #0078d4;
+    }
+
+    .sidebar-block ul ul {
+      margin-top: 10px;
+      padding-left: 1rem;
+    }
+
+    footer {
+      border-top: 1px solid #edebe9;
+      padding: 16px 24px;
+      font-size: 14px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .canvas { padding: 32px; }
+      .breadcrumb { font-size: 0.75rem; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+    }
+
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid #edebe9;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #0078d4;
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #323130;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 6px 0;
+      position: relative;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #0078d4;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0%;
+      height: 2px;
+      background: #0078d4;
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-links a.active {
+      color: #005a9e;
+      font-weight: 600;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #0078d4;
+    }
+
+    @media (max-width: 1024px) {
+      .header-container {
+        padding: 12px 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        gap: 16px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* Lesson specific styles */
+    .lesson-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+      color: #605e5c;
+      font-size: 0.95rem;
+    }
+
+    .lesson-meta-item {
+      background: #f3f2f1;
+      border: 1px solid #edebe9;
+      border-radius: 999px;
+      padding: 8px 14px;
+    }
+
+    .lesson-description {
+      margin-top: 0;
+      margin-bottom: 24px;
+      padding: 18px 22px;
+      background: #f3f2f1;
+      border-left: 4px solid #0078d4;
+      border-radius: 8px;
+    }
+
+    .learning-objectives,
+    .key-takeaways,
+    .steps-list {
+      margin-top: 24px;
+      padding-left: 1.35rem;
+    }
+
+    .learning-objectives li,
+    .key-takeaways li {
+      margin-bottom: 0.75rem;
+    }
+
+    .callout {
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 24px 0;
+      border: 1px solid transparent;
+    }
+
+    .callout-title {
+      margin: 0 0 10px 0;
+      font-weight: 700;
+    }
+
+    .callout-info { background: #eef6ff; border-color: #d0e7ff; }
+    .callout-tip { background: #f3fbf7; border-color: #bce0c9; }
+    .callout-warning { background: #fff4e5; border-color: #ffd59e; }
+  </style>
+
+  {{ site.head }}
+</head>
+
+<body>
+
+  {% include header.html %}
+
+  <nav class="breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    {% assign url_parts = page.url | split: '/' %}
+    {% assign path = '' %}
+    {% for part in url_parts %}
+      {% unless part == '' or forloop.last %}
+        {% assign path = path | append: '/' | append: part %}
+        / <a href="{{ path | relative_url }}">{{ part | replace: '-', ' ' | capitalize }}</a>
+      {% endunless %}
+    {% endfor %}
+    {% unless page.url == '/' %}
+      / <span>{{ page.title }}</span>
+    {% endunless %}
+  </nav>
+
+  <main class="content">
+    <div class="lesson-shell fade-in">
+      <aside class="sidebar">
+        {% include sidebar.html %}
+      </aside>
+
+      <section class="lesson-main">
+        <div class="canvas">
+          <header class="lesson-header">
+            {% if page.description %}
+              <p class="lesson-description">{{ page.description }}</p>
+            {% endif %}
+
+            <div class="lesson-meta">
+              {% if page.difficulty %}
+                <span class="lesson-meta-item">Difficulty: {{ page.difficulty }}</span>
+              {% endif %}
+              {% if page.estimated_time %}
+                <span class="lesson-meta-item">Estimated time: {{ page.estimated_time }}</span>
+              {% endif %}
+              {% if page.tags %}
+                <span class="lesson-meta-item">Tags: {{ page.tags | join: ', ' }}</span>
+              {% endif %}
+            </div>
+
+            {% if page.learning_objectives %}
+              {% include learning-objectives.html objectives=page.learning_objectives %}
+            {% endif %}
+          </header>
+
+          {{ content }}
+
+          {% if page.key_takeaways %}
+            {% include key-takeaways.html takeaways=page.key_takeaways %}
+          {% endif %}
+        </div>
+      </section>
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add("show");
+        });
+      });
+      document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+    });
+
+    function toggleChat() {
+      const chat = document.getElementById("chatWindow");
+      chat.classList.toggle("open");
+    }
+  </script>
+
+</body>
+</html>

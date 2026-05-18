@@ -1,6 +1,27 @@
 ---
-layout: page
+layout: lesson
 title: Module 1 – Introduction to Azure & SRE
+description: This module introduces cloud computing, Microsoft Azure, and the role of Site Reliability Engineering.
+difficulty: Beginner
+estimated_time: 30 min
+tags:
+  - azure
+  - sre
+  - cloud
+services:
+  - Azure
+prerequisites:
+  - Basic IT knowledge
+learning_objectives:
+  - Understand cloud service models and Azure fundamentals.
+  - Explain the role of Site Reliability Engineering.
+  - Use the Azure Portal to create a resource group and VM.
+author: Abhiram Mangde
+last_updated: 2026-05-18
+key_takeaways:
+  - Azure provides IaaS, PaaS, and SaaS services for different operational needs.
+  - SRE is a reliability-first engineering practice that combines software and operations.
+  - Hands-on Azure Portal use is the first step toward practical cloud reliability.
 ---
 
 # Module 1: Introduction to Azure & SRE

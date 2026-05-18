@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 14 - End to End RAG Project
 permalink: /rag-course/Module-14-End-to-End-RAG-Project/
 ---

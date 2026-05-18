@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 12 - Evaluating and Improving RAG Systems
 permalink: /rag-course/Module-12-Evaluating-and-Improving-RAG-Systems/
 ---
@@ -459,3 +459,4 @@ You will learn how companies build:
 - large scale RAG pipelines
 - enterprise knowledge assistants
 - multi-agent retrieval systems
+

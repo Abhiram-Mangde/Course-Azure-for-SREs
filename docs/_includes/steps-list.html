@@ -1,0 +1,10 @@
+{% if include.title %}<h2>{{ include.title }}</h2>{% endif %}
+{% if include.steps %}
+<ol class="steps-list">
+  {% for step in include.steps %}
+    <li>{{ step }}</li>
+  {% endfor %}
+</ol>
+{% elsif include.content %}
+<div class="steps-list">{{ include.content | markdownify }}</div>
+{% endif %}

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 10 - Capstone Project
 permalink: /dtdl-course/Module-10-Capstone-Project/
 ---
@@ -204,3 +204,4 @@ if temperature > 28:
 
 You have **completed the Azure Digital Twins Capstone Project**.  
 You are now capable of **designing and implementing production-grade ADT solutions**.
+

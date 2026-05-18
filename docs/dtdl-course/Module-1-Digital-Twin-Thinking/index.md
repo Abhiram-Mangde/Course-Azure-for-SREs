@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lesson
 title: Module 1 - Digital Twin Thinking & Architecture
 permalink: /dtdl-course/Module-1-Digital-Twin-Thinking/
 ---
