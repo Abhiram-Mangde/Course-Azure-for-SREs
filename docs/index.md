@@ -280,18 +280,6 @@ Explore Azure Services from an SRE Perspective
 
 ---
 
-## Daily Learning Journal
-
-<div class="intro-box">
-Track and reflect on your Azure progress with daily learning notes, lab outcomes, and follow-up actions.
-</div>
-
-- Start your own learning journal in [Daily Learning Journal]({{ '/daily-learning/' | relative_url }})
-- Capture one idea, one command, and one takeaway each day
-- Use journal entries to review key Azure SRE concepts
-
----
-
 ## Learn by Doing
 
 This course focuses heavily on **practice over theory**:
