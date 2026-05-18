@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Azure Services
+permalink: /azureservices/
 ---
 
 <style>

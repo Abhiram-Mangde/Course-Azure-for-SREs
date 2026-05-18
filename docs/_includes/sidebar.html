@@ -3,13 +3,17 @@
   <ul>
     {% assign current_track = nil %}
     {% for track in site.data.navigation.tracks %}
-      {% if track.url != '/' and page.url contains track.url %}
-        {% assign current_track = track %}
+      {% if track.url != '/' %}
+        {% assign prefix = page.url | slice: 0, track.url | size %}
+        {% if prefix == track.url %}
+          {% assign current_track = track %}
+        {% endif %}
       {% endif %}
     {% endfor %}
 
     {% for track in site.data.navigation.tracks %}
-      {% assign is_current = track.url != '/' and page.url contains track.url %}
+      {% assign prefix = page.url | slice: 0, track.url | size %}
+      {% assign is_current = track.url != '/' and prefix == track.url %}
       <li class="{% if is_current %}active{% endif %}">
         <a href="{{ track.url | relative_url }}">{{ track.title }}</a>
 
