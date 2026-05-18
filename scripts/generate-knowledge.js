@@ -25,6 +25,30 @@ function cleanMarkdown(content) {
     .trim();
 }
 
+function getCategory(relativePath) {
+  if (relativePath.startsWith("daily-learning/")) return "Daily Learning";
+  if (relativePath.startsWith("blogs/")) return "Blog";
+  if (relativePath.startsWith("casestudy/")) return "Case Study";
+  if (relativePath.startsWith("azureservices/")) return "Azure Service";
+  if (relativePath.startsWith("azureconcepts/")) return "Azure Concept";
+  if (["sre-course/", "kql-course/", "dtdl-course/", "rag-course/", "dsa/"].some(prefix => relativePath.startsWith(prefix))) return "Course";
+  return "Reference";
+}
+
+function formatUrl(relativePath) {
+  return (
+    repoBase +
+    "/" +
+    relativePath
+      .replace(/\.md$/, "/")
+      .split(path.sep)
+      .map(part => encodeURIComponent(part))
+      .join("/")
+      .replace(/%2F/g, "/")
+      .toLowerCase()
+  );
+}
+
 function extractFromFile(filePath) {
   const raw = fs.readFileSync(filePath, "utf-8");
   const noFrontMatter = removeFrontMatter(raw);
@@ -55,8 +79,9 @@ function scanDirectory(dir) {
 
       knowledge.push({
         title: data.title,
+        category: getCategory(relativePath),
         content: data.content,
-        url: repoBase + "/" + relativePath.replace(/\.md$/, "/").toLowerCase()
+        url: formatUrl(relativePath)
       });
     }
   });
